@@ -1,0 +1,37 @@
+/* Design tokens: colours, radii and widths (same values as the original). */
+:root {
+  --bg: #020617;
+  --surface: #0f172a;
+  --border: #1e293b;
+  --border-strong: #334155;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --subtle: #64748b;
+  --primary-bg: #f1f5f9;
+  --primary-text: #020617;
+  --indigo: #4338ca;
+  --progress: #635bff;
+  --focus: #818cf8;
+  --disabled-bg: #92959e;
+  --correct: #00e676;
+  --incorrect: #ff5252;
+  --partial: #fbbf24;
+  --radius: 8px;
+  --radius-card: 12px;
+  --width-wide: 72rem;
+  --width-task: 1080px;
+  --width-start: 560px;
+  color-scheme: dark;
+  color: var(--text);
+  background: var(--bg);
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Helvetica Neue,
+    Arial,
+    sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}

@@ -1,0 +1,79 @@
+/* Success animations after a fully correct answer. */
+.task-card {
+  position: relative;
+}
+.continue-wrap {
+  display: inline-block;
+  position: relative;
+}
+.task-card.is-celebrating .token-placed,
+.task-card.is-celebrating .token[aria-pressed="true"],
+.task-card.is-celebrating select {
+  animation: 0.9s ease-out both success-flash;
+}
+.task-card.is-celebrating .choice:has(input:checked) {
+  animation: 0.9s ease-out both success-flash;
+}
+.task-card.is-celebrating .units:not(:has(.reference-list)) .text-input {
+  animation: 0.9s ease-out both success-flash;
+}
+.task-card.is-celebrating:has(.matching) {
+  animation: 0.9s ease-out 1.2s both card-flash;
+}
+@keyframes card-flash {
+  0% {
+    background-color: var(--surface);
+    border-color: var(--border);
+  }
+  30% {
+    border-color: var(--correct);
+    background-color: #00e67638;
+  }
+  to {
+    border-color: var(--correct);
+    background-color: #00e6761f;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .task-card.is-celebrating:has(.matching) {
+    border-color: var(--correct);
+    background-color: #00e67626;
+    animation: none;
+  }
+}
+@keyframes success-flash {
+  0% {
+    box-shadow: none;
+  }
+  30% {
+    border-color: var(--correct);
+    box-shadow:
+      0 0 0 1px var(--correct),
+      0 0 18px #00e67659;
+    background-color: #00e67638;
+  }
+  to {
+    border-color: var(--correct);
+    box-shadow: 0 0 0 1px var(--correct);
+    background-color: #00e6761f;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .task-card.is-celebrating .token-placed,
+  .task-card.is-celebrating .token[aria-pressed="true"],
+  .task-card.is-celebrating select {
+    border-color: var(--correct);
+    background-color: #00e67626;
+    animation: none;
+  }
+  .task-card.is-celebrating .choice:has(input:checked) {
+    border-color: var(--correct);
+    background-color: #00e67626;
+    animation: none;
+  }
+  .task-card.is-celebrating .units:not(:has(.reference-list)) .text-input {
+    border-color: var(--correct);
+    background-color: #00e67626;
+    animation: none;
+  }
+}

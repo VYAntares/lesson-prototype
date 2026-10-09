@@ -1,0 +1,61 @@
+/* Listen buttons and the voice help dialog. */
+.listen {
+  display: inline;
+}
+.voice-help-dialog {
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  width: min(36rem, 100vw - 32px);
+  max-height: calc(100vh - 32px);
+  color: var(--text);
+  text-align: left;
+  padding: 1.25rem 1.5rem;
+  overflow-y: auto;
+}
+.voice-help-dialog::backdrop {
+  background: #020617bf;
+}
+.voice-help-dialog h2 {
+  margin-top: 0;
+}
+.voice-help-dialog > button {
+  margin-top: 1rem;
+}
+.voice-help-steps ol,
+.voice-help-steps ul {
+  margin: 0.5rem 0;
+  padding-left: 1.2rem;
+}
+.icon-button {
+  border: 1px solid var(--border-strong);
+  width: 32px;
+  height: 32px;
+  color: var(--text);
+  cursor: pointer;
+  background: 0 0;
+  border-radius: 999px;
+  flex-shrink: 0;
+  place-items: center;
+  font-size: 15px;
+  display: inline-grid;
+}
+.icon-button-large {
+  width: 42px;
+  height: 42px;
+}
+.icon-button:hover {
+  border-color: var(--progress);
+}
+.icon-button.is-unavailable {
+  opacity: 0.6;
+}
+.listen:has(.icon-button) {
+  display: inline-flex;
+}
+.flashcard-face .flashcard-example {
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  display: flex;
+}

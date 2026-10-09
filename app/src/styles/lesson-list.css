@@ -1,0 +1,31 @@
+/* Course index lesson table. */
+.table-wrap {
+  position: relative;
+  overflow-x: auto;
+}
+.lesson-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.lesson-table th {
+  text-align: left;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border-strong);
+  white-space: nowrap;
+  padding: 0.75rem;
+  font-size: 16px;
+  font-weight: 600;
+}
+.lesson-table td {
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+  padding: 1rem 0.75rem;
+}
+.lesson-table .ordinal {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.lesson-table .score {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}

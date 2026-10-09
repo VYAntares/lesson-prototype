@@ -1,0 +1,112 @@
+/* Grammar: pronoun form matching (drag & drop), new verbs table. */
+.choice-gender {
+  color: var(--muted);
+  font-size: 13px;
+}
+.form-bank {
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius);
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  min-height: 3rem;
+  margin: 0.75rem 0;
+  padding: 0.5rem;
+  display: flex;
+}
+.form-token {
+  touch-action: none;
+  cursor: grab;
+  margin: 0;
+}
+.form-rows {
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+}
+.form-row {
+  grid-template-columns: minmax(5rem, 9rem) minmax(0, 16rem) auto;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  display: grid;
+}
+.form-pronoun {
+  font-weight: 700;
+}
+.form-slot {
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius);
+  background: var(--bg);
+  min-height: 2.75rem;
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+}
+.form-slot.is-filled {
+  border-style: solid;
+  border-color: var(--progress);
+}
+.form-slot[aria-pressed="true"],
+.pronoun-match.is-dragging .form-slot:hover {
+  border-color: var(--indigo);
+  background: #1e1b4b;
+}
+.form-slot:disabled {
+  cursor: default;
+}
+.form-slot.is-right {
+  border-color: var(--correct);
+  box-shadow: 0 0 0 1px var(--correct);
+}
+.form-slot.is-wrong {
+  border-color: var(--incorrect);
+  box-shadow: 0 0 0 1px var(--incorrect);
+}
+.form-slot .form-placed {
+  touch-action: none;
+  cursor: grab;
+}
+.form-slot.is-wrong .form-placed {
+  color: var(--incorrect);
+  text-decoration: line-through;
+}
+.row-explanation {
+  color: var(--muted);
+  grid-column: 2/-1;
+  margin: 0;
+  font-size: 14px;
+}
+.drag-ghost {
+  z-index: 50;
+  pointer-events: none;
+  border-color: var(--indigo);
+  position: fixed;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 6px 18px #0006;
+}
+@media (width<=520px) {
+  .form-row {
+    grid-template-columns: minmax(4rem, 6rem) minmax(0, 1fr);
+  }
+  .form-row .inline-answer {
+    grid-column: 2;
+  }
+}
+.matching.has-gap {
+  --person-gap: 0.75rem;
+}
+.flow-list .flow-detail {
+  white-space: normal;
+  margin-top: 0.15rem;
+  display: block;
+}
+.new-verbs {
+  margin: 1rem 0;
+}
+.new-verbs .data-table {
+  width: auto;
+  min-width: 18rem;
+}

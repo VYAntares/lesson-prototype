@@ -1,0 +1,207 @@
+/* Vocabulary: matching corrections, gender selection, overview, reference list. */
+.match-summary {
+  margin: 0 0 1rem;
+}
+.match-corrections {
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+}
+.match-corrections li {
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--incorrect);
+  border-radius: var(--radius);
+  background: var(--bg);
+  gap: 0.35rem;
+  padding: 0.85rem 1rem;
+  display: grid;
+}
+.match-corrections p {
+  margin: 0;
+}
+.match-fix {
+  grid-template-columns: auto auto 1fr;
+  align-items: center;
+  gap: 0.15rem 0.6rem;
+  display: grid;
+}
+.match-fix .match-wrong {
+  grid-column: 1;
+}
+.match-arrow {
+  color: var(--muted);
+}
+.match-word {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 19px;
+  font-weight: 600;
+  display: inline-flex;
+}
+.match-word small {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 400;
+}
+.match-wrong {
+  color: var(--incorrect);
+}
+.match-right {
+  color: var(--correct);
+}
+.fix-lines {
+  justify-items: start;
+  gap: 0.15rem;
+  margin: 0.35rem 0;
+  display: grid;
+}
+.feedback-title {
+  font-weight: 600;
+}
+.gender-grid {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 24rem), 1fr));
+  gap: 0.5rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+}
+.gender-row {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  display: flex;
+}
+.gender-lemma {
+  font-size: 19px;
+  font-weight: 600;
+}
+.gender-options {
+  border: 0;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.gender-option input {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+.gender-option span {
+  border: 1px solid var(--border-strong);
+  text-align: center;
+  cursor: pointer;
+  border-radius: 999px;
+  min-width: 6.5rem;
+  padding: 0.45rem 0.75rem;
+  display: inline-block;
+}
+.gender-option input:checked + span {
+  border-color: var(--progress);
+  box-shadow: inset 0 0 0 1px var(--progress);
+  background: #1e1b4b;
+}
+.gender-option input:focus-visible + span {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+.overview-list {
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+}
+.overview-list li {
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--border-strong);
+  border-radius: var(--radius);
+  background: var(--bg);
+  padding: 0.55rem 0.85rem;
+}
+.overview-list li.is-right {
+  border-left-color: var(--correct);
+}
+.overview-list li.is-wrong {
+  border-left-color: var(--incorrect);
+}
+.overview-main {
+  grid-template-columns: 1.25rem minmax(10rem, 1.2fr) minmax(8rem, 1fr) auto;
+  align-items: center;
+  gap: 0.75rem;
+  display: grid;
+}
+.overview-status {
+  font-weight: 700;
+}
+.is-right .overview-status {
+  color: var(--correct);
+}
+.is-wrong .overview-status {
+  color: var(--incorrect);
+}
+.overview-gender {
+  justify-items: end;
+  display: grid;
+}
+.overview-fix {
+  margin: 0;
+  padding: 0.35rem 0 0 2rem;
+}
+@media (width<=600px) {
+  .overview-main {
+    grid-template-columns: 1.25rem 1fr auto;
+  }
+  .overview-translation {
+    grid-column: 2/-1;
+  }
+  .gender-option span {
+    min-width: 0;
+  }
+}
+.references {
+  margin-top: 1.25rem;
+}
+.references > p {
+  margin: 0 0 0.4rem;
+}
+.reference-list {
+  gap: 0.9rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+}
+.reference-list li {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  cursor: default;
+  background: #131c30;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  font-size: 18px;
+  display: flex;
+}
+.reference-list small {
+  color: var(--muted);
+  font-size: 13px;
+}
+@media (width>=720px) {
+  .units .field:not(.field-row) {
+    grid-template-columns: minmax(12rem, 1fr) minmax(0, 1.6fr);
+    align-items: center;
+    gap: 1rem;
+    display: grid;
+  }
+}

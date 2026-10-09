@@ -1,0 +1,15 @@
+/* Import order matches the original stylesheet so the cascade is unchanged. */
+@import "./tokens.css";
+@import "./base.css";
+@import "./layout.css";
+@import "./lesson-list.css";
+@import "./lesson-detail.css";
+@import "./player.css";
+@import "./exercises.css";
+@import "./content-preview.css";
+@import "./voice.css";
+@import "./celebration.css";
+@import "./vocabulary.css";
+@import "./results.css";
+@import "./states.css";
+@import "./grammar.css";

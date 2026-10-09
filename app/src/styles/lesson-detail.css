@@ -1,0 +1,218 @@
+/* Lesson detail: artifact sections, meta grid, brief, data tables, JSON tree. */
+.artifact-section {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  margin-top: 2.5rem;
+  padding: 1.75rem;
+}
+.section-tag {
+  background: var(--bg);
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  border-radius: 6px;
+  margin-right: 0.5rem;
+  padding: 0.1rem 0.6rem;
+  font-size: 14px;
+  display: inline-block;
+}
+.meta-grid {
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 1rem 2rem;
+  margin: 0;
+  display: grid;
+}
+.meta-grid dt {
+  color: var(--muted);
+  font-size: 16px;
+}
+.meta-grid dd {
+  margin: 0;
+}
+.meta-wide {
+  grid-column: 1/-1;
+}
+.intent {
+  font-size: 20px;
+}
+.badge {
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  padding: 0.15rem 0.7rem;
+  font-size: 15px;
+  display: inline-block;
+}
+.brief-summary {
+  color: var(--muted);
+  white-space: pre-wrap;
+  margin: 0 0 1.5rem;
+}
+.brief-block {
+  margin-top: 2rem;
+}
+.brief-block h3 {
+  margin: 0 0 0.75rem;
+  font-size: 20px;
+}
+.brief-lead {
+  font-size: 20px;
+}
+.brief-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+.brief-list li + li {
+  margin-top: 0.4rem;
+}
+.brief-columns {
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 0 2rem;
+  display: grid;
+}
+.data-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.data-table caption {
+  text-align: left;
+  padding: 0.5rem 0;
+  font-weight: 600;
+}
+.data-table th,
+.data-table td {
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+  padding: 0.6rem 0.75rem;
+}
+.data-table thead th {
+  color: var(--muted);
+  border-bottom-color: var(--border-strong);
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 600;
+}
+.data-table tbody th {
+  font-weight: 600;
+}
+.data-table p {
+  margin: 0;
+}
+.data-table p + p {
+  margin-top: 0.3rem;
+}
+.target-details {
+  min-width: 18rem;
+}
+.step-number {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.badge.difficulty-demanding {
+  border-color: var(--partial);
+  color: var(--partial);
+}
+.block-card {
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-card);
+  background: var(--bg);
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.5rem;
+}
+.block-card h4 {
+  margin: 0;
+  font-size: 19px;
+}
+.block-card h5 {
+  color: var(--muted);
+  margin: 1.25rem 0 0.4rem;
+  font-size: 16px;
+}
+.raw-text {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  max-height: 30rem;
+  padding: 1rem;
+  font-size: 14px;
+  overflow: auto;
+}
+.diagnostic {
+  margin-top: 1.5rem;
+}
+.json-tree {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 1rem;
+  overflow-x: auto;
+}
+.json-tree ul {
+  margin: 0;
+  padding: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 15px;
+  list-style: none;
+}
+.tree-row {
+  overflow-wrap: anywhere;
+  border-radius: 4px;
+  padding-block: 0.2rem;
+}
+.tree-row.is-container {
+  cursor: pointer;
+}
+.tree-row:hover {
+  background: var(--bg);
+}
+.tree-toggle {
+  width: 1.25rem;
+  color: var(--muted);
+  display: inline-block;
+}
+.tree-key {
+  color: var(--text);
+}
+.tree-summary,
+.tree-colon {
+  color: var(--muted);
+}
+.tree-string {
+  color: #a5f3fc;
+}
+.tree-number,
+.tree-boolean,
+.tree-null {
+  color: #c4b5fd;
+}
+@media (width<=640px) {
+  .header-inner,
+  .page {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .prefs {
+    justify-content: flex-start;
+  }
+  .header-actions {
+    width: 100%;
+  }
+  .header-actions .button {
+    flex: auto;
+  }
+  .filter-group,
+  .filter-group:first-child {
+    border-left: 0;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+  }
+  .artifact-section {
+    padding: 1.25rem;
+  }
+}

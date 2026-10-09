@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 2,
+  "id": "fr-definite-articles-and-elision",
+  "lang": "fr",
+  "level": "A1",
+  "locales": [
+    "en",
+    "fr",
+    "de"
+  ],
+  "title": "Les articles le, la, l', les",
+  "objective": {
+    "en": "Learn to use the French definite articles (le, la, l', les) correctly, including elision before vowels and silent h, and after verbs of preference.",
+    "fr": "Apprendre à utiliser correctement les articles définis français (le, la, l', les), y compris l'élision devant les voyelles et le h muet, et après les verbes de préférence.",
+    "de": "Lernen Sie die korrekte Verwendung der bestimmten französischen Artikel (le, la, l', les), einschließlich der Elision vor Vokalen und stummem h, sowie nach Vorlieben-Verben."
+  },
+  "estimatedMinutes": 18,
+  "provenance": {
+    "generator": "claude-code-direct-authoring",
+    "model": "claude-opus-5-5",
+    "promptVersion": "brief-v7",
+    "generatedAt": "2026-10-08T00:17:18.529Z",
+    "inputHashes": {
+      "outline": "54d6c8d3101f255f7b601ed8abe3d28ddde9f81411327c0f77e77dc1368e62c9"
+    }
+  },
+  "kind": "grammar",
+  "topic": "nouns_and_determiners",
+  "scopeBoundaries": {
+    "en": "Focus on the basic forms le, la, l', les and simple preference verbs. Excludes contracted articles like au or du.",
+    "fr": "Se concentre sur les formes de base le, la, l', les et les verbes de préférence simples. Exclut les articles contractés comme au ou du.",
+    "de": "Konzentriert sich auf die Grundformen le, la, l', les und einfache Vorlieben-Verben. Ausgeschlossen sind verschmolzene Artikel wie au oder du."
+  },
+  "prerequisites": [
+    {
+      "en": "Basic understanding of masculine and feminine nouns.",
+      "fr": "Compréhension de base des noms masculins et féminins.",
+      "de": "Grundlegendes Verständnis von maskulinen und femininen Substantiven."
+    },
+    {
+      "en": "Basic knowledge of simple subject pronouns and verbs like 'aimer'.",
+      "fr": "Connaissance de base des pronoms sujets simples et des verbes comme 'aimer'.",
+      "de": "Grundkenntnisse einfacher Subjektpronomen und Verben wie 'aimer'."
+    }
+  ],
+  "rules": [
+    {
+      "id": "rule-def-basic",
+      "summary": {
+        "en": "Use 'le' for masculine singular, 'la' for feminine singular, and 'les' for all plural nouns.",
+        "fr": "Utilisez 'le' pour le masculin singulier, 'la' pour le féminin singulier et 'les' pour tous les noms au pluriel.",
+        "de": "Verwenden Sie 'le' für männliche Einzahl, 'la' für weibliche Einzahl und 'les' für alle Plurale."
+      }
+    },
+    {
+      "id": "rule-def-elision",
+      "summary": {
+        "en": "'le' and 'la' become 'l'' before a word starting with a vowel or a silent 'h'.",
+        "fr": "'le' et 'la' deviennent 'l'' devant un mot commençant par une voyelle ou un 'h' muet.",
+        "de": "'le' und 'la' werden vor einem Wort, das mit einem Vokal oder stummen 'h' beginnt, zu 'l''."
+      }
+    },
+    {
+      "id": "rule-def-preference",
+      "summary": {
+        "en": "Always use definite articles (le, la, l', les) after preference verbs like 'aimer', 'adorer', and 'détester'.",
+        "fr": "Utilisez toujours les articles définis (le, la, l', les) après les verbes de préférence comme 'aimer', 'adorer' et 'détester'.",
+        "de": "Verwenden Sie nach Vorlieben-Verben wie 'aimer', 'adorer' und 'détester' immer bestimmte Artikel (le, la, l', les)."
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "id": "block-basic-and-elision",
+      "title": {
+        "en": "Definite Articles and Elision",
+        "fr": "Les articles définis et l'élision",
+        "de": "Bestimmte Artikel und Elision"
+      },
+      "ruleIds": [
+        "rule-def-basic",
+        "rule-def-elision"
+      ],
+      "explanationPlan": {
+        "en": "Introduce the definite articles (le, la, les). Explain how 'le' and 'la' change to 'l'' before vowels or a silent 'h' to make pronunciation smoother.",
+        "fr": "Présenter les articles définis (le, la, les). Expliquer comment 'le' et 'la' deviennent 'l'' devant une voyelle ou un 'h' muet pour faciliter la prononciation.",
+        "de": "Einführung der bestimmten Artikel (le, la, les). Erklären Sie, wie 'le' und 'la' vor Vokalen oder stummem 'h' zu 'l'' werden, um die Aussprache flüssiger zu machen."
+      },
+      "explanationDurationS": 120,
+      "examples": [
+        {
+          "text": "le garçon",
+          "translation": {
+            "en": "the boy",
+            "de": "der Junge"
+          }
+        },
+        {
+          "text": "la fille",
+          "translation": {
+            "en": "the girl",
+            "de": "das Mädchen"
+          }
+        },
+        {
+          "text": "l'ami",
+          "translation": {
+            "en": "the friend",
+            "de": "der Freund"
+          }
+        },
+        {
+          "text": "l'hôtel",
+          "translation": {
+            "en": "the hotel",
+            "de": "das Hotel"
+          }
+        },
+        {
+          "text": "les enfants",
+          "translation": {
+            "en": "the children",
+            "de": "die Kinder"
+          }
+        }
+      ],
+      "pitfalls": [
+        {
+          "en": "Don't forget that plural 'les' never undergoes elision, even before a vowel (e.g., 'les amis', not 'l'amis').",
+          "fr": "N'oubliez pas que le pluriel 'les' ne subit jamais d'élision, même devant une voyelle (ex : 'les amis', et non 'l'amis').",
+          "de": "Vergessen Sie nicht, dass der Plural 'les' niemals elidiert wird, selbst vor einem Vokal (z. B. 'les amis', nicht 'l'amis')."
+        },
+        {
+          "en": "Watch out for aspirate 'h' where elision does not occur, though silent 'h' (like 'l'hôtel') is much more common.",
+          "fr": "Attention au 'h' aspiré où l'élision ne se fait pas, bien que le 'h' muet (comme 'l'hôtel') soit beaucoup plus fréquent.",
+          "de": "Achten Sie auf das aspirierte 'h', bei dem keine Elision stattfindet, obwohl das stumme 'h' (wie 'l'hôtel') viel häufiger ist."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex-basic-gap-choice",
+          "type": "grammar_gap_choice",
+          "itemCount": 7,
+          "ruleIds": [
+            "rule-def-basic",
+            "rule-def-elision"
+          ],
+          "estimatedDurationS": 70
+        },
+        {
+          "id": "ex-basic-gap-typing",
+          "type": "grammar_gap_typing",
+          "itemCount": 7,
+          "ruleIds": [
+            "rule-def-basic",
+            "rule-def-elision"
+          ],
+          "estimatedDurationS": 105
+        },
+        {
+          "id": "ex-basic-spot",
+          "type": "grammar_error_spotter",
+          "itemCount": 5,
+          "ruleIds": [
+            "rule-def-basic",
+            "rule-def-elision"
+          ],
+          "estimatedDurationS": 125
+        }
+      ]
+    },
+    {
+      "id": "block-preference-verbs",
+      "title": {
+        "en": "Preference Verbs and Definite Articles",
+        "fr": "Verbes de préférence et articles définis",
+        "de": "Vorlieben-Verben und bestimmte Artikel"
+      },
+      "ruleIds": [
+        "rule-def-preference"
+      ],
+      "explanationPlan": {
+        "en": "Explain that verbs expressing likes and dislikes (aimer, adorer, détester) always require a definite article, unlike in English where articles are often omitted for general terms.",
+        "fr": "Expliquer que les verbes exprimant les goûts (aimer, adorer, détester) nécessitent toujours un article défini, contrairement à l'anglais ou parfois l'allemand.",
+        "de": "Erklären Sie, dass Verben, die Vorlieben und Abneigungen ausdrücken (aimer, adorer, détester), immer einen bestimmten Artikel verlangen, im Gegensatz zum Englischen."
+      },
+      "explanationDurationS": 120,
+      "examples": [
+        {
+          "text": "J'aime le café.",
+          "translation": {
+            "en": "I like coffee.",
+            "de": "Ich mag Kaffee."
+          }
+        },
+        {
+          "text": "Elle adore la musique.",
+          "translation": {
+            "en": "She loves music.",
+            "de": "Sie liebt Musik."
+          }
+        },
+        {
+          "text": "Nous détestons l'hiver.",
+          "translation": {
+            "en": "We hate winter.",
+            "de": "Wir hassen den Winter."
+          }
+        }
+      ],
+      "pitfalls": [
+        {
+          "en": "Do not use partitive articles (du, de la) with preference verbs; always use 'le, la, l', les' (e.g., 'J'aime le chocolat', not 'J'aime du chocolat').",
+          "fr": "N'utilisez pas d'articles partitifs (du, de la) avec les verbes de préférence ; utilisez toujours 'le, la, l', les' (ex : 'J'aime le chocolat', et non 'J'aime du chocolat').",
+          "de": "Verwenden Sie bei Vorlieben-Verben keine Teilungsartikel (du, de la); nutzen Sie immer 'le, la, l', les' (z. B. 'J'aime le chocolat', nicht 'J'aime du chocolat')."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex-pref-choice",
+          "type": "grammar_gap_choice",
+          "itemCount": 6,
+          "ruleIds": [
+            "rule-def-preference"
+          ],
+          "estimatedDurationS": 60
+        },
+        {
+          "id": "ex-pref-gap-typing",
+          "type": "grammar_gap_typing",
+          "itemCount": 6,
+          "ruleIds": [
+            "rule-def-preference"
+          ],
+          "estimatedDurationS": 90
+        },
+        {
+          "id": "ex-pref-order",
+          "type": "grammar_word_order",
+          "itemCount": 4,
+          "ruleIds": [
+            "rule-def-preference"
+          ],
+          "estimatedDurationS": 100
+        }
+      ]
+    }
+  ],
+  "feedbackPlaceholder": {
+    "estimatedDurationS": 30
+  },
+  "exam": {
+    "pages": [
+      {
+        "pageId": "exam-page-1",
+        "type": "grammar_gap_typing",
+        "itemCount": 6,
+        "ruleIds": [
+          "rule-def-basic"
+        ],
+        "estimatedDurationS": 90,
+        "timeLimitS": 140
+      },
+      {
+        "pageId": "exam-elision",
+        "type": "grammar_gap_typing",
+        "itemCount": 5,
+        "ruleIds": [
+          "rule-def-elision"
+        ],
+        "estimatedDurationS": 75,
+        "timeLimitS": 120
+      },
+      {
+        "pageId": "exam-page-2",
+        "type": "grammar_gap_typing",
+        "itemCount": 5,
+        "ruleIds": [
+          "rule-def-preference"
+        ],
+        "estimatedDurationS": 75,
+        "timeLimitS": 120
+      }
+    ]
+  },
+  "scoring": {
+    "practiceWeight": 35,
+    "examWeight": 65,
+    "orthographyCredit": 0.5
+  },
+  "newVerbs": [
+    {
+      "infinitive": "aimer",
+      "translations": {
+        "en": "to like, to love",
+        "de": "mögen, lieben"
+      }
+    },
+    {
+      "infinitive": "adorer",
+      "translations": {
+        "en": "to love, to adore",
+        "de": "sehr gern mögen, lieben"
+      }
+    },
+    {
+      "infinitive": "détester",
+      "translations": {
+        "en": "to hate",
+        "de": "hassen, gar nicht mögen"
+      }
+    },
+    {
+      "infinitive": "préférer",
+      "translations": {
+        "en": "to prefer",
+        "de": "lieber mögen, bevorzugen"
+      }
+    }
+  ]
+}

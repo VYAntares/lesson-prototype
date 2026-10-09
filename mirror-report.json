@@ -1,0 +1,16 @@
+{
+  "base": "https://bastian-schnitzler.github.io/lesson_prototype/",
+  "date": "2026-10-09T15:00:59.128Z",
+  "files": 35,
+  "bytes": 1799620,
+  "byDir": {
+    ".": 1,
+    "content": 1,
+    "assets": 2,
+    "content/outlines": 1,
+    "content/lessons": 10,
+    "content/briefs": 20
+  },
+  "failures": [],
+  "optionalMisses": []
+}

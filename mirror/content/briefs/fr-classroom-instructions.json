@@ -1,0 +1,888 @@
+{
+  "schemaVersion": 2,
+  "id": "fr-classroom-instructions",
+  "lang": "fr",
+  "level": "A1",
+  "locales": [
+    "en",
+    "fr",
+    "de"
+  ],
+  "title": "Les consignes de la classe",
+  "objective": {
+    "en": "Understand and respond to common classroom instructions in spoken and written French.",
+    "fr": "Comprendre et appliquer les consignes usuelles de la classe à l'oral et à l'écrit en français.",
+    "de": "Häufige Unterrichtsanweisungen auf Französisch mündlich und schriftlich verstehen und anwenden."
+  },
+  "estimatedMinutes": 19,
+  "provenance": {
+    "generator": "lesson-prototype",
+    "model": "gemini-3.7-flash",
+    "promptVersion": "brief-v2",
+    "generatedAt": "2026-10-06T17:07:01.324Z",
+    "inputHashes": {
+      "outline": "e59ae0fa961d6955e3408b36a8db08eb4d0a98bbca4e292eca36f60a4b3c75bd"
+    }
+  },
+  "kind": "vocabulary",
+  "theme": "education",
+  "coverageNotes": {
+    "en": "Focuses on high-frequency imperative classroom instructions addressing learners (vous-form) and standard instructional phrases.",
+    "fr": "Se concentre sur les consignes fréquentes à l'impératif pluriel (forme vous) et les expressions pédagogiques de base.",
+    "de": "Konzentriert sich auf häufige Unterrichtsanweisungen im Imperativ der Höflichkeits-/Pluralform (vous) und grundlegende Handlungsanweisungen."
+  },
+  "targetCount": 11,
+  "countRationale": {
+    "en": "Eleven essential instructional verbs and phrases provide complete coverage for typical classroom communication without overloading beginners.",
+    "fr": "Onze verbes et expressions clés couvrent la communication essentielle de classe sans surcharger l'apprenant débutant.",
+    "de": "Elf zentrale Verben und Wendungen decken die wesentliche Unterrichtskommunikation ab, ohne Anfänger zu überfordern."
+  },
+  "difficultyBalance": {
+    "en": "Eight single-verb core instructions and three demanding multi-word classroom phrases.",
+    "fr": "Huit consignes de base à verbe unique et trois expressions composées plus exigeantes.",
+    "de": "Acht grundlegende Einzelverb-Anweisungen und drei anspruchsvollere mehrteilige Ausdrücke."
+  },
+  "prerequisites": [
+    {
+      "en": "Basic familiarity with basic French pronunciation and polite interaction.",
+      "fr": "Familiarité de base avec la prononciation française et les interactions de politesse.",
+      "de": "Grundlegende Vertrautheit mit der französischen Aussprache und Höflichkeitsformen."
+    }
+  ],
+  "groups": [
+    {
+      "id": "group-core-actions",
+      "label": {
+        "en": "Core Language Activities",
+        "fr": "Activités langagières principales",
+        "de": "Zentrale Sprachaktivitäten"
+      },
+      "targetIds": [
+        "target-ecoutez",
+        "target-lisez",
+        "target-ecrivez",
+        "target-repetez",
+        "target-regardez",
+        "target-parlez"
+      ],
+      "introduction": {
+        "en": "These instructions use the **vous form**: they address a whole class, or one person politely. Listen for the ending /e/.\n\n- `écoutez` – listen\n- `lisez` – read\n- `écrivez` – write\n- `répétez` – repeat\n- `regardez` – look\n- `parlez` – speak\n\nRepeat each instruction aloud, then imagine doing it.",
+        "fr": "Ces consignes utilisent la **forme vous** : elles s'adressent à toute la classe ou poliment à une personne. Écoutez la terminaison /e/.\n\n- `écoutez` – écouter\n- `lisez` – lire\n- `écrivez` – écrire\n- `répétez` – répéter\n- `regardez` – regarder\n- `parlez` – parler\n\nRépétez chaque consigne à voix haute, puis imaginez l'action.",
+        "de": "Diese Anweisungen stehen in der **vous-Form**: Sie richten sich an die ganze Klasse oder höflich an eine Person. Achte auf die Endung /e/.\n\n- `écoutez` – hört zu / hören Sie zu\n- `lisez` – lest / lesen Sie\n- `écrivez` – schreibt / schreiben Sie\n- `répétez` – sprecht nach / sprechen Sie nach\n- `regardez` – schaut / schauen Sie\n- `parlez` – sprecht / sprechen Sie\n\nSprich jede Anweisung laut und stell dir die Handlung vor."
+      }
+    },
+    {
+      "id": "group-classroom-tasks",
+      "label": {
+        "en": "Classroom Tasks and Gestures",
+        "fr": "Tâches et gestes de classe",
+        "de": "Aufgaben und Gesten im Unterricht"
+      },
+      "targetIds": [
+        "target-completez",
+        "target-cochez",
+        "target-ouvrez-le-livre",
+        "target-fermez-le-livre",
+        "target-levez-la-main"
+      ],
+      "introduction": {
+        "en": "**Tasks and gestures** in class. Say each instruction aloud and study its example:\n\n- `complétez` – complete: Complétez les phrases avec le bon mot.\n- `cochez` – tick: Cochez la bonne réponse.\n- `ouvrez le livre` – open the book: Ouvrez le livre à la page vingt.\n- `fermez le livre` – close the book: Fermez le livre pour le test.\n- `levez la main` – raise your hand: Levez la main pour poser une question.\n\nWhen a whole phrase is a reference word, the whole phrase is the answer.",
+        "fr": "**Tâches et gestes** en classe. Dites chaque consigne à voix haute et étudiez son exemple :\n\n- `complétez` – remplir : Complétez les phrases avec le bon mot.\n- `cochez` – marquer une case : Cochez la bonne réponse.\n- `ouvrez le livre` : Ouvrez le livre à la page vingt.\n- `fermez le livre` : Fermez le livre pour le test.\n- `levez la main` : Levez la main pour poser une question.\n\nQuand une expression entière est un mot de référence, toute l'expression est la réponse.",
+        "de": "**Aufgaben und Gesten** im Unterricht. Sprich jede Anweisung laut und lies das Beispiel:\n\n- `complétez` – ergänzt: Complétez les phrases avec le bon mot.\n- `cochez` – kreuzt an: Cochez la bonne réponse.\n- `ouvrez le livre` – öffnet das Buch: Ouvrez le livre à la page vingt.\n- `fermez le livre` – schließt das Buch: Fermez le livre pour le test.\n- `levez la main` – hebt die Hand: Levez la main pour poser une question.\n\nWenn eine ganze Wendung ein Referenzwort ist, ist die ganze Wendung die Antwort."
+      }
+    }
+  ],
+  "targets": [
+    {
+      "id": "target-ecoutez",
+      "term": "écoutez",
+      "translations": {
+        "en": [
+          "listen",
+          "listen up"
+        ],
+        "de": [
+          "hören Sie zu",
+          "hört zu"
+        ]
+      },
+      "wordClass": "verb",
+      "genders": [],
+      "number": null,
+      "teachingForm": "écoutez",
+      "examForms": [
+        "écoutez"
+      ],
+      "accentSensitive": [],
+      "articleException": null,
+      "genderVariants": [],
+      "pronunciation": "/e.ku.te/",
+      "difficulty": "core",
+      "context": {
+        "sentence": "Écoutez le dialogue attentivement.",
+        "translation": {
+          "en": "Listen to the dialogue carefully.",
+          "de": "Hören Sie sich den Dialog aufmerksam an."
+        }
+      },
+      "ambiguityNote": null,
+      "explanation": {
+        "en": "écoutez means listen. ",
+        "fr": "La forme à retenir est « écoutez ». ",
+        "de": "écoutez bedeutet hören Sie zu. "
+      },
+      "genderExplanation": null,
+      "matchingLabel": {
+        "en": "listen",
+        "de": "hören Sie zu"
+      },
+      "examPrompt": null,
+      "gap": {
+        "before": "Pour entendre le dialogue, ",
+        "after": " attentivement.",
+        "accepted": {
+          "answers": [
+            "écoutez"
+          ],
+          "accentSensitive": []
+        },
+        "referenceTargetIds": [
+          "target-lisez",
+          "target-ecoutez",
+          "target-repetez",
+          "target-ecrivez"
+        ],
+        "explanation": {
+          "en": "écoutez means listen. ",
+          "fr": "La forme à retenir est « écoutez ». ",
+          "de": "écoutez bedeutet hören Sie zu. "
+        }
+      },
+      "listeningOptionTargetIds": [
+        "target-lisez",
+        "target-ecoutez",
+        "target-repetez",
+        "target-ecrivez"
+      ]
+    },
+    {
+      "id": "target-lisez",
+      "term": "lisez",
+      "translations": {
+        "en": [
+          "read"
+        ],
+        "de": [
+          "lesen Sie",
+          "lest"
+        ]
+      },
+      "wordClass": "verb",
+      "genders": [],
+      "number": null,
+      "teachingForm": "lisez",
+      "examForms": [
+        "lisez"
+      ],
+      "accentSensitive": [],
+      "articleException": null,
+      "genderVariants": [],
+      "pronunciation": "/li.ze/",
+      "difficulty": "core",
+      "context": {
+        "sentence": "Lisez le texte à la page dix.",
+        "translation": {
+          "en": "Read the text on page ten.",
+          "de": "Lesen Sie den Text auf Seite zehn."
+        }
+      },
+      "ambiguityNote": null,
+      "explanation": {
+        "en": "lisez means read. ",
+        "fr": "La forme à retenir est « lisez ». ",
+        "de": "lisez bedeutet lesen Sie. "
+      },
+      "genderExplanation": null,
+      "matchingLabel": {
+        "en": "read",
+        "de": "lesen Sie"
+      },
+      "examPrompt": null,
+      "gap": {
+        "before": "Pour comprendre le texte écrit, ",
+        "after": " le texte.",
+        "accepted": {
+          "answers": [
+            "lisez"
+          ],
+          "accentSensitive": []
+        },
+        "referenceTargetIds": [
+          "target-ecrivez",
+          "target-lisez",
+          "target-regardez",
+          "target-repetez"
+        ],
+        "explanation": {
+          "en": "lisez means read. ",
+          "fr": "La forme à retenir est « lisez ». ",
+          "de": "lisez bedeutet lesen Sie. "
+        }
+      },
+      "listeningOptionTargetIds": [
+        "target-ecrivez",
+        "target-lisez",
+        "target-regardez",
+        "target-repetez"
+      ]
+    },
+    {
+      "id": "target-ecrivez",
+      "term": "écrivez",
+      "translations": {
+        "en": [
+          "write"
+        ],
+        "de": [
+          "schreiben Sie",
+          "schreibt"
+        ]
+      },
+      "wordClass": "verb",
+      "genders": [],
+      "number": null,
+      "teachingForm": "écrivez",
+      "examForms": [
+        "écrivez"
+      ],
+      "accentSensitive": [],
+      "articleException": null,
+      "genderVariants": [],
+      "pronunciation": "/e.kʁi.ve/",
+      "difficulty": "core",
+      "context": {
+        "sentence": "Écrivez la réponse dans votre cahier.",
+        "translation": {
+          "en": "Write the answer in your notebook.",
+          "de": "Schreiben Sie die Antwort in Ihr Heft."
+        }
+      },
+      "ambiguityNote": null,
+      "explanation": {
+        "en": "écrivez means write. ",
+        "fr": "La forme à retenir est « écrivez ». ",
+        "de": "écrivez bedeutet schreiben Sie. "
+      },
+      "genderExplanation": null,
+      "matchingLabel": {
+        "en": "write",
+        "de": "schreiben Sie"
+      },
+      "examPrompt": null,
+      "gap": {
+        "before": "Avec votre stylo, ",
+        "after": " la réponse.",
+        "accepted": {
+          "answers": [
+            "écrivez"
+          ],
+          "accentSensitive": []
+        },
+        "referenceTargetIds": [
+          "target-repetez",
+          "target-ecrivez",
+          "target-parlez",
+          "target-regardez"
+        ],
+        "explanation": {
+          "en": "écrivez means write. ",
+          "fr": "La forme à retenir est « écrivez ». ",
+          "de": "écrivez bedeutet schreiben Sie. "
+        }
+      },
+      "listeningOptionTargetIds": [
+        "target-repetez",
+        "target-ecrivez",
+        "target-parlez",
+        "target-regardez"
+      ]
+    },
+    {
+      "id": "target-repetez",
+      "term": "répétez",
+      "translations": {
+        "en": [
+          "repeat"
+        ],
+        "de": [
+          "wiederholen Sie",
+          "wiederholt"
+        ]
+      },
+      "wordClass": "verb",
+      "genders": [],
+      "number": null,
+      "teachingForm": "répétez",
+      "examForms": [
+        "répétez"
+      ],
+      "accentSensitive": [],
+      "articleException": null,
+      "genderVariants": [],
+      "pronunciation": "/ʁe.pe.te/",
+      "difficulty": "core",
+      "context": {
+        "sentence": "Répétez la phrase après moi.",
+        "translation": {
+          "en": "Repeat the sentence after me.",
+          "de": "Wiederholen Sie den Satz nach mir."
+        }
+      },
+      "ambiguityNote": null,
+      "explanation": {
+        "en": "répétez means repeat. ",
+        "fr": "La forme à retenir est « répétez ». ",
+        "de": "répétez bedeutet wiederholen Sie. "
+      },
+      "genderExplanation": null,
+      "matchingLabel": {
+        "en": "repeat",
+        "de": "wiederholen Sie"
+      },
+      "examPrompt": null,
+      "gap": {
+        "before": "Dites encore la même phrase : ",
+        "after": " la phrase.",
+        "accepted": {
+          "answers": [
+            "répétez"
+          ],
+          "accentSensitive": []
+        },
+        "referenceTargetIds": [
+          "target-regardez",
+          "target-repetez",
+          "target-completez",
+          "target-parlez"
+        ],
+        "explanation": {
+          "en": "répétez means repeat. ",
+          "fr": "La forme à retenir est « répétez ». ",
+          "de": "répétez bedeutet wiederholen Sie. "
+        }
+      },
+      "listeningOptionTargetIds": [
+        "target-regardez",
+        "target-repetez",
+        "target-completez",
+        "target-parlez"
+      ]
+    },
+    {
+      "id": "target-regardez",
+      "term": "regardez",
+      "translations": {
+        "en": [
+          "look",
+          "watch"
+        ],
+        "de": [
+          "schauen Sie",
+          "schaut"
+        ]
+      },
+      "wordClass": "verb",
+      "genders": [],
+      "number": null,
+      "teachingForm": "regardez",
+      "examForms": [
+        "regardez"
+      ],
+      "accentSensitive": [],
+      "articleException": null,
+      "genderVariants": [],
+      "pronunciation": "/ʁə.ɡaʁ.de/",
+      "difficulty": "core",
+      "context": {
+        "sentence": "Regardez le tableau, s'il vous plaît.",
+        "translation": {
+          "en": "Look at the board, please.",
+          "de": "Schauen Sie bitte an die Tafel."
+        }
+      },
+      "ambiguityNote": null,
+      "explanation": {
+        "en": "regardez means look. ",
+        "fr": "La forme à retenir est « regardez ». ",
+        "de": "regardez bedeutet schauen Sie. "
+      },
+      "genderExplanation": null,
+      "matchingLabel": {
+        "en": "look",
+        "de": "schauen Sie"
+      },
+      "examPrompt": null,
+      "gap": {
+        "before": "Pour voir l’image, ",
+        "after": " le tableau.",
+        "accepted": {
+          "answers": [
+            "regardez"
+          ],
+          "accentSensitive": []
+        },
+        "referenceTargetIds": [
+          "target-regardez",
+          "target-parlez",
+          "target-repetez",
+          "target-cochez"
+        ],
+        "explanation": {
+          "en": "regardez means look: you look at the board to see the picture.",
+          "fr": "« regardez » : on regarde le tableau pour voir l’image.",
+          "de": "regardez bedeutet schauen Sie: Man schaut an die Tafel, um das Bild zu sehen."
+        }
+      },
+      "listeningOptionTargetIds": [
+        "target-parlez",
+        "target-regardez",
+        "target-cochez",
+        "target-completez"
+      ]
+    },
+    {
+      "id": "target-parlez",
+      "term": "parlez",
+      "translations": {
+        "en": [
+          "speak",
+          "talk"
+        ],
+        "de": [
+          "sprechen Sie",
+          "sprecht"
+        ]
+      },
+      "wordClass": "verb",
+      "genders": [],
+      "number": null,
+      "teachingForm": "parlez",
+      "examForms": [
+        "parlez"
+      ],
+      "accentSensitive": [],
+      "articleException": null,
+      "genderVariants": [],
+      "pronunciation": "/paʁ.le/",
+      "difficulty": "core",
+      "context": {
+        "sentence": "Parlez avec votre voisin.",
+        "translation": {
+          "en": "Speak with your neighbor.",
+          "de": "Sprechen Sie mit Ihrem Nachbarn."
+        }
+      },
+      "ambiguityNote": null,
+      "explanation": {
+        "en": "parlez means speak. ",
+        "fr": "La forme à retenir est « parlez ». ",
+        "de": "parlez bedeutet sprechen Sie. "
+      },
+      "genderExplanation": null,
+      "matchingLabel": {
+        "en": "speak",
+        "de": "sprechen Sie"
+      },
+      "examPrompt": null,
+      "gap": {
+        "before": "Pour pratiquer l’oral, ",
+        "after": " avec votre voisin.",
+        "accepted": {
+          "answers": [
+            "parlez"
+          ],
+          "accentSensitive": []
+        },
+        "referenceTargetIds": [
+          "target-parlez",
+          "target-cochez",
+          "target-fermez-le-livre",
+          "target-levez-la-main"
+        ],
+        "explanation": {
+          "en": "parlez means speak: you practise speaking with your neighbour.",
+          "fr": "« parlez » : on pratique l’oral en parlant avec son voisin.",
+          "de": "parlez bedeutet sprechen Sie: Man übt das Sprechen mit dem Nachbarn."
+        }
+      },
+      "listeningOptionTargetIds": [
+        "target-parlez",
+        "target-regardez",
+        "target-repetez",
+        "target-lisez"
+      ]
+    },
+    {
+      "id": "target-completez",
+      "term": "complétez",
+      "translations": {
+        "en": [
+          "complete",
+          "fill in"
+        ],
+        "de": [
+          "vervollständigen Sie",
+          "ergänzt"
+        ]
+      },
+      "wordClass": "verb",
+      "genders": [],
+      "number": null,
+      "teachingForm": "complétez",
+      "examForms": [
+        "complétez"
+      ],
+      "accentSensitive": [],
+      "articleException": null,
+      "genderVariants": [],
+      "pronunciation": "/kɔ̃.ple.te/",
+      "difficulty": "core",
+      "context": {
+        "sentence": "Complétez les phrases avec le bon mot.",
+        "translation": {
+          "en": "Complete the sentences with the correct word.",
+          "de": "Vervollständigen Sie die Sätze mit dem richtigen Wort."
+        }
+      },
+      "ambiguityNote": null,
+      "explanation": {
+        "en": "complétez means complete. ",
+        "fr": "La forme à retenir est « complétez ». ",
+        "de": "complétez bedeutet vervollständigen Sie. "
+      },
+      "genderExplanation": null,
+      "matchingLabel": {
+        "en": "complete",
+        "de": "vervollständigen Sie"
+      },
+      "examPrompt": null,
+      "gap": {
+        "before": "Ajoutez le mot manquant : ",
+        "after": " les phrases.",
+        "accepted": {
+          "answers": [
+            "complétez"
+          ],
+          "accentSensitive": []
+        },
+        "referenceTargetIds": [
+          "target-cochez",
+          "target-completez",
+          "target-fermez-le-livre",
+          "target-ouvrez-le-livre"
+        ],
+        "explanation": {
+          "en": "complétez means complete. ",
+          "fr": "La forme à retenir est « complétez ». ",
+          "de": "complétez bedeutet vervollständigen Sie. "
+        }
+      },
+      "listeningOptionTargetIds": [
+        "target-cochez",
+        "target-completez",
+        "target-fermez-le-livre",
+        "target-ouvrez-le-livre"
+      ]
+    },
+    {
+      "id": "target-cochez",
+      "term": "cochez",
+      "translations": {
+        "en": [
+          "check",
+          "tick"
+        ],
+        "de": [
+          "kreuzen Sie an",
+          "hakt ab"
+        ]
+      },
+      "wordClass": "verb",
+      "genders": [],
+      "number": null,
+      "teachingForm": "cochez",
+      "examForms": [
+        "cochez"
+      ],
+      "accentSensitive": [],
+      "articleException": null,
+      "genderVariants": [],
+      "pronunciation": "/kɔ.ʃe/",
+      "difficulty": "core",
+      "context": {
+        "sentence": "Cochez la bonne réponse.",
+        "translation": {
+          "en": "Check the correct answer.",
+          "de": "Kreuzen Sie die richtige Antwort an."
+        }
+      },
+      "ambiguityNote": null,
+      "explanation": {
+        "en": "cochez means check. ",
+        "fr": "La forme à retenir est « cochez ». ",
+        "de": "cochez bedeutet kreuzen Sie an. "
+      },
+      "genderExplanation": null,
+      "matchingLabel": {
+        "en": "check",
+        "de": "kreuzen Sie an"
+      },
+      "examPrompt": null,
+      "gap": {
+        "before": "Marquez la case correcte : ",
+        "after": " la bonne case.",
+        "accepted": {
+          "answers": [
+            "cochez"
+          ],
+          "accentSensitive": []
+        },
+        "referenceTargetIds": [
+          "target-ouvrez-le-livre",
+          "target-cochez",
+          "target-levez-la-main",
+          "target-fermez-le-livre"
+        ],
+        "explanation": {
+          "en": "cochez means check. ",
+          "fr": "La forme à retenir est « cochez ». ",
+          "de": "cochez bedeutet kreuzen Sie an. "
+        }
+      },
+      "listeningOptionTargetIds": [
+        "target-ouvrez-le-livre",
+        "target-cochez",
+        "target-levez-la-main",
+        "target-fermez-le-livre"
+      ]
+    },
+    {
+      "id": "target-ouvrez-le-livre",
+      "term": "ouvrez le livre",
+      "translations": {
+        "en": [
+          "open the book"
+        ],
+        "de": [
+          "öffnen Sie das Buch",
+          "öffnet das Buch"
+        ]
+      },
+      "wordClass": "phrase",
+      "genders": [],
+      "number": null,
+      "teachingForm": "ouvrez le livre",
+      "examForms": [
+        "ouvrez le livre"
+      ],
+      "accentSensitive": [],
+      "articleException": null,
+      "genderVariants": [],
+      "pronunciation": "/u.vʁe lə livʁ/",
+      "difficulty": "demanding",
+      "context": {
+        "sentence": "Ouvrez le livre à la page vingt.",
+        "translation": {
+          "en": "Open the book to page twenty.",
+          "de": "Öffnen Sie das Buch auf Seite zwanzig."
+        }
+      },
+      "ambiguityNote": null,
+      "explanation": {
+        "en": "ouvrez le livre means open the book. ",
+        "fr": "La forme à retenir est « ouvrez le livre ». ",
+        "de": "ouvrez le livre bedeutet öffnen Sie das Buch. "
+      },
+      "genderExplanation": null,
+      "matchingLabel": {
+        "en": "open the book",
+        "de": "öffnen Sie das Buch"
+      },
+      "examPrompt": null,
+      "gap": {
+        "before": "Pour lire la leçon, ",
+        "after": " à la page vingt.",
+        "accepted": {
+          "answers": [
+            "ouvrez le livre"
+          ],
+          "accentSensitive": []
+        },
+        "referenceTargetIds": [
+          "target-ouvrez-le-livre",
+          "target-fermez-le-livre",
+          "target-levez-la-main",
+          "target-cochez"
+        ],
+        "explanation": {
+          "en": "ouvrez le livre means open the book: you open it to read the lesson.",
+          "fr": "« ouvrez le livre » : on ouvre le livre pour lire la leçon.",
+          "de": "ouvrez le livre bedeutet öffnen Sie das Buch: Man öffnet es, um die Lektion zu lesen."
+        }
+      },
+      "listeningOptionTargetIds": [
+        "target-ouvrez-le-livre",
+        "target-fermez-le-livre",
+        "target-levez-la-main",
+        "target-ecoutez"
+      ]
+    },
+    {
+      "id": "target-fermez-le-livre",
+      "term": "fermez le livre",
+      "translations": {
+        "en": [
+          "close the book"
+        ],
+        "de": [
+          "schließen Sie das Buch",
+          "schließt das Buch"
+        ]
+      },
+      "wordClass": "phrase",
+      "genders": [],
+      "number": null,
+      "teachingForm": "fermez le livre",
+      "examForms": [
+        "fermez le livre"
+      ],
+      "accentSensitive": [],
+      "articleException": null,
+      "genderVariants": [],
+      "pronunciation": "/fɛʁ.me lə livʁ/",
+      "difficulty": "demanding",
+      "context": {
+        "sentence": "Fermez le livre pour le test.",
+        "translation": {
+          "en": "Close the book for the test.",
+          "de": "Schließen Sie das Buch für den Test."
+        }
+      },
+      "ambiguityNote": null,
+      "explanation": {
+        "en": "fermez le livre means close the book. ",
+        "fr": "La forme à retenir est « fermez le livre ». ",
+        "de": "fermez le livre bedeutet schließen Sie das Buch. "
+      },
+      "genderExplanation": null,
+      "matchingLabel": {
+        "en": "close the book",
+        "de": "schließen Sie das Buch"
+      },
+      "examPrompt": null,
+      "gap": {
+        "before": "Le test commence : ",
+        "after": " et rangez-le.",
+        "accepted": {
+          "answers": [
+            "fermez le livre"
+          ],
+          "accentSensitive": []
+        },
+        "referenceTargetIds": [
+          "target-fermez-le-livre",
+          "target-ouvrez-le-livre",
+          "target-levez-la-main",
+          "target-completez"
+        ],
+        "explanation": {
+          "en": "fermez le livre means close the book: during a test the book stays closed.",
+          "fr": "« fermez le livre » : pendant un test, le livre reste fermé.",
+          "de": "fermez le livre bedeutet schließen Sie das Buch: Beim Test bleibt das Buch zu."
+        }
+      },
+      "listeningOptionTargetIds": [
+        "target-fermez-le-livre",
+        "target-ouvrez-le-livre",
+        "target-levez-la-main",
+        "target-cochez"
+      ]
+    },
+    {
+      "id": "target-levez-la-main",
+      "term": "levez la main",
+      "translations": {
+        "en": [
+          "raise your hand"
+        ],
+        "de": [
+          "heben Sie die Hand",
+          "hebt die Hand"
+        ]
+      },
+      "wordClass": "phrase",
+      "genders": [],
+      "number": null,
+      "teachingForm": "levez la main",
+      "examForms": [
+        "levez la main"
+      ],
+      "accentSensitive": [],
+      "articleException": null,
+      "genderVariants": [],
+      "pronunciation": "/lə.ve la mɛ̃/",
+      "difficulty": "demanding",
+      "context": {
+        "sentence": "Levez la main pour poser une question.",
+        "translation": {
+          "en": "Raise your hand to ask a question.",
+          "de": "Heben Sie die Hand, um eine Frage zu stellen."
+        }
+      },
+      "ambiguityNote": null,
+      "explanation": {
+        "en": "levez la main means raise your hand. ",
+        "fr": "La forme à retenir est « levez la main ». ",
+        "de": "levez la main bedeutet heben Sie die Hand. "
+      },
+      "genderExplanation": null,
+      "matchingLabel": {
+        "en": "raise your hand",
+        "de": "heben Sie die Hand"
+      },
+      "examPrompt": null,
+      "gap": {
+        "before": "Pour poser une question, ",
+        "after": " et attendez.",
+        "accepted": {
+          "answers": [
+            "levez la main"
+          ],
+          "accentSensitive": []
+        },
+        "referenceTargetIds": [
+          "target-levez-la-main",
+          "target-fermez-le-livre",
+          "target-cochez",
+          "target-ouvrez-le-livre"
+        ],
+        "explanation": {
+          "en": "levez la main means raise your hand: you raise it before asking a question.",
+          "fr": "« levez la main » : on lève la main avant de poser une question.",
+          "de": "levez la main bedeutet heben Sie die Hand: Man hebt sie, bevor man eine Frage stellt."
+        }
+      },
+      "listeningOptionTargetIds": [
+        "target-ecoutez",
+        "target-levez-la-main",
+        "target-ecrivez",
+        "target-lisez"
+      ]
+    }
+  ],
+  "scoring": {
+    "practiceWeight": 35,
+    "examWeight": 65,
+    "orthographyCredit": 0.5
+  }
+}

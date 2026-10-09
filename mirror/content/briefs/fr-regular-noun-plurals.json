@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 2,
+  "id": "fr-regular-noun-plurals",
+  "lang": "fr",
+  "level": "A1",
+  "locales": [
+    "en",
+    "fr",
+    "de"
+  ],
+  "title": "Le pluriel des noms",
+  "objective": {
+    "en": "Learn how to form regular French noun plurals using -s and -x, and recognize that final plural markers are silent.",
+    "fr": "Apprendre à former le pluriel des noms réguliers avec -s et -x, et comprendre que le -s ou -x final est muet.",
+    "de": "Lernen Sie, wie man den regelmäßigen Plural im Französischen mit -s und -x bildet und dass diese Endungen stumm sind."
+  },
+  "estimatedMinutes": 17,
+  "provenance": {
+    "generator": "claude-code-direct-authoring",
+    "model": "claude-opus-5-5",
+    "promptVersion": "brief-v7",
+    "generatedAt": "2026-10-08T00:17:18.593Z",
+    "inputHashes": {
+      "outline": "b7ef42d6b6f8a10c79700ba5eddb9d79afaefa941237e1a5607f83ab01bfe0c8"
+    }
+  },
+  "kind": "grammar",
+  "topic": "nouns_and_determiners",
+  "scopeBoundaries": {
+    "en": "Covers regular plurals in -s and -x for words ending in -eau or -eu. Excludes irregular plurals like -al to -aux or invariant nouns.",
+    "fr": "Couvre le pluriel régulier en -s et en -x pour les mots en -eau ou -eu. Exclut les pluriels irréguliers comme -al en -aux ou les mots invariables.",
+    "de": "Deckt den regelmäßigen Plural auf -s und -x für Wörter auf -eau oder -eu ab. Ausgenommen sind unregelmäßige Plurale wie -al zu -aux oder unveränderliche Nomen."
+  },
+  "prerequisites": [
+    {
+      "en": "Basic knowledge of French singular articles (un, une, le, la).",
+      "fr": "Connaissance de base des articles singuliers en français (un, une, le, la).",
+      "de": "Grundkenntnisse der französischen Singularartikel (un, une, le, la)."
+    }
+  ],
+  "rules": [
+    {
+      "id": "rule-plural-s",
+      "summary": {
+        "en": "Most French nouns add an -s to form the plural.",
+        "fr": "La plupart des noms français prennent un -s au pluriel.",
+        "de": "Die meisten französischen Nomen bilden den Plural mit ein -s."
+      }
+    },
+    {
+      "id": "rule-plural-x",
+      "summary": {
+        "en": "Nouns ending in -eau or -eu take an -x in the plural instead of -s.",
+        "fr": "Les noms se terminant par -eau ou -eu prennent un -x au pluriel.",
+        "de": "Nomen auf -eau oder -eu bilden den Plural mit -x statt -s."
+      }
+    },
+    {
+      "id": "rule-silent-plural",
+      "summary": {
+        "en": "Final plural -s and -x are silent; the article signals the plural sound.",
+        "fr": "Le -s et le -x finaux du pluriel ne se prononcent pas ; l'article indique le pluriel.",
+        "de": "Das Plural-s und -x am Wortende sind stumm; der Artikel zeigt die Mehrzahl an."
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "id": "block-regular-plural-s",
+      "title": {
+        "en": "Plurals with -s and Silent Consonants",
+        "fr": "Le pluriel en -s et les consonnes muettes",
+        "de": "Plural mit -s und stumme Konsonanten"
+      },
+      "ruleIds": [
+        "rule-plural-s",
+        "rule-silent-plural"
+      ],
+      "explanationPlan": {
+        "en": "Explain that most nouns add -s in the plural. Emphasize that the -s is not pronounced, so listening to the article (des, les) is essential.",
+        "fr": "Expliquer que la plupart des noms prennent un -s au pluriel. Insister sur le fait que le -s ne se prononce pas et que l'article permet d'entendre le pluriel.",
+        "de": "Erklären Sie, dass die meisten Nomen im Plural ein -s erhalten. Betonen Sie, dass das -s stumm ist und der Plural über den Artikel hörbar wird."
+      },
+      "explanationDurationS": 120,
+      "examples": [
+        {
+          "text": "un livre -> des livres",
+          "translation": {
+            "en": "a book -> books",
+            "de": "ein Buch -> Bücher"
+          }
+        },
+        {
+          "text": "la chaise -> les chaises",
+          "translation": {
+            "en": "the chair -> the chairs",
+            "de": "der Stuhl -> die Stühle"
+          }
+        }
+      ],
+      "pitfalls": [
+        {
+          "en": "Do not pronounce the final -s in plural nouns.",
+          "fr": "Ne prononcez pas le -s final des noms au pluriel.",
+          "de": "Sprechen Sie das Plural-s am Ende des Nomens nicht aus."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex-s-choice",
+          "type": "grammar_gap_choice",
+          "itemCount": 6,
+          "ruleIds": [
+            "rule-plural-s",
+            "rule-silent-plural"
+          ],
+          "estimatedDurationS": 60
+        },
+        {
+          "id": "ex-s-typing",
+          "type": "grammar_gap_typing",
+          "itemCount": 6,
+          "ruleIds": [
+            "rule-plural-s"
+          ],
+          "estimatedDurationS": 90
+        },
+        {
+          "id": "ex-s-spot",
+          "type": "grammar_error_spotter",
+          "itemCount": 5,
+          "ruleIds": [
+            "rule-silent-plural",
+            "rule-plural-s"
+          ],
+          "estimatedDurationS": 125
+        }
+      ]
+    },
+    {
+      "id": "block-plural-x",
+      "title": {
+        "en": "Plurals with -x (-eau, -eu)",
+        "fr": "Le pluriel en -x (-eau, -eu)",
+        "de": "Plural mit -x (-eau, -eu)"
+      },
+      "ruleIds": [
+        "rule-plural-x"
+      ],
+      "explanationPlan": {
+        "en": "Show that nouns ending in -eau and -eu take -x instead of -s. Explain that this -x is also silent.",
+        "fr": "Montrer que les noms finissant par -eau et -eu prennent un -x au lieu d'un -s. Expliquer que ce -x est également muet.",
+        "de": "Zeigen Sie, dass Nomen auf -eau und -eu ein -x statt einem -s erhalten. Erklären Sie, dass auch dieses -x stumm ist."
+      },
+      "explanationDurationS": 120,
+      "examples": [
+        {
+          "text": "un gâteau -> des gâteaux",
+          "translation": {
+            "en": "a cake -> cakes",
+            "de": "ein Kuchen -> Kuchen (Pl.)"
+          }
+        },
+        {
+          "text": "un jeu -> des jeux",
+          "translation": {
+            "en": "a game -> games",
+            "de": "ein Spiel -> Spiele"
+          }
+        }
+      ],
+      "pitfalls": [
+        {
+          "en": "Avoid adding -s to words ending in -eau or -eu; use -x instead.",
+          "fr": "Évitez d'ajouter un -s aux mots en -eau ou -eu ; utilisez un -x.",
+          "de": "Fügen Sie Wörtern auf -eau oder -eu kein -s hinzu, sondern ein -x."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex-x-choice",
+          "type": "grammar_gap_choice",
+          "itemCount": 7,
+          "ruleIds": [
+            "rule-plural-x"
+          ],
+          "estimatedDurationS": 70
+        },
+        {
+          "id": "ex-x-typing",
+          "type": "grammar_gap_typing",
+          "itemCount": 6,
+          "ruleIds": [
+            "rule-plural-x"
+          ],
+          "estimatedDurationS": 90
+        },
+        {
+          "id": "ex-x-spot",
+          "type": "grammar_error_spotter",
+          "itemCount": 4,
+          "ruleIds": [
+            "rule-plural-x"
+          ],
+          "estimatedDurationS": 100
+        }
+      ]
+    }
+  ],
+  "feedbackPlaceholder": {
+    "estimatedDurationS": 30
+  },
+  "exam": {
+    "pages": [
+      {
+        "pageId": "exam-s",
+        "type": "grammar_gap_typing",
+        "itemCount": 6,
+        "ruleIds": [
+          "rule-plural-s"
+        ],
+        "estimatedDurationS": 90,
+        "timeLimitS": 140
+      },
+      {
+        "pageId": "exam-x",
+        "type": "grammar_gap_typing",
+        "itemCount": 5,
+        "ruleIds": [
+          "rule-plural-x"
+        ],
+        "estimatedDurationS": 75,
+        "timeLimitS": 120
+      },
+      {
+        "pageId": "exam-sentences",
+        "type": "grammar_gap_typing",
+        "itemCount": 5,
+        "ruleIds": [
+          "rule-silent-plural",
+          "rule-plural-x"
+        ],
+        "estimatedDurationS": 75,
+        "timeLimitS": 120
+      }
+    ]
+  },
+  "scoring": {
+    "practiceWeight": 35,
+    "examWeight": 65,
+    "orthographyCredit": 0.5
+  },
+  "newVerbs": []
+}

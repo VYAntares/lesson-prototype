@@ -1,0 +1,2100 @@
+{
+  "schemaVersion": 2,
+  "id": "fr-regular-noun-plurals",
+  "lang": "fr",
+  "level": "A1",
+  "locales": [
+    "en",
+    "fr",
+    "de"
+  ],
+  "title": "Le pluriel des noms",
+  "objective": {
+    "en": "Learn how to form regular French noun plurals using -s and -x, and recognize that final plural markers are silent.",
+    "fr": "Apprendre à former le pluriel des noms réguliers avec -s et -x, et comprendre que le -s ou -x final est muet.",
+    "de": "Lernen Sie, wie man den regelmäßigen Plural im Französischen mit -s und -x bildet und dass diese Endungen stumm sind."
+  },
+  "estimatedMinutes": 17,
+  "kind": "grammar",
+  "topic": "nouns_and_determiners",
+  "steps": [
+    {
+      "id": "block-regular-plural-s-explanation",
+      "role": "explanation",
+      "blockId": "block-regular-plural-s",
+      "label": {
+        "en": "Plurals with -s and Silent Consonants",
+        "fr": "Le pluriel en -s et les consonnes muettes",
+        "de": "Plural mit -s und stumme Konsonanten"
+      },
+      "pages": [
+        {
+          "pageId": "block-regular-plural-s-explanation",
+          "estimatedDurationS": 120,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Read the explanation and the examples.",
+            "fr": "Lisez l’explication et les exemples.",
+            "de": "Lies die Erklärung und die Beispiele."
+          },
+          "items": [
+            {
+              "type": "grammar_explanation",
+              "itemId": "block-regular-plural-s-explanation",
+              "ruleIds": [
+                "rule-plural-s",
+                "rule-silent-plural"
+              ],
+              "heading": {
+                "en": "Plurals with -s and Silent Consonants",
+                "fr": "Le pluriel en -s et les consonnes muettes",
+                "de": "Plural mit -s und stumme Konsonanten"
+              },
+              "text": {
+                "en": "Most nouns add **-s** in the plural: `livre` → `livres`, `chaise` → `chaises`.\n\n- `un` and `une` become `des`\n- `le` and `la` become `les`\n\nThe final -s is silent, so listen to the **article** to hear the number. In these gaps the article is given – write only the plural noun.",
+                "fr": "La plupart des noms prennent **-s** au pluriel : `livre` → `livres`, `chaise` → `chaises`.\n\n- `un` et `une` deviennent `des`\n- `le` et `la` deviennent `les`\n\nLe -s final est muet : écoutez l'**article** pour reconnaître le nombre. Dans les trous, l'article est donné – écrivez seulement le nom au pluriel.",
+                "de": "Die meisten Nomen bekommen im Plural **-s**: `livre` → `livres`, `chaise` → `chaises`.\n\n- `un` und `une` werden zu `des`\n- `le` und `la` werden zu `les`\n\nDas End-s ist stumm – am **Artikel** hörst du die Zahl. In diesen Lücken steht der Artikel schon; schreibe nur das Nomen im Plural."
+              },
+              "formTable": [],
+              "examples": [
+                {
+                  "text": "un livre -> des livres",
+                  "translation": {
+                    "en": "a book -> books",
+                    "de": "ein Buch -> Bücher"
+                  }
+                },
+                {
+                  "text": "la chaise -> les chaises",
+                  "translation": {
+                    "en": "the chair -> the chairs",
+                    "de": "der Stuhl -> die Stühle"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex-s-choice",
+      "role": "exercise",
+      "blockId": "block-regular-plural-s",
+      "label": {
+        "en": "Multiple-choice gaps 1",
+        "fr": "Phrases à trous à choix multiple 1",
+        "de": "Lücken mit Auswahl 1"
+      },
+      "pages": [
+        {
+          "pageId": "ex-s-choice-1",
+          "estimatedDurationS": 10,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Choose the word that completes the sentence.",
+            "fr": "Choisissez le mot qui complète la phrase.",
+            "de": "Wähle das Wort, das den Satz ergänzt."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_choice",
+              "ruleIds": [
+                "rule-plural-s"
+              ],
+              "before": "un livre → des",
+              "after": "",
+              "choices": [
+                {
+                  "choiceId": "c-1",
+                  "text": "livre"
+                },
+                {
+                  "choiceId": "c-2",
+                  "text": "livrent"
+                },
+                {
+                  "choiceId": "c-3",
+                  "text": "livrex"
+                },
+                {
+                  "choiceId": "c-4",
+                  "text": "livres"
+                }
+              ],
+              "answerChoiceId": "c-4",
+              "hint": null,
+              "answerExplanation": {
+                "en": "Most nouns add -s in the plural: un livre → des livres.",
+                "fr": "La plupart des noms prennent un -s au pluriel : un livre → des livres.",
+                "de": "Die meisten Nomen bekommen im Plural ein -s: un livre → des livres."
+              },
+              "itemId": "ex-s-choice-1"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-s-choice-2",
+          "estimatedDurationS": 10,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Choose the word that completes the sentence.",
+            "fr": "Choisissez le mot qui complète la phrase.",
+            "de": "Wähle das Wort, das den Satz ergänzt."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_choice",
+              "ruleIds": [
+                "rule-plural-s"
+              ],
+              "before": "une table → des",
+              "after": "",
+              "choices": [
+                {
+                  "choiceId": "c-1",
+                  "text": "tablex"
+                },
+                {
+                  "choiceId": "c-2",
+                  "text": "table"
+                },
+                {
+                  "choiceId": "c-3",
+                  "text": "tabless"
+                },
+                {
+                  "choiceId": "c-4",
+                  "text": "tables"
+                }
+              ],
+              "answerChoiceId": "c-4",
+              "hint": null,
+              "answerExplanation": {
+                "en": "Most nouns add -s in the plural: une table → des tables.",
+                "fr": "La plupart des noms prennent un -s au pluriel : une table → des tables.",
+                "de": "Die meisten Nomen bekommen im Plural ein -s: une table → des tables."
+              },
+              "itemId": "ex-s-choice-2"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-s-choice-3",
+          "estimatedDurationS": 10,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Choose the word that completes the sentence.",
+            "fr": "Choisissez le mot qui complète la phrase.",
+            "de": "Wähle das Wort, das den Satz ergänzt."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_choice",
+              "ruleIds": [
+                "rule-plural-s"
+              ],
+              "before": "un stylo → des",
+              "after": "",
+              "choices": [
+                {
+                  "choiceId": "c-1",
+                  "text": "styloes"
+                },
+                {
+                  "choiceId": "c-2",
+                  "text": "stylox"
+                },
+                {
+                  "choiceId": "c-3",
+                  "text": "stylos"
+                },
+                {
+                  "choiceId": "c-4",
+                  "text": "stylo"
+                }
+              ],
+              "answerChoiceId": "c-3",
+              "hint": null,
+              "answerExplanation": {
+                "en": "Most nouns add -s in the plural: un stylo → des stylos.",
+                "fr": "La plupart des noms prennent un -s au pluriel : un stylo → des stylos.",
+                "de": "Die meisten Nomen bekommen im Plural ein -s: un stylo → des stylos."
+              },
+              "itemId": "ex-s-choice-3"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-s-choice-4",
+          "estimatedDurationS": 10,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Choose the word that completes the sentence.",
+            "fr": "Choisissez le mot qui complète la phrase.",
+            "de": "Wähle das Wort, das den Satz ergänzt."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_choice",
+              "ruleIds": [
+                "rule-plural-s"
+              ],
+              "before": "une chaise → des",
+              "after": "",
+              "choices": [
+                {
+                  "choiceId": "c-1",
+                  "text": "chaisex"
+                },
+                {
+                  "choiceId": "c-2",
+                  "text": "chaises"
+                },
+                {
+                  "choiceId": "c-3",
+                  "text": "chaisent"
+                },
+                {
+                  "choiceId": "c-4",
+                  "text": "chaise"
+                }
+              ],
+              "answerChoiceId": "c-2",
+              "hint": null,
+              "answerExplanation": {
+                "en": "Most nouns add -s in the plural: une chaise → des chaises.",
+                "fr": "La plupart des noms prennent un -s au pluriel : une chaise → des chaises.",
+                "de": "Die meisten Nomen bekommen im Plural ein -s: une chaise → des chaises."
+              },
+              "itemId": "ex-s-choice-4"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-s-choice-5",
+          "estimatedDurationS": 10,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Choose the word that completes the sentence.",
+            "fr": "Choisissez le mot qui complète la phrase.",
+            "de": "Wähle das Wort, das den Satz ergänzt."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_choice",
+              "ruleIds": [
+                "rule-silent-plural"
+              ],
+              "before": "Ce sont mes",
+              "after": "de l’école.",
+              "choices": [
+                {
+                  "choiceId": "c-1",
+                  "text": "amit"
+                },
+                {
+                  "choiceId": "c-2",
+                  "text": "ami"
+                },
+                {
+                  "choiceId": "c-3",
+                  "text": "amix"
+                },
+                {
+                  "choiceId": "c-4",
+                  "text": "amis"
+                }
+              ],
+              "answerChoiceId": "c-4",
+              "hint": null,
+              "answerExplanation": {
+                "en": "ami and amis sound the same: the plural -s is silent, so only the article (les, des) is heard – but the -s is written.",
+                "fr": "ami et amis se prononcent pareil : le -s du pluriel est muet, on entend seulement l’article (les, des) – mais on écrit le -s.",
+                "de": "ami und amis klingen gleich: Das Plural-s ist stumm, man hört nur den Artikel (les, des) – geschrieben wird das -s aber."
+              },
+              "itemId": "ex-s-choice-5"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-s-choice-6",
+          "estimatedDurationS": 10,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Choose the word that completes the sentence.",
+            "fr": "Choisissez le mot qui complète la phrase.",
+            "de": "Wähle das Wort, das den Satz ergänzt."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_choice",
+              "ruleIds": [
+                "rule-plural-s"
+              ],
+              "before": "une fleur → des",
+              "after": "",
+              "choices": [
+                {
+                  "choiceId": "c-1",
+                  "text": "fleurx"
+                },
+                {
+                  "choiceId": "c-2",
+                  "text": "fleur"
+                },
+                {
+                  "choiceId": "c-3",
+                  "text": "fleurs"
+                },
+                {
+                  "choiceId": "c-4",
+                  "text": "fleures"
+                }
+              ],
+              "answerChoiceId": "c-3",
+              "hint": null,
+              "answerExplanation": {
+                "en": "Most nouns add -s in the plural: une fleur → des fleurs.",
+                "fr": "La plupart des noms prennent un -s au pluriel : une fleur → des fleurs.",
+                "de": "Die meisten Nomen bekommen im Plural ein -s: une fleur → des fleurs."
+              },
+              "itemId": "ex-s-choice-6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex-s-typing",
+      "role": "exercise",
+      "blockId": "block-regular-plural-s",
+      "label": {
+        "en": "Typed gaps 1",
+        "fr": "Phrases à trous à écrire 1",
+        "de": "Lücken zum Schreiben 1"
+      },
+      "pages": [
+        {
+          "pageId": "ex-s-typing-1",
+          "estimatedDurationS": 15,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Type the missing words.",
+            "fr": "Écrivez les mots manquants.",
+            "de": "Schreib die fehlenden Wörter."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-plural-s"
+              ],
+              "before": "un cahier → des",
+              "after": "",
+              "accepted": {
+                "answers": [
+                  "cahiers"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "Most nouns add -s in the plural: un cahier → des cahiers.",
+                "fr": "La plupart des noms prennent un -s au pluriel : un cahier → des cahiers.",
+                "de": "Die meisten Nomen bekommen im Plural ein -s: un cahier → des cahiers."
+              },
+              "itemId": "ex-s-typing-1"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-s-typing-2",
+          "estimatedDurationS": 15,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Type the missing words.",
+            "fr": "Écrivez les mots manquants.",
+            "de": "Schreib die fehlenden Wörter."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-plural-s"
+              ],
+              "before": "une voiture → des",
+              "after": "",
+              "accepted": {
+                "answers": [
+                  "voitures"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "Most nouns add -s in the plural: une voiture → des voitures.",
+                "fr": "La plupart des noms prennent un -s au pluriel : une voiture → des voitures.",
+                "de": "Die meisten Nomen bekommen im Plural ein -s: une voiture → des voitures."
+              },
+              "itemId": "ex-s-typing-2"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-s-typing-3",
+          "estimatedDurationS": 15,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Type the missing words.",
+            "fr": "Écrivez les mots manquants.",
+            "de": "Schreib die fehlenden Wörter."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-plural-s"
+              ],
+              "before": "un ami → des",
+              "after": "",
+              "accepted": {
+                "answers": [
+                  "amis"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "Most nouns add -s in the plural: un ami → des amis.",
+                "fr": "La plupart des noms prennent un -s au pluriel : un ami → des amis.",
+                "de": "Die meisten Nomen bekommen im Plural ein -s: un ami → des amis."
+              },
+              "itemId": "ex-s-typing-3"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-s-typing-4",
+          "estimatedDurationS": 15,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Type the missing words.",
+            "fr": "Écrivez les mots manquants.",
+            "de": "Schreib die fehlenden Wörter."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-plural-s"
+              ],
+              "before": "une maison → des",
+              "after": "",
+              "accepted": {
+                "answers": [
+                  "maisons"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "Most nouns add -s in the plural: une maison → des maisons.",
+                "fr": "La plupart des noms prennent un -s au pluriel : une maison → des maisons.",
+                "de": "Die meisten Nomen bekommen im Plural ein -s: une maison → des maisons."
+              },
+              "itemId": "ex-s-typing-4"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-s-typing-5",
+          "estimatedDurationS": 15,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Type the missing words.",
+            "fr": "Écrivez les mots manquants.",
+            "de": "Schreib die fehlenden Wörter."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-plural-s"
+              ],
+              "before": "un chat → des",
+              "after": "",
+              "accepted": {
+                "answers": [
+                  "chats"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "Most nouns add -s in the plural: un chat → des chats.",
+                "fr": "La plupart des noms prennent un -s au pluriel : un chat → des chats.",
+                "de": "Die meisten Nomen bekommen im Plural ein -s: un chat → des chats."
+              },
+              "itemId": "ex-s-typing-5"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-s-typing-6",
+          "estimatedDurationS": 15,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Type the missing words.",
+            "fr": "Écrivez les mots manquants.",
+            "de": "Schreib die fehlenden Wörter."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-plural-s"
+              ],
+              "before": "une pomme → des",
+              "after": "",
+              "accepted": {
+                "answers": [
+                  "pommes"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "Most nouns add -s in the plural: une pomme → des pommes.",
+                "fr": "La plupart des noms prennent un -s au pluriel : une pomme → des pommes.",
+                "de": "Die meisten Nomen bekommen im Plural ein -s: une pomme → des pommes."
+              },
+              "itemId": "ex-s-typing-6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex-s-spot",
+      "role": "exercise",
+      "blockId": "block-regular-plural-s",
+      "label": {
+        "en": "Error spotting 1",
+        "fr": "Repérer l’erreur 1",
+        "de": "Fehler finden 1"
+      },
+      "pages": [
+        {
+          "pageId": "ex-s-spot-1",
+          "estimatedDurationS": 25,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Find the wrong word and correct it.",
+            "fr": "Trouvez le mot faux et corrigez-le.",
+            "de": "Finde das falsche Wort und korrigiere es."
+          },
+          "items": [
+            {
+              "type": "grammar_error_spotter",
+              "ruleIds": [
+                "rule-silent-plural"
+              ],
+              "tokens": [
+                {
+                  "tokenId": "t-1",
+                  "text": "Voici"
+                },
+                {
+                  "tokenId": "t-2",
+                  "text": "les"
+                },
+                {
+                  "tokenId": "t-3",
+                  "text": "livre"
+                }
+              ],
+              "faultyTokenId": "t-3",
+              "correction": {
+                "mode": "type",
+                "accepted": {
+                  "answers": [
+                    "livres"
+                  ],
+                  "accentSensitive": []
+                },
+                "choices": []
+              },
+              "answerExplanation": {
+                "en": "livre and livres sound the same: the plural -s is silent, so only the article (les, des) is heard – but the -s is written.",
+                "fr": "livre et livres se prononcent pareil : le -s du pluriel est muet, on entend seulement l’article (les, des) – mais on écrit le -s.",
+                "de": "livre und livres klingen gleich: Das Plural-s ist stumm, man hört nur den Artikel (les, des) – geschrieben wird das -s aber."
+              },
+              "itemId": "ex-s-spot-1"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-s-spot-2",
+          "estimatedDurationS": 25,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Find the wrong word and correct it.",
+            "fr": "Trouvez le mot faux et corrigez-le.",
+            "de": "Finde das falsche Wort und korrigiere es."
+          },
+          "items": [
+            {
+              "type": "grammar_error_spotter",
+              "ruleIds": [
+                "rule-silent-plural"
+              ],
+              "tokens": [
+                {
+                  "tokenId": "t-1",
+                  "text": "J’ai"
+                },
+                {
+                  "tokenId": "t-2",
+                  "text": "deux"
+                },
+                {
+                  "tokenId": "t-3",
+                  "text": "chat"
+                }
+              ],
+              "faultyTokenId": "t-3",
+              "correction": {
+                "mode": "select",
+                "accepted": {
+                  "answers": [
+                    "chats"
+                  ],
+                  "accentSensitive": []
+                },
+                "choices": [
+                  "chats",
+                  "chat",
+                  "chatx"
+                ]
+              },
+              "answerExplanation": {
+                "en": "chat and chats sound the same: the plural -s is silent, so only the article (les, des) is heard – but the -s is written.",
+                "fr": "chat et chats se prononcent pareil : le -s du pluriel est muet, on entend seulement l’article (les, des) – mais on écrit le -s.",
+                "de": "chat und chats klingen gleich: Das Plural-s ist stumm, man hört nur den Artikel (les, des) – geschrieben wird das -s aber."
+              },
+              "itemId": "ex-s-spot-2"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-s-spot-3",
+          "estimatedDurationS": 25,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Find the wrong word and correct it.",
+            "fr": "Trouvez le mot faux et corrigez-le.",
+            "de": "Finde das falsche Wort und korrigiere es."
+          },
+          "items": [
+            {
+              "type": "grammar_error_spotter",
+              "ruleIds": [
+                "rule-plural-s"
+              ],
+              "tokens": [
+                {
+                  "tokenId": "t-1",
+                  "text": "Ce"
+                },
+                {
+                  "tokenId": "t-2",
+                  "text": "sont"
+                },
+                {
+                  "tokenId": "t-3",
+                  "text": "des"
+                },
+                {
+                  "tokenId": "t-4",
+                  "text": "stylox"
+                }
+              ],
+              "faultyTokenId": "t-4",
+              "correction": {
+                "mode": "select",
+                "accepted": {
+                  "answers": [
+                    "stylos"
+                  ],
+                  "accentSensitive": []
+                },
+                "choices": [
+                  "stylos",
+                  "stylox",
+                  "stylo"
+                ]
+              },
+              "answerExplanation": {
+                "en": "Most nouns add -s in the plural: un stylo → des stylos.",
+                "fr": "La plupart des noms prennent un -s au pluriel : un stylo → des stylos.",
+                "de": "Die meisten Nomen bekommen im Plural ein -s: un stylo → des stylos."
+              },
+              "itemId": "ex-s-spot-3"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-s-spot-4",
+          "estimatedDurationS": 25,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Find the wrong word and correct it.",
+            "fr": "Trouvez le mot faux et corrigez-le.",
+            "de": "Finde das falsche Wort und korrigiere es."
+          },
+          "items": [
+            {
+              "type": "grammar_error_spotter",
+              "ruleIds": [
+                "rule-silent-plural"
+              ],
+              "tokens": [
+                {
+                  "tokenId": "t-1",
+                  "text": "Les"
+                },
+                {
+                  "tokenId": "t-2",
+                  "text": "fille"
+                },
+                {
+                  "tokenId": "t-3",
+                  "text": "sont"
+                },
+                {
+                  "tokenId": "t-4",
+                  "text": "là"
+                }
+              ],
+              "faultyTokenId": "t-2",
+              "correction": {
+                "mode": "type",
+                "accepted": {
+                  "answers": [
+                    "filles"
+                  ],
+                  "accentSensitive": []
+                },
+                "choices": []
+              },
+              "answerExplanation": {
+                "en": "fille and filles sound the same: the plural -s is silent, so only the article (les, des) is heard – but the -s is written.",
+                "fr": "fille et filles se prononcent pareil : le -s du pluriel est muet, on entend seulement l’article (les, des) – mais on écrit le -s.",
+                "de": "fille und filles klingen gleich: Das Plural-s ist stumm, man hört nur den Artikel (les, des) – geschrieben wird das -s aber."
+              },
+              "itemId": "ex-s-spot-4"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-s-spot-5",
+          "estimatedDurationS": 25,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Find the wrong word and correct it.",
+            "fr": "Trouvez le mot faux et corrigez-le.",
+            "de": "Finde das falsche Wort und korrigiere es."
+          },
+          "items": [
+            {
+              "type": "grammar_error_spotter",
+              "ruleIds": [
+                "rule-plural-s"
+              ],
+              "tokens": [
+                {
+                  "tokenId": "t-1",
+                  "text": "Voici"
+                },
+                {
+                  "tokenId": "t-2",
+                  "text": "des"
+                },
+                {
+                  "tokenId": "t-3",
+                  "text": "tabless"
+                }
+              ],
+              "faultyTokenId": "t-3",
+              "correction": {
+                "mode": "type",
+                "accepted": {
+                  "answers": [
+                    "tables"
+                  ],
+                  "accentSensitive": []
+                },
+                "choices": []
+              },
+              "answerExplanation": {
+                "en": "The plural takes one -s only: tables.",
+                "fr": "Le pluriel prend un seul -s : tables.",
+                "de": "Der Plural bekommt nur ein -s: tables."
+              },
+              "itemId": "ex-s-spot-5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "block-plural-x-explanation",
+      "role": "explanation",
+      "blockId": "block-plural-x",
+      "label": {
+        "en": "Plurals with -x (-eau, -eu)",
+        "fr": "Le pluriel en -x (-eau, -eu)",
+        "de": "Plural mit -x (-eau, -eu)"
+      },
+      "pages": [
+        {
+          "pageId": "block-plural-x-explanation",
+          "estimatedDurationS": 120,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Read the explanation and the examples.",
+            "fr": "Lisez l’explication et les exemples.",
+            "de": "Lies die Erklärung und die Beispiele."
+          },
+          "items": [
+            {
+              "type": "grammar_explanation",
+              "itemId": "block-plural-x-explanation",
+              "ruleIds": [
+                "rule-plural-x"
+              ],
+              "heading": {
+                "en": "Plurals with -x (-eau, -eu)",
+                "fr": "Le pluriel en -x (-eau, -eu)",
+                "de": "Plural mit -x (-eau, -eu)"
+              },
+              "text": {
+                "en": "Nouns ending in **-eau** and **-eu** take **-x**: `gâteau` → `gâteaux`, `jeu` → `jeux`. This -x is silent too.\n\nLearn the forms with their articles: `un bateau`, `des bateaux`. A few -eu nouns are exceptions, such as `pneu` → `pneus`; this lesson practises the common -x pattern.",
+                "fr": "Les noms en **-eau** et **-eu** prennent **-x** : `gâteau` → `gâteaux`, `jeu` → `jeux`. Ce -x est aussi muet.\n\nApprenez les formes avec l'article : `un bateau`, `des bateaux`. Quelques noms en -eu sont des exceptions, comme `pneu` → `pneus` ; cette leçon travaille la règle fréquente en -x.",
+                "de": "Nomen auf **-eau** und **-eu** bekommen **-x**: `gâteau` → `gâteaux`, `jeu` → `jeux`. Auch dieses -x ist stumm.\n\nLerne die Formen mit Artikel: `un bateau`, `des bateaux`. Einige Nomen auf -eu sind Ausnahmen, etwa `pneu` → `pneus`; diese Lektion übt das häufige Muster mit -x."
+              },
+              "formTable": [],
+              "examples": [
+                {
+                  "text": "un gâteau -> des gâteaux",
+                  "translation": {
+                    "en": "a cake -> cakes",
+                    "de": "ein Kuchen -> Kuchen (Pl.)"
+                  }
+                },
+                {
+                  "text": "un jeu -> des jeux",
+                  "translation": {
+                    "en": "a game -> games",
+                    "de": "ein Spiel -> Spiele"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex-x-choice",
+      "role": "exercise",
+      "blockId": "block-plural-x",
+      "label": {
+        "en": "Multiple-choice gaps 2",
+        "fr": "Phrases à trous à choix multiple 2",
+        "de": "Lücken mit Auswahl 2"
+      },
+      "pages": [
+        {
+          "pageId": "ex-x-choice-1",
+          "estimatedDurationS": 10,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Choose the word that completes the sentence.",
+            "fr": "Choisissez le mot qui complète la phrase.",
+            "de": "Wähle das Wort, das den Satz ergänzt."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_choice",
+              "ruleIds": [
+                "rule-plural-x"
+              ],
+              "before": "un bateau → des",
+              "after": "",
+              "choices": [
+                {
+                  "choiceId": "c-1",
+                  "text": "bateaus"
+                },
+                {
+                  "choiceId": "c-2",
+                  "text": "bateauxs"
+                },
+                {
+                  "choiceId": "c-3",
+                  "text": "bateaux"
+                },
+                {
+                  "choiceId": "c-4",
+                  "text": "bateau"
+                }
+              ],
+              "answerChoiceId": "c-3",
+              "hint": null,
+              "answerExplanation": {
+                "en": "Nouns in -eau and -eu take -x in the plural: un bateau → des bateaux.",
+                "fr": "Les noms en -eau et en -eu prennent un -x au pluriel : un bateau → des bateaux.",
+                "de": "Nomen auf -eau und -eu bekommen im Plural ein -x: un bateau → des bateaux."
+              },
+              "itemId": "ex-x-choice-1"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-x-choice-2",
+          "estimatedDurationS": 10,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Choose the word that completes the sentence.",
+            "fr": "Choisissez le mot qui complète la phrase.",
+            "de": "Wähle das Wort, das den Satz ergänzt."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_choice",
+              "ruleIds": [
+                "rule-plural-x"
+              ],
+              "before": "un cadeau → des",
+              "after": "",
+              "choices": [
+                {
+                  "choiceId": "c-1",
+                  "text": "cadeaus"
+                },
+                {
+                  "choiceId": "c-2",
+                  "text": "cadeauxs"
+                },
+                {
+                  "choiceId": "c-3",
+                  "text": "cadeaux"
+                },
+                {
+                  "choiceId": "c-4",
+                  "text": "cadeau"
+                }
+              ],
+              "answerChoiceId": "c-3",
+              "hint": null,
+              "answerExplanation": {
+                "en": "Nouns in -eau and -eu take -x in the plural: un cadeau → des cadeaux.",
+                "fr": "Les noms en -eau et en -eu prennent un -x au pluriel : un cadeau → des cadeaux.",
+                "de": "Nomen auf -eau und -eu bekommen im Plural ein -x: un cadeau → des cadeaux."
+              },
+              "itemId": "ex-x-choice-2"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-x-choice-3",
+          "estimatedDurationS": 10,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Choose the word that completes the sentence.",
+            "fr": "Choisissez le mot qui complète la phrase.",
+            "de": "Wähle das Wort, das den Satz ergänzt."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_choice",
+              "ruleIds": [
+                "rule-plural-x"
+              ],
+              "before": "un jeu → des",
+              "after": "",
+              "choices": [
+                {
+                  "choiceId": "c-1",
+                  "text": "jeux"
+                },
+                {
+                  "choiceId": "c-2",
+                  "text": "jeus"
+                },
+                {
+                  "choiceId": "c-3",
+                  "text": "jeuxs"
+                },
+                {
+                  "choiceId": "c-4",
+                  "text": "jeu"
+                }
+              ],
+              "answerChoiceId": "c-1",
+              "hint": null,
+              "answerExplanation": {
+                "en": "Nouns in -eau and -eu take -x in the plural: un jeu → des jeux.",
+                "fr": "Les noms en -eau et en -eu prennent un -x au pluriel : un jeu → des jeux.",
+                "de": "Nomen auf -eau und -eu bekommen im Plural ein -x: un jeu → des jeux."
+              },
+              "itemId": "ex-x-choice-3"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-x-choice-4",
+          "estimatedDurationS": 10,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Choose the word that completes the sentence.",
+            "fr": "Choisissez le mot qui complète la phrase.",
+            "de": "Wähle das Wort, das den Satz ergänzt."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_choice",
+              "ruleIds": [
+                "rule-plural-x"
+              ],
+              "before": "un gâteau → des",
+              "after": "",
+              "choices": [
+                {
+                  "choiceId": "c-1",
+                  "text": "gâteaus"
+                },
+                {
+                  "choiceId": "c-2",
+                  "text": "gâteaux"
+                },
+                {
+                  "choiceId": "c-3",
+                  "text": "gâteauxs"
+                },
+                {
+                  "choiceId": "c-4",
+                  "text": "gâteau"
+                }
+              ],
+              "answerChoiceId": "c-2",
+              "hint": null,
+              "answerExplanation": {
+                "en": "Nouns in -eau and -eu take -x in the plural: un gâteau → des gâteaux.",
+                "fr": "Les noms en -eau et en -eu prennent un -x au pluriel : un gâteau → des gâteaux.",
+                "de": "Nomen auf -eau und -eu bekommen im Plural ein -x: un gâteau → des gâteaux."
+              },
+              "itemId": "ex-x-choice-4"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-x-choice-5",
+          "estimatedDurationS": 10,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Choose the word that completes the sentence.",
+            "fr": "Choisissez le mot qui complète la phrase.",
+            "de": "Wähle das Wort, das den Satz ergänzt."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_choice",
+              "ruleIds": [
+                "rule-plural-x"
+              ],
+              "before": "un cheveu → des",
+              "after": "",
+              "choices": [
+                {
+                  "choiceId": "c-1",
+                  "text": "cheveus"
+                },
+                {
+                  "choiceId": "c-2",
+                  "text": "cheveu"
+                },
+                {
+                  "choiceId": "c-3",
+                  "text": "cheveux"
+                },
+                {
+                  "choiceId": "c-4",
+                  "text": "cheveuxs"
+                }
+              ],
+              "answerChoiceId": "c-3",
+              "hint": null,
+              "answerExplanation": {
+                "en": "Nouns in -eau and -eu take -x in the plural: un cheveu → des cheveux.",
+                "fr": "Les noms en -eau et en -eu prennent un -x au pluriel : un cheveu → des cheveux.",
+                "de": "Nomen auf -eau und -eu bekommen im Plural ein -x: un cheveu → des cheveux."
+              },
+              "itemId": "ex-x-choice-5"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-x-choice-6",
+          "estimatedDurationS": 10,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Choose the word that completes the sentence.",
+            "fr": "Choisissez le mot qui complète la phrase.",
+            "de": "Wähle das Wort, das den Satz ergänzt."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_choice",
+              "ruleIds": [
+                "rule-plural-x"
+              ],
+              "before": "un oiseau → des",
+              "after": "",
+              "choices": [
+                {
+                  "choiceId": "c-1",
+                  "text": "oiseaux"
+                },
+                {
+                  "choiceId": "c-2",
+                  "text": "oiseauxs"
+                },
+                {
+                  "choiceId": "c-3",
+                  "text": "oiseaus"
+                },
+                {
+                  "choiceId": "c-4",
+                  "text": "oiseau"
+                }
+              ],
+              "answerChoiceId": "c-1",
+              "hint": null,
+              "answerExplanation": {
+                "en": "Nouns in -eau and -eu take -x in the plural: un oiseau → des oiseaux.",
+                "fr": "Les noms en -eau et en -eu prennent un -x au pluriel : un oiseau → des oiseaux.",
+                "de": "Nomen auf -eau und -eu bekommen im Plural ein -x: un oiseau → des oiseaux."
+              },
+              "itemId": "ex-x-choice-6"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-x-choice-7",
+          "estimatedDurationS": 10,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Choose the word that completes the sentence.",
+            "fr": "Choisissez le mot qui complète la phrase.",
+            "de": "Wähle das Wort, das den Satz ergänzt."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_choice",
+              "ruleIds": [
+                "rule-plural-x"
+              ],
+              "before": "un manteau → des",
+              "after": "",
+              "choices": [
+                {
+                  "choiceId": "c-1",
+                  "text": "manteauxs"
+                },
+                {
+                  "choiceId": "c-2",
+                  "text": "manteau"
+                },
+                {
+                  "choiceId": "c-3",
+                  "text": "manteaux"
+                },
+                {
+                  "choiceId": "c-4",
+                  "text": "manteaus"
+                }
+              ],
+              "answerChoiceId": "c-3",
+              "hint": null,
+              "answerExplanation": {
+                "en": "Nouns in -eau and -eu take -x in the plural: un manteau → des manteaux.",
+                "fr": "Les noms en -eau et en -eu prennent un -x au pluriel : un manteau → des manteaux.",
+                "de": "Nomen auf -eau und -eu bekommen im Plural ein -x: un manteau → des manteaux."
+              },
+              "itemId": "ex-x-choice-7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex-x-typing",
+      "role": "exercise",
+      "blockId": "block-plural-x",
+      "label": {
+        "en": "Typed gaps 2",
+        "fr": "Phrases à trous à écrire 2",
+        "de": "Lücken zum Schreiben 2"
+      },
+      "pages": [
+        {
+          "pageId": "ex-x-typing-1",
+          "estimatedDurationS": 15,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Type the missing words.",
+            "fr": "Écrivez les mots manquants.",
+            "de": "Schreib die fehlenden Wörter."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-plural-x"
+              ],
+              "before": "un bureau → des",
+              "after": "",
+              "accepted": {
+                "answers": [
+                  "bureaux"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "Nouns in -eau and -eu take -x in the plural: un bureau → des bureaux.",
+                "fr": "Les noms en -eau et en -eu prennent un -x au pluriel : un bureau → des bureaux.",
+                "de": "Nomen auf -eau und -eu bekommen im Plural ein -x: un bureau → des bureaux."
+              },
+              "itemId": "ex-x-typing-1"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-x-typing-2",
+          "estimatedDurationS": 15,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Type the missing words.",
+            "fr": "Écrivez les mots manquants.",
+            "de": "Schreib die fehlenden Wörter."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-plural-x"
+              ],
+              "before": "un couteau → des",
+              "after": "",
+              "accepted": {
+                "answers": [
+                  "couteaux"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "Nouns in -eau and -eu take -x in the plural: un couteau → des couteaux.",
+                "fr": "Les noms en -eau et en -eu prennent un -x au pluriel : un couteau → des couteaux.",
+                "de": "Nomen auf -eau und -eu bekommen im Plural ein -x: un couteau → des couteaux."
+              },
+              "itemId": "ex-x-typing-2"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-x-typing-3",
+          "estimatedDurationS": 15,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Type the missing words.",
+            "fr": "Écrivez les mots manquants.",
+            "de": "Schreib die fehlenden Wörter."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-plural-x"
+              ],
+              "before": "un feu → des",
+              "after": "",
+              "accepted": {
+                "answers": [
+                  "feux"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "Nouns in -eau and -eu take -x in the plural: un feu → des feux.",
+                "fr": "Les noms en -eau et en -eu prennent un -x au pluriel : un feu → des feux.",
+                "de": "Nomen auf -eau und -eu bekommen im Plural ein -x: un feu → des feux."
+              },
+              "itemId": "ex-x-typing-3"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-x-typing-4",
+          "estimatedDurationS": 15,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Type the missing words.",
+            "fr": "Écrivez les mots manquants.",
+            "de": "Schreib die fehlenden Wörter."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-plural-x"
+              ],
+              "before": "un chapeau → des",
+              "after": "",
+              "accepted": {
+                "answers": [
+                  "chapeaux"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "Nouns in -eau and -eu take -x in the plural: un chapeau → des chapeaux.",
+                "fr": "Les noms en -eau et en -eu prennent un -x au pluriel : un chapeau → des chapeaux.",
+                "de": "Nomen auf -eau und -eu bekommen im Plural ein -x: un chapeau → des chapeaux."
+              },
+              "itemId": "ex-x-typing-4"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-x-typing-5",
+          "estimatedDurationS": 15,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Type the missing words.",
+            "fr": "Écrivez les mots manquants.",
+            "de": "Schreib die fehlenden Wörter."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-plural-x"
+              ],
+              "before": "un tableau → des",
+              "after": "",
+              "accepted": {
+                "answers": [
+                  "tableaux"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "Nouns in -eau and -eu take -x in the plural: un tableau → des tableaux.",
+                "fr": "Les noms en -eau et en -eu prennent un -x au pluriel : un tableau → des tableaux.",
+                "de": "Nomen auf -eau und -eu bekommen im Plural ein -x: un tableau → des tableaux."
+              },
+              "itemId": "ex-x-typing-5"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-x-typing-6",
+          "estimatedDurationS": 15,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Type the missing words.",
+            "fr": "Écrivez les mots manquants.",
+            "de": "Schreib die fehlenden Wörter."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-plural-x"
+              ],
+              "before": "un château → des",
+              "after": "",
+              "accepted": {
+                "answers": [
+                  "châteaux"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "Nouns in -eau take -x in the plural, and the accent circonflexe stays: un château → des châteaux.",
+                "fr": "Les noms en -eau prennent un -x au pluriel, et l’accent circonflexe reste : un château → des châteaux.",
+                "de": "Nomen auf -eau bekommen ein -x, und der Accent circonflexe bleibt: un château → des châteaux."
+              },
+              "itemId": "ex-x-typing-6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex-x-spot",
+      "role": "exercise",
+      "blockId": "block-plural-x",
+      "label": {
+        "en": "Error spotting 2",
+        "fr": "Repérer l’erreur 2",
+        "de": "Fehler finden 2"
+      },
+      "pages": [
+        {
+          "pageId": "ex-x-spot-1",
+          "estimatedDurationS": 25,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Find the wrong word and correct it.",
+            "fr": "Trouvez le mot faux et corrigez-le.",
+            "de": "Finde das falsche Wort und korrigiere es."
+          },
+          "items": [
+            {
+              "type": "grammar_error_spotter",
+              "ruleIds": [
+                "rule-plural-x"
+              ],
+              "tokens": [
+                {
+                  "tokenId": "t-1",
+                  "text": "Voici"
+                },
+                {
+                  "tokenId": "t-2",
+                  "text": "des"
+                },
+                {
+                  "tokenId": "t-3",
+                  "text": "cadeaus"
+                }
+              ],
+              "faultyTokenId": "t-3",
+              "correction": {
+                "mode": "select",
+                "accepted": {
+                  "answers": [
+                    "cadeaux"
+                  ],
+                  "accentSensitive": []
+                },
+                "choices": [
+                  "cadeaux",
+                  "cadeaus",
+                  "cadeau"
+                ]
+              },
+              "answerExplanation": {
+                "en": "Nouns in -eau and -eu take -x in the plural: un cadeau → des cadeaux.",
+                "fr": "Les noms en -eau et en -eu prennent un -x au pluriel : un cadeau → des cadeaux.",
+                "de": "Nomen auf -eau und -eu bekommen im Plural ein -x: un cadeau → des cadeaux."
+              },
+              "itemId": "ex-x-spot-1"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-x-spot-2",
+          "estimatedDurationS": 25,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Find the wrong word and correct it.",
+            "fr": "Trouvez le mot faux et corrigez-le.",
+            "de": "Finde das falsche Wort und korrigiere es."
+          },
+          "items": [
+            {
+              "type": "grammar_error_spotter",
+              "ruleIds": [
+                "rule-plural-x"
+              ],
+              "tokens": [
+                {
+                  "tokenId": "t-1",
+                  "text": "Les"
+                },
+                {
+                  "tokenId": "t-2",
+                  "text": "bateaus"
+                },
+                {
+                  "tokenId": "t-3",
+                  "text": "sont"
+                },
+                {
+                  "tokenId": "t-4",
+                  "text": "beaux"
+                }
+              ],
+              "faultyTokenId": "t-2",
+              "correction": {
+                "mode": "type",
+                "accepted": {
+                  "answers": [
+                    "bateaux"
+                  ],
+                  "accentSensitive": []
+                },
+                "choices": []
+              },
+              "answerExplanation": {
+                "en": "Nouns in -eau and -eu take -x in the plural: un bateau → des bateaux.",
+                "fr": "Les noms en -eau et en -eu prennent un -x au pluriel : un bateau → des bateaux.",
+                "de": "Nomen auf -eau und -eu bekommen im Plural ein -x: un bateau → des bateaux."
+              },
+              "itemId": "ex-x-spot-2"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-x-spot-3",
+          "estimatedDurationS": 25,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Find the wrong word and correct it.",
+            "fr": "Trouvez le mot faux et corrigez-le.",
+            "de": "Finde das falsche Wort und korrigiere es."
+          },
+          "items": [
+            {
+              "type": "grammar_error_spotter",
+              "ruleIds": [
+                "rule-plural-x"
+              ],
+              "tokens": [
+                {
+                  "tokenId": "t-1",
+                  "text": "J’aime"
+                },
+                {
+                  "tokenId": "t-2",
+                  "text": "les"
+                },
+                {
+                  "tokenId": "t-3",
+                  "text": "jeus"
+                }
+              ],
+              "faultyTokenId": "t-3",
+              "correction": {
+                "mode": "select",
+                "accepted": {
+                  "answers": [
+                    "jeux"
+                  ],
+                  "accentSensitive": []
+                },
+                "choices": [
+                  "jeux",
+                  "jeus",
+                  "jeu"
+                ]
+              },
+              "answerExplanation": {
+                "en": "Nouns in -eau and -eu take -x in the plural: un jeu → des jeux.",
+                "fr": "Les noms en -eau et en -eu prennent un -x au pluriel : un jeu → des jeux.",
+                "de": "Nomen auf -eau und -eu bekommen im Plural ein -x: un jeu → des jeux."
+              },
+              "itemId": "ex-x-spot-3"
+            }
+          ]
+        },
+        {
+          "pageId": "ex-x-spot-4",
+          "estimatedDurationS": 25,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Find the wrong word and correct it.",
+            "fr": "Trouvez le mot faux et corrigez-le.",
+            "de": "Finde das falsche Wort und korrigiere es."
+          },
+          "items": [
+            {
+              "type": "grammar_error_spotter",
+              "ruleIds": [
+                "rule-plural-x"
+              ],
+              "tokens": [
+                {
+                  "tokenId": "t-1",
+                  "text": "Ce"
+                },
+                {
+                  "tokenId": "t-2",
+                  "text": "sont"
+                },
+                {
+                  "tokenId": "t-3",
+                  "text": "des"
+                },
+                {
+                  "tokenId": "t-4",
+                  "text": "gâteaus"
+                }
+              ],
+              "faultyTokenId": "t-4",
+              "correction": {
+                "mode": "type",
+                "accepted": {
+                  "answers": [
+                    "gâteaux"
+                  ],
+                  "accentSensitive": []
+                },
+                "choices": []
+              },
+              "answerExplanation": {
+                "en": "Nouns in -eau and -eu take -x in the plural: un gâteau → des gâteaux.",
+                "fr": "Les noms en -eau et en -eu prennent un -x au pluriel : un gâteau → des gâteaux.",
+                "de": "Nomen auf -eau und -eu bekommen im Plural ein -x: un gâteau → des gâteaux."
+              },
+              "itemId": "ex-x-spot-4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "feedback",
+      "role": "feedback",
+      "blockId": null,
+      "label": {
+        "en": "Your feedback",
+        "fr": "Votre retour",
+        "de": "Dein Feedback"
+      },
+      "pages": [
+        {
+          "pageId": "feedback",
+          "estimatedDurationS": 30,
+          "timeLimitS": null,
+          "instructions": {
+            "en": "Continue to the final exam.",
+            "fr": "Passez à l’examen final.",
+            "de": "Weiter zur Abschlussprüfung."
+          },
+          "items": [
+            {
+              "type": "production_feedback_placeholder",
+              "itemId": "feedback"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exam",
+      "role": "exam",
+      "blockId": null,
+      "label": {
+        "en": "Final exam",
+        "fr": "Examen final",
+        "de": "Abschlussprüfung"
+      },
+      "pages": [
+        {
+          "pageId": "exam-s",
+          "estimatedDurationS": 90,
+          "timeLimitS": 140,
+          "instructions": {
+            "en": "Type the missing words.",
+            "fr": "Écrivez les mots manquants.",
+            "de": "Schreib die fehlenden Wörter."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-plural-s"
+              ],
+              "before": "un arbre → des",
+              "after": "",
+              "accepted": {
+                "answers": [
+                  "arbres"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "Most nouns add -s in the plural: un arbre → des arbres.",
+                "fr": "La plupart des noms prennent un -s au pluriel : un arbre → des arbres.",
+                "de": "Die meisten Nomen bekommen im Plural ein -s: un arbre → des arbres."
+              },
+              "itemId": "exam-s-1"
+            },
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-plural-s"
+              ],
+              "before": "une lampe → des",
+              "after": "",
+              "accepted": {
+                "answers": [
+                  "lampes"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "Most nouns add -s in the plural: une lampe → des lampes.",
+                "fr": "La plupart des noms prennent un -s au pluriel : une lampe → des lampes.",
+                "de": "Die meisten Nomen bekommen im Plural ein -s: une lampe → des lampes."
+              },
+              "itemId": "exam-s-2"
+            },
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-plural-s"
+              ],
+              "before": "un film → des",
+              "after": "",
+              "accepted": {
+                "answers": [
+                  "films"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "Most nouns add -s in the plural: un film → des films.",
+                "fr": "La plupart des noms prennent un -s au pluriel : un film → des films.",
+                "de": "Die meisten Nomen bekommen im Plural ein -s: un film → des films."
+              },
+              "itemId": "exam-s-3"
+            },
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-plural-s"
+              ],
+              "before": "une porte → des",
+              "after": "",
+              "accepted": {
+                "answers": [
+                  "portes"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "Most nouns add -s in the plural: une porte → des portes.",
+                "fr": "La plupart des noms prennent un -s au pluriel : une porte → des portes.",
+                "de": "Die meisten Nomen bekommen im Plural ein -s: une porte → des portes."
+              },
+              "itemId": "exam-s-4"
+            },
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-plural-s"
+              ],
+              "before": "un garçon → des",
+              "after": "",
+              "accepted": {
+                "answers": [
+                  "garçons"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "Most nouns add -s in the plural: un garçon → des garçons.",
+                "fr": "La plupart des noms prennent un -s au pluriel : un garçon → des garçons.",
+                "de": "Die meisten Nomen bekommen im Plural ein -s: un garçon → des garçons."
+              },
+              "itemId": "exam-s-5"
+            },
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-plural-s"
+              ],
+              "before": "une idée → des",
+              "after": "",
+              "accepted": {
+                "answers": [
+                  "idées"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "Most nouns add -s in the plural: une idée → des idées.",
+                "fr": "La plupart des noms prennent un -s au pluriel : une idée → des idées.",
+                "de": "Die meisten Nomen bekommen im Plural ein -s: une idée → des idées."
+              },
+              "itemId": "exam-s-6"
+            }
+          ]
+        },
+        {
+          "pageId": "exam-x",
+          "estimatedDurationS": 75,
+          "timeLimitS": 120,
+          "instructions": {
+            "en": "Type the missing words.",
+            "fr": "Écrivez les mots manquants.",
+            "de": "Schreib die fehlenden Wörter."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-plural-x"
+              ],
+              "before": "un drapeau → des",
+              "after": "",
+              "accepted": {
+                "answers": [
+                  "drapeaux"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "Nouns in -eau and -eu take -x in the plural: un drapeau → des drapeaux.",
+                "fr": "Les noms en -eau et en -eu prennent un -x au pluriel : un drapeau → des drapeaux.",
+                "de": "Nomen auf -eau und -eu bekommen im Plural ein -x: un drapeau → des drapeaux."
+              },
+              "itemId": "exam-x-1"
+            },
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-plural-x"
+              ],
+              "before": "un jeu → des",
+              "after": "",
+              "accepted": {
+                "answers": [
+                  "jeux"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "Nouns in -eau and -eu take -x in the plural: un jeu → des jeux.",
+                "fr": "Les noms en -eau et en -eu prennent un -x au pluriel : un jeu → des jeux.",
+                "de": "Nomen auf -eau und -eu bekommen im Plural ein -x: un jeu → des jeux."
+              },
+              "itemId": "exam-x-2"
+            },
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-plural-x"
+              ],
+              "before": "un morceau → des",
+              "after": "",
+              "accepted": {
+                "answers": [
+                  "morceaux"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "Nouns in -eau and -eu take -x in the plural: un morceau → des morceaux.",
+                "fr": "Les noms en -eau et en -eu prennent un -x au pluriel : un morceau → des morceaux.",
+                "de": "Nomen auf -eau und -eu bekommen im Plural ein -x: un morceau → des morceaux."
+              },
+              "itemId": "exam-x-3"
+            },
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-plural-x"
+              ],
+              "before": "un neveu → des",
+              "after": "",
+              "accepted": {
+                "answers": [
+                  "neveux"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "Nouns in -eau and -eu take -x in the plural: un neveu → des neveux.",
+                "fr": "Les noms en -eau et en -eu prennent un -x au pluriel : un neveu → des neveux.",
+                "de": "Nomen auf -eau und -eu bekommen im Plural ein -x: un neveu → des neveux."
+              },
+              "itemId": "exam-x-4"
+            },
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-plural-x"
+              ],
+              "before": "un bateau → des",
+              "after": "",
+              "accepted": {
+                "answers": [
+                  "bateaux"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "Nouns in -eau and -eu take -x in the plural: un bateau → des bateaux.",
+                "fr": "Les noms en -eau et en -eu prennent un -x au pluriel : un bateau → des bateaux.",
+                "de": "Nomen auf -eau und -eu bekommen im Plural ein -x: un bateau → des bateaux."
+              },
+              "itemId": "exam-x-5"
+            }
+          ]
+        },
+        {
+          "pageId": "exam-sentences",
+          "estimatedDurationS": 75,
+          "timeLimitS": 120,
+          "instructions": {
+            "en": "Type the missing words.",
+            "fr": "Écrivez les mots manquants.",
+            "de": "Schreib die fehlenden Wörter."
+          },
+          "items": [
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-silent-plural"
+              ],
+              "before": "Les",
+              "after": "sont en classe.",
+              "accepted": {
+                "answers": [
+                  "étudiants"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "étudiant and étudiants sound the same: the plural -s is silent, so only the article (les, des) is heard – but the -s is written.",
+                "fr": "étudiant et étudiants se prononcent pareil : le -s du pluriel est muet, on entend seulement l’article (les, des) – mais on écrit le -s.",
+                "de": "étudiant und étudiants klingen gleich: Das Plural-s ist stumm, man hört nur den Artikel (les, des) – geschrieben wird das -s aber."
+              },
+              "itemId": "exam-sentences-1"
+            },
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-silent-plural"
+              ],
+              "before": "J’ai trois",
+              "after": "à Lyon.",
+              "accepted": {
+                "answers": [
+                  "cousines"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "cousine and cousines sound the same: the plural -s is silent, so only the article (les, des) is heard – but the -s is written.",
+                "fr": "cousine et cousines se prononcent pareil : le -s du pluriel est muet, on entend seulement l’article (les, des) – mais on écrit le -s.",
+                "de": "cousine und cousines klingen gleich: Das Plural-s ist stumm, man hört nur den Artikel (les, des) – geschrieben wird das -s aber."
+              },
+              "itemId": "exam-sentences-2"
+            },
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-plural-x"
+              ],
+              "before": "Les",
+              "after": "chantent.",
+              "accepted": {
+                "answers": [
+                  "oiseaux"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "Nouns in -eau and -eu take -x in the plural: un oiseau → des oiseaux.",
+                "fr": "Les noms en -eau et en -eu prennent un -x au pluriel : un oiseau → des oiseaux.",
+                "de": "Nomen auf -eau und -eu bekommen im Plural ein -x: un oiseau → des oiseaux."
+              },
+              "itemId": "exam-sentences-3"
+            },
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-silent-plural"
+              ],
+              "before": "Voici les",
+              "after": "de la maison.",
+              "accepted": {
+                "answers": [
+                  "clés"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "clé and clés sound the same: the plural -s is silent, so only the article (les, des) is heard – but the -s is written.",
+                "fr": "clé et clés se prononcent pareil : le -s du pluriel est muet, on entend seulement l’article (les, des) – mais on écrit le -s.",
+                "de": "clé und clés klingen gleich: Das Plural-s ist stumm, man hört nur den Artikel (les, des) – geschrieben wird das -s aber."
+              },
+              "itemId": "exam-sentences-4"
+            },
+            {
+              "type": "grammar_gap_typing",
+              "ruleIds": [
+                "rule-plural-x"
+              ],
+              "before": "Ce sont des",
+              "after": "au chocolat.",
+              "accepted": {
+                "answers": [
+                  "gâteaux"
+                ],
+                "accentSensitive": []
+              },
+              "hint": null,
+              "answerExplanation": {
+                "en": "Nouns in -eau and -eu take -x in the plural: un gâteau → des gâteaux.",
+                "fr": "Les noms en -eau et en -eu prennent un -x au pluriel : un gâteau → des gâteaux.",
+                "de": "Nomen auf -eau und -eu bekommen im Plural ein -x: un gâteau → des gâteaux."
+              },
+              "itemId": "exam-sentences-5"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "generator": "claude-code-direct-authoring",
+    "model": "claude-opus-5-5",
+    "promptVersion": "content-v4",
+    "generatedAt": "2026-10-08T00:17:18.593Z",
+    "inputHashes": {
+      "outline": "b7ef42d6b6f8a10c79700ba5eddb9d79afaefa941237e1a5607f83ab01bfe0c8",
+      "brief": "35b59a3f0ae35db790b0b96fe1b7f809d2e3d88523e01cca19252bf924f2d7a7"
+    }
+  }
+}

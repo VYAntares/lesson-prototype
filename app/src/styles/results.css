@@ -1,0 +1,142 @@
+/* Feedback and exam result lists. */
+.result-fix {
+  grid-template-columns: auto auto 1fr;
+  align-items: baseline;
+  gap: 0.15rem 0.6rem;
+  display: grid;
+}
+.result-answer {
+  row-gap: 0.15rem;
+  display: grid;
+}
+@media (width>=601px) {
+  .result-list {
+    grid-template-columns: 1.5rem repeat(var(--parts, 1), auto auto) minmax(
+        0,
+        1fr
+      );
+    column-gap: 0.6rem;
+    display: grid;
+  }
+  .result-list.no-prompt {
+    grid-template-columns: 1.5rem minmax(0, 1fr);
+  }
+  .result-list .result-item,
+  .result-list .result-body,
+  .result-list .result-fix {
+    grid-column: 1/-1;
+    grid-template-columns: subgrid;
+  }
+  .result-list .result-body {
+    grid-column: 2/-1;
+  }
+  .result-list .result-body > :not(.result-fix) {
+    grid-column: 1/-1;
+  }
+  .result-list .result-prompt {
+    grid-column: span var(--span, 1);
+  }
+  .result-list .result-answer {
+    grid-column: -2/-1;
+  }
+}
+.result-prompt {
+  font-size: 18px;
+  font-weight: 600;
+}
+@media (width<=600px) {
+  .result-fix {
+    grid-template-columns: 1fr;
+  }
+  .result-fix .match-arrow {
+    display: none;
+  }
+  .result-fix .match-wrong {
+    grid-column: 1;
+  }
+  .result-fix > .match-arrow:empty {
+    display: none;
+  }
+}
+.result-notes {
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  display: flex;
+}
+.result-note {
+  border: 1px solid var(--border-strong);
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 0.1rem 0.6rem;
+  font-size: 13px;
+}
+.result-note-almost {
+  border-color: var(--partial);
+  color: var(--partial);
+}
+.match-corrections li.outcome-orthography_only {
+  border-left-color: var(--partial);
+}
+.flashcard-face .flashcard-form + .muted {
+  margin-top: -0.45rem;
+}
+.result-section + .result-section {
+  margin-top: 1.25rem;
+}
+.result-section.is-framed {
+  border: 1px solid var(--border-strong);
+  border-left: 4px solid var(--review-color, var(--border-strong));
+  border-radius: var(--radius-card);
+  padding: 0.75rem 1rem;
+}
+.result-section.is-framed .result-section-title {
+  color: var(--review-color, var(--muted));
+}
+.result-section-title {
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0 0 0.25rem;
+  font-size: 14px;
+  font-weight: 600;
+}
+.result-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.result-item {
+  border-bottom: 1px solid var(--border);
+  grid-template-columns: 1.5rem 1fr;
+  gap: 0.5rem;
+  padding: 0.85rem 0;
+  display: grid;
+}
+.result-item .result-icon {
+  font-size: 18px;
+  font-weight: 700;
+}
+.result-item.outcome-fully_correct .result-icon {
+  color: var(--correct);
+}
+.result-item.outcome-orthography_only .result-icon {
+  color: var(--partial);
+}
+.result-item.outcome-incorrect .result-icon,
+.result-item.outcome-unanswered .result-icon {
+  color: var(--incorrect);
+}
+.result-body {
+  gap: 0.3rem;
+  display: grid;
+}
+.result-body p {
+  margin: 0;
+}
+.result-item .result-prompt {
+  font-size: 17px;
+  font-weight: 500;
+}
+.units:has(.reference-list) .unit {
+  border-bottom: 0;
+}

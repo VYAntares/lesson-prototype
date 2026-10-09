@@ -1,0 +1,71 @@
+/* Element defaults and small utilities. */
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+body {
+  background: var(--bg);
+  min-height: 100vh;
+  color: var(--text);
+  margin: 0;
+}
+h1 {
+  margin: 0 0 0.5rem;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+h2 {
+  margin: 0 0 1rem;
+  font-size: 22px;
+  font-weight: 600;
+}
+a {
+  color: var(--text);
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.85em;
+}
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+main:focus {
+  outline: none;
+}
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  position: absolute !important;
+}
+.skip-link {
+  background: var(--primary-bg);
+  color: var(--primary-text);
+  border-radius: var(--radius);
+  z-index: 10;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  top: -4rem;
+  left: 1rem;
+}
+.skip-link:focus {
+  top: 0.5rem;
+}
+.label-muted {
+  color: var(--muted);
+  font-size: 16px;
+}
+.muted {
+  color: var(--muted);
+}
+.secondary {
+  color: var(--subtle);
+}

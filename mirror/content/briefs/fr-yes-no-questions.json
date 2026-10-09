@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 2,
+  "id": "fr-yes-no-questions",
+  "lang": "fr",
+  "level": "A1",
+  "locales": [
+    "en",
+    "fr",
+    "de"
+  ],
+  "title": "Les questions avec oui ou non",
+  "objective": {
+    "en": "Learn how to ask simple yes/no questions using intonation or 'est-ce que' and answer with 'oui' or 'non'.",
+    "fr": "Apprendre à poser des questions fermées simples avec l'intonation ou 'est-ce que' et y répondre par 'oui' ou 'non'.",
+    "de": "Lerne, einfache Ja/Nein-Fragen mit Intonation oder 'est-ce que' zu stellen und mit 'oui' oder 'non' zu antworten."
+  },
+  "estimatedMinutes": 20,
+  "provenance": {
+    "generator": "claude-code-direct-authoring",
+    "model": "claude-opus-5-5",
+    "promptVersion": "brief-v7",
+    "generatedAt": "2026-10-08T00:17:18.767Z",
+    "inputHashes": {
+      "outline": "3c12786bc37e360e4fe392d664b19a6b0785f2775510b6f39fdc04fb475a22ec"
+    }
+  },
+  "kind": "grammar",
+  "topic": "syntax_and_sentence_structure",
+  "scopeBoundaries": {
+    "en": "Covers intonation questions, 'est-ce que / est-ce qu'', and 'oui/non' responses. Excludes inversion questions and 'si'.",
+    "fr": "Couvre les questions par intonation, 'est-ce que / est-ce qu'', et les réponses 'oui/non'. Exclut l'inversion et le 'si'.",
+    "de": "Deckt Intonationsfragen, 'est-ce que / est-ce qu'' und 'oui/non'-Antworten ab. Schließt Inversion und 'si' aus."
+  },
+  "prerequisites": [
+    {
+      "en": "Basic French present tense verb conjugation",
+      "fr": "Conjugaison de base des verbes au présent",
+      "de": "Grundlegende Verbkonjugation im Präsens"
+    }
+  ],
+  "rules": [
+    {
+      "id": "rule-intonation-question",
+      "summary": {
+        "en": "In informal French, raise the pitch at the end of a statement to form a yes/no question.",
+        "fr": "En français familier, montez l'intonation à la fin d'une phrase pour poser une question.",
+        "de": "Im informellen Französisch hebt man die Stimme am Satzende, um eine Ja/Nein-Frage zu stellen."
+      }
+    },
+    {
+      "id": "rule-est-ce-que",
+      "summary": {
+        "en": "Place 'est-ce que' (or 'est-ce qu'' before a vowel) at the beginning of a sentence to form a standard question.",
+        "fr": "Placez 'est-ce que' (ou 'est-ce qu'' devant une voyelle) au début de la phrase pour poser une question standard.",
+        "de": "Setze 'est-ce que' (oder 'est-ce qu'' vor einem Vokal) an den Satzanfang, um eine Standardfrage zu bilden."
+      }
+    },
+    {
+      "id": "rule-answering-oui-non",
+      "summary": {
+        "en": "Answer affirmative questions with 'oui' for yes and 'non' for no.",
+        "fr": "Répondez aux questions affirmatives par 'oui' ou par 'non'.",
+        "de": "Beantworte affirmative Fragen mit 'oui' für Ja und 'non' für Nein."
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "id": "block-intonation",
+      "title": {
+        "en": "Asking Questions with Intonation",
+        "fr": "Poser des questions avec l'intonation",
+        "de": "Fragen stellen mit Intonation"
+      },
+      "ruleIds": [
+        "rule-intonation-question",
+        "rule-answering-oui-non"
+      ],
+      "explanationPlan": {
+        "en": "Explain how statement word order remains unchanged while sentence pitch rises at the end. Show how to answer with 'oui' or 'non'.",
+        "fr": "Expliquer que l'ordre des mots ne change pas et que la voix monte à la fin. Montrer comment répondre par 'oui' ou 'non'.",
+        "de": "Erklären, dass die Wortstellung gleich bleibt und die Stimme am Ende steigt. Zeigen, wie man mit 'oui' oder 'non' antwortet."
+      },
+      "explanationDurationS": 120,
+      "examples": [
+        {
+          "text": "Tu parles français ?",
+          "translation": {
+            "en": "Do you speak French?",
+            "de": "Sprichst du Französisch?"
+          }
+        },
+        {
+          "text": "Oui, je parle français.",
+          "translation": {
+            "en": "Yes, I speak French.",
+            "de": "Ja, ich spreche Französisch."
+          }
+        },
+        {
+          "text": "Non, je ne parle pas français.",
+          "translation": {
+            "en": "No, I do not speak French.",
+            "de": "Nein, ich spreche kein Französisch."
+          }
+        }
+      ],
+      "pitfalls": [
+        {
+          "en": "Forgetting to raise the intonation makes the question sound like a statement.",
+          "fr": "Oublier de monter l'intonation transforme la question en simple affirmation.",
+          "de": "Wenn man die Stimme am Ende nicht hebt, klingt die Frage wie eine Aussage."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex-intonation-choice",
+          "type": "grammar_gap_choice",
+          "itemCount": 6,
+          "ruleIds": [
+            "rule-intonation-question",
+            "rule-answering-oui-non"
+          ],
+          "estimatedDurationS": 60
+        },
+        {
+          "id": "ex-intonation-typing",
+          "type": "grammar_gap_typing",
+          "itemCount": 5,
+          "ruleIds": [
+            "rule-answering-oui-non"
+          ],
+          "estimatedDurationS": 75
+        },
+        {
+          "id": "ex-intonation-order",
+          "type": "grammar_word_order",
+          "itemCount": 5,
+          "ruleIds": [
+            "rule-intonation-question"
+          ],
+          "estimatedDurationS": 125
+        }
+      ]
+    },
+    {
+      "id": "block-est-ce-que",
+      "title": {
+        "en": "Asking Questions with Est-ce que",
+        "fr": "Poser des questions avec Est-ce que",
+        "de": "Fragen stellen mit Est-ce que"
+      },
+      "ruleIds": [
+        "rule-est-ce-que"
+      ],
+      "explanationPlan": {
+        "en": "Explain the structure 'Est-ce que + subject + verb'. Highlight elision to 'est-ce qu'' before vowels or silent h.",
+        "fr": "Expliquer la structure 'Est-ce que + sujet + verbe'. Souligner l'élision en 'est-ce qu'' devant une voyelle ou un h muet.",
+        "de": "Erkläre die Struktur 'Est-ce que + Subjekt + Verb'. Hebe die Elision zu 'est-ce qu'' vor Vokalen oder stummem h hervor."
+      },
+      "explanationDurationS": 150,
+      "examples": [
+        {
+          "text": "Est-ce que vous habitez ici ?",
+          "translation": {
+            "en": "Do you live here?",
+            "de": "Wohnen Sie hier?"
+          }
+        },
+        {
+          "text": "Est-ce qu'il aime le chocolat ?",
+          "translation": {
+            "en": "Does he like chocolate?",
+            "de": "Mag er Schokolade?"
+          }
+        }
+      ],
+      "pitfalls": [
+        {
+          "en": "Writing 'est-ce que il' instead of shortening it to 'est-ce qu'il'.",
+          "fr": "Écrire 'est-ce que il' au lieu d'utiliser l'élision 'est-ce qu'il'.",
+          "de": "'est-ce que il' anstelle der verkürzten Form 'est-ce qu'il' schreiben."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex-est-ce-que-choice",
+          "type": "grammar_gap_choice",
+          "itemCount": 6,
+          "ruleIds": [
+            "rule-est-ce-que"
+          ],
+          "estimatedDurationS": 60
+        },
+        {
+          "id": "ex-est-ce-que-typing",
+          "type": "grammar_gap_typing",
+          "itemCount": 5,
+          "ruleIds": [
+            "rule-est-ce-que"
+          ],
+          "estimatedDurationS": 75
+        },
+        {
+          "id": "ex-est-ce-que-order",
+          "type": "grammar_word_order",
+          "itemCount": 4,
+          "ruleIds": [
+            "rule-est-ce-que"
+          ],
+          "estimatedDurationS": 100
+        },
+        {
+          "id": "ex-est-ce-que-spot",
+          "type": "grammar_error_spotter",
+          "itemCount": 4,
+          "ruleIds": [
+            "rule-est-ce-que"
+          ],
+          "estimatedDurationS": 100
+        }
+      ]
+    }
+  ],
+  "feedbackPlaceholder": {
+    "estimatedDurationS": 30
+  },
+  "exam": {
+    "pages": [
+      {
+        "pageId": "exam-order",
+        "type": "grammar_word_order",
+        "itemCount": 4,
+        "ruleIds": [
+          "rule-intonation-question",
+          "rule-est-ce-que"
+        ],
+        "estimatedDurationS": 100,
+        "timeLimitS": 150
+      },
+      {
+        "pageId": "exam-est-ce-que",
+        "type": "grammar_gap_typing",
+        "itemCount": 6,
+        "ruleIds": [
+          "rule-est-ce-que"
+        ],
+        "estimatedDurationS": 90,
+        "timeLimitS": 140
+      },
+      {
+        "pageId": "exam-answers",
+        "type": "grammar_gap_typing",
+        "itemCount": 6,
+        "ruleIds": [
+          "rule-answering-oui-non",
+          "rule-intonation-question"
+        ],
+        "estimatedDurationS": 90,
+        "timeLimitS": 140
+      }
+    ]
+  },
+  "scoring": {
+    "practiceWeight": 35,
+    "examWeight": 65,
+    "orthographyCredit": 0.5
+  },
+  "newVerbs": []
+}

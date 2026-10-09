@@ -1,0 +1,132 @@
+/* Lesson player: cards, start screen, session header, countdown, units. */
+.task-card,
+.summary-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  margin-top: 1.5rem;
+  padding: 1.75rem;
+}
+.task-heading {
+  margin: 0.25rem 0 1.25rem;
+  font-size: 22px;
+}
+.task-heading:focus {
+  outline: none;
+}
+.task-footer {
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.75rem;
+  display: flex;
+}
+.button-wide {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+.small-heading {
+  margin: 1.5rem 0 0.5rem;
+  font-size: 18px;
+}
+.start-card {
+  position: relative;
+}
+.kind-badge {
+  border: 1px solid var(--border-strong);
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+  font-size: 14px;
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+}
+.group-list {
+  counter-reset: group;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+}
+.group-list li {
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--review-color);
+  border-radius: var(--radius);
+  background: var(--surface);
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.55rem 0.75rem;
+  display: flex;
+}
+.group-list li:before {
+  counter-increment: group;
+  content: counter(group) ".";
+  min-width: 1.5rem;
+  color: var(--review-color);
+  font-weight: 600;
+}
+.group-list li span {
+  flex: 1;
+}
+.group-list small {
+  color: var(--muted);
+  white-space: nowrap;
+}
+.start-actions {
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  display: flex;
+}
+.session-header {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+.session-title {
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+}
+.session-meters {
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+}
+.progress {
+  background: var(--border);
+  border-radius: 999px;
+  flex: 1;
+  height: 8px;
+  overflow: hidden;
+}
+.progress span {
+  background: var(--progress);
+  height: 100%;
+  display: block;
+}
+.session-score {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+.countdown {
+  border: 2px solid var(--border-strong);
+  font-variant-numeric: tabular-nums;
+  border-radius: 999px;
+  margin: 0 0 1rem;
+  padding: 0.3rem 0.9rem;
+  font-size: 20px;
+  display: inline-block;
+}
+.countdown-low {
+  border-color: var(--incorrect);
+  color: var(--incorrect);
+}
+.units {
+  gap: 1.25rem;
+  display: grid;
+}
+.unit {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}

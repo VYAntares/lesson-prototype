@@ -81,13 +81,18 @@ export type Plan = {
 
 const GENDERS = ['masculine', 'feminine', 'neuter'] as const
 
-type PlanOptions = { interleaveGroups?: boolean; examIntro?: boolean }
+type PlanOptions = {
+  interleaveGroups?: boolean
+  examIntro?: boolean
+  /** Exam countdowns. The redesigned player has none: the ten-minute lesson is the limit. */
+  timers?: boolean
+}
 
 export function buildPlan(
   lesson: Lesson,
   brief: Brief,
   nativeLocale: string,
-  { interleaveGroups = false, examIntro = false }: PlanOptions = {},
+  { interleaveGroups = false, examIntro = false, timers = true }: PlanOptions = {},
 ): Plan {
   const targets = new Map<string, VocabularyTarget>(
     brief.kind === 'vocabulary' ? brief.targets.map((t) => [t.id, t]) : [],
@@ -127,7 +132,8 @@ export function buildPlan(
           text: `gender.${g}`,
           lang: 'ui' as const,
         }))
-        return item.rows.map((row) => {
+        // Only words that have a gender (team feedback).
+        return item.rows.filter((row) => targets.get(row.targetId)?.genders.length).map((row) => {
           const target = targets.get(row.targetId)
           return {
             ...base,
@@ -330,6 +336,8 @@ export function buildPlan(
   const pages: PlanPage[] = []
   lessonSteps(lesson).forEach((step, stepIndex) => {
     for (const page of step.pages) {
+      // The production feedback placeholder is an empty page: skipped.
+      if (page.items.every((item) => item.type === 'production_feedback_placeholder')) continue
       const units = (page.items as LessonItem[]).flatMap((item) =>
         unitsOf(page.pageId, item).map((u) => ('ruleIds' in item ? { ...u, ruleIds: item.ruleIds } : u)),
       )
@@ -342,7 +350,7 @@ export function buildPlan(
         blockId: ('blockId' in step ? step.blockId : null) ?? null,
         role: step.role === 'exam' ? 'exam' : units.length ? 'practice' : 'presentation',
         estimatedDurationS: page.estimatedDurationS,
-        timeLimitS: page.timeLimitS,
+        timeLimitS: timers ? page.timeLimitS : null,
         instructions: page.instructions,
         items: page.items,
         units,
@@ -369,7 +377,7 @@ export function buildPlan(
       brief.kind === 'grammar'
         ? brief.newVerbs.map((v) => ({ infinitive: v.infinitive, translation: native(v.translations) }))
         : [],
-    steps: lessonSteps(lesson).map((step) => ({
+    steps: lessonSteps(lesson).filter((step) => pages.some((p) => p.stepId === step.id)).map((step) => ({
       stepId: step.id,
       label: step.label,
       role:

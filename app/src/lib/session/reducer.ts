@@ -46,7 +46,7 @@ export function createSession(plan: Plan, s: NewSession): SessionRecord {
 /** The countdown of an exam page starts when the page opens (listening pages: once a voice is ready). */
 function startExamTimer(plan: Plan, record: SessionRecord, now: number): SessionRecord {
   const page = plan.pages[record.pageIndex]
-  if (!page || page.role !== 'exam' || isListeningPage(page) || record.exam[page.pageId]) return record
+  if (!page || page.role !== 'exam' || !page.timeLimitS || isListeningPage(page) || record.exam[page.pageId]) return record
   return {
     ...record,
     exam: {
@@ -70,8 +70,18 @@ export function isSelfCheckingPage(page: PlanPage) {
   )
 }
 
+/** Matching boards move on by themselves once all pairs are right. */
+const MATCHING_TYPES = ['vocabulary_matching', 'grammar_person_matching', 'grammar_pronoun_form_match']
+export function advancesWhenRight(page: PlanPage) {
+  return isSelfCheckingPage(page) && page.items.every((item) => MATCHING_TYPES.includes(item.type))
+}
+
+/**
+ * Other pages always show their feedback, even when right: the explanation and the other
+ * accepted answers matter as much as the green tick.
+ */
 function allLockedCorrect(page: PlanPage, record: SessionRecord) {
-  return isSelfCheckingPage(page) && page.units.every((u) => record.locked[u.id]?.outcome === 'fully_correct')
+  return advancesWhenRight(page) && page.units.every((u) => record.locked[u.id]?.outcome === 'fully_correct')
 }
 
 /** Every flashcard on the page has been turned at least once. */
@@ -128,7 +138,7 @@ export function reduceSession(plan: Plan, record: SessionRecord, action: TimedAc
       break
     }
     case 'voice_ready':
-      if (!isListeningPage(page) || page.role !== 'exam' || record.exam[page.pageId]) return record
+      if (!isListeningPage(page) || page.role !== 'exam' || !page.timeLimitS || record.exam[page.pageId]) return record
       next = {
         ...record,
         exam: {
@@ -144,10 +154,14 @@ export function reduceSession(plan: Plan, record: SessionRecord, action: TimedAc
       next = { ...record, revealed: { ...record.revealed, [action.itemKey]: [...revealed, action.key] } }
       break
     }
-    case 'skip_no_voice':
+    case 'skip_no_voice': {
       if (!isListeningPage(page) || record.phase !== 'answering') return record
-      next = nextPage(plan, { ...record, skippedNoVoice: [...(record.skippedNoVoice ?? []), page.pageId] }, now)
+      // Skips this page and the listening pages right after it: one notice, not one per page.
+      next = record
+      do next = nextPage(plan, { ...next, skippedNoVoice: [...(next.skippedNoVoice ?? []), plan.pages[next.pageIndex].pageId] }, now)
+      while (next.status === 'active' && isListeningPage(plan.pages[next.pageIndex]))
       break
+    }
     case 'expire':
       if (!expired || record.phase !== 'answering') return record
       next = nextPage(
@@ -164,7 +178,7 @@ export function reduceSession(plan: Plan, record: SessionRecord, action: TimedAc
         if (!allCardsRevealed(page, record)) return record
         next = nextPage(plan, record, now)
       } else if (page.role === 'exam') {
-        if (isListeningPage(page) && deadline === undefined) return record
+        if (isListeningPage(page) && page.timeLimitS && deadline === undefined) return record
         if (expired) return reduceSession(plan, record, { type: 'expire', now, interfaceLanguage: action.interfaceLanguage })
         next = nextPage(plan, lockPage(page, record, action.interfaceLanguage, false), now)
       } else if (record.phase === 'answering') {

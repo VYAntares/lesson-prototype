@@ -22,8 +22,9 @@ export function startBlockers(kind: string, artifacts: LessonArtifacts | undefin
   const reasons: StartBlocker[] = []
   if (!artifacts?.draft) reasons.push('missingDraft')
   if (needsContentFile(kind) && !artifacts?.content) reasons.push('missingContent')
+  // A stale file (its outline entry changed since) still plays: it is flagged, not blocked.
   for (const p of ARTIFACT_PROBLEMS)
-    if (artifacts?.draft?.status === p || artifacts?.content?.status === p) reasons.push(p)
+    if (p !== 'stale' && (artifacts?.draft?.status === p || artifacts?.content?.status === p)) reasons.push(p)
   if (!isPlayableKind(kind)) reasons.push('unsupported')
   return reasons
 }

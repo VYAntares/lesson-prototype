@@ -1,0 +1,113 @@
+{
+  "formatVersion": 3,
+  "id": "fr-subject-pronouns",
+  "lang": "fr",
+  "level": "A1",
+  "provenance": {
+    "generator": "hand",
+    "model": null,
+    "promptVersion": null,
+    "generatedAt": "2026-10-09T00:00:00.000Z",
+    "inputHash": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "kind": "grammar",
+  "topic": "pronouns",
+  "theme": null,
+  "title": "Les pronoms je, tu, il, elle…",
+  "summary": {
+    "en": "Say who does something with je, tu, il, elle, on, nous, vous, ils, elles.",
+    "de": "Mit je, tu, il, elle, on, nous, vous, ils, elles sagen, wer etwas tut."
+  },
+  "objective": {
+    "en": "Choose the right subject pronoun, tu or vous for the person you talk to, and ils or elles for a group.",
+    "de": "Das richtige Subjektpronomen wählen, tu oder vous je nach Gesprächspartner und ils oder elles für eine Gruppe."
+  },
+  "outOfScope": {
+    "en": "Verb endings, stressed pronouns (moi, toi) and object pronouns. The forms of être are only given, not taught.",
+    "de": "Verbendungen, betonte Pronomen (moi, toi) und Objektpronomen. Die Formen von être werden nur gezeigt, nicht gelehrt."
+  },
+  "points": [
+    {
+      "id": "p-singular",
+      "title": { "en": "je, tu, il, elle", "de": "je, tu, il, elle" },
+      "summary": {
+        "en": "One person: je for yourself, tu for a friend, il for a man, elle for a woman.",
+        "de": "Eine Person: je für sich selbst, tu für einen Freund, il für einen Mann, elle für eine Frau."
+      }
+    },
+    {
+      "id": "p-plural",
+      "title": { "en": "nous, vous, ils, elles, on", "de": "nous, vous, ils, elles, on" },
+      "summary": {
+        "en": "Several people: ils for men or a mixed group, elles for women only; on often means nous.",
+        "de": "Mehrere Personen: ils für Männer oder gemischte Gruppen, elles nur für Frauen; on bedeutet oft nous."
+      }
+    },
+    {
+      "id": "p-tu-vous",
+      "title": { "en": "tu or vous?", "de": "tu oder vous?" },
+      "summary": {
+        "en": "tu for a friend or a child, vous for a stranger or several people.",
+        "de": "tu für Freunde oder Kinder, vous für Fremde oder mehrere Personen."
+      }
+    }
+  ],
+  "introduces": [],
+  "glossary": [
+    {
+      "term": "être",
+      "pos": "verb",
+      "gender": null,
+      "forms": ["être", "suis", "es", "est", "sommes", "êtes", "sont"],
+      "meaning": { "en": "to be", "de": "sein" },
+      "register": null,
+      "pointId": null
+    },
+    {
+      "term": "voici",
+      "pos": "adverb",
+      "gender": null,
+      "forms": ["voici"],
+      "meaning": { "en": "here is, this is", "de": "hier ist, das ist" },
+      "register": null,
+      "pointId": null
+    },
+    {
+      "term": "madame",
+      "pos": "noun",
+      "gender": "feminine",
+      "forms": ["madame"],
+      "meaning": { "en": "madam, Mrs", "de": "Frau (Anrede)" },
+      "register": null,
+      "pointId": null
+    },
+    {
+      "term": "monsieur",
+      "pos": "noun",
+      "gender": "masculine",
+      "forms": ["monsieur"],
+      "meaning": { "en": "sir, Mr", "de": "Herr (Anrede)" },
+      "register": null,
+      "pointId": null
+    }
+  ],
+  "names": ["Léa", "Marc", "Julie", "Thomas", "Paris"],
+  "practice": [
+    { "pointId": "p-singular", "type": "gap_choice", "count": 2 },
+    { "pointId": "p-singular", "type": "gap_typing", "count": 1 },
+    { "pointId": "p-plural", "type": "gap_choice", "count": 1 },
+    { "pointId": "p-plural", "type": "match_forms", "count": 1 },
+    { "pointId": "p-plural", "type": "gap_typing", "count": 1 },
+    { "pointId": "p-tu-vous", "type": "gap_choice", "count": 1 },
+    { "pointId": "p-tu-vous", "type": "gap_typing", "count": 1 }
+  ],
+  "quiz": [
+    { "pointIds": ["p-singular"], "type": "gap_typing", "count": 1 },
+    { "pointIds": ["p-singular"], "type": "gap_choice", "count": 1 },
+    { "pointIds": ["p-plural"], "type": "gap_typing", "count": 1 },
+    { "pointIds": ["p-plural"], "type": "translate", "count": 1 },
+    { "pointIds": ["p-tu-vous"], "type": "gap_choice", "count": 1 }
+  ],
+  "reading": null,
+  "tooBig": null
+}

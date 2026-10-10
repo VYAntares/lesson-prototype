@@ -79,7 +79,7 @@ export function LessonPlayer({ manifest, lessonId }: { manifest: Manifest; lesso
   const resumable = saved && saved.status === 'active' && saved.contentHash === contentHash ? saved : undefined
   const contentChanged = saved && saved.status === 'active' && saved.contentHash !== contentHash
   const [session, setSession] = useState<SessionRecord>()
-  const [inProgress, setInProgress] = useState(false)
+  const [, setInProgress] = useState(false)
   const motherTongue =
     course && isValidMotherTongue(prefs.motherTongue, course.lang)
       ? prefs.motherTongue
@@ -91,6 +91,7 @@ export function LessonPlayer({ manifest, lessonId }: { manifest: Manifest; lesso
         ? buildPlan(loaded.content, loaded.brief, session?.motherTongue ?? motherTongue, {
             interleaveGroups: true,
             examIntro: true,
+            timers: false,
           })
         : undefined,
     [loaded, session?.motherTongue, motherTongue],
@@ -135,7 +136,8 @@ export function LessonPlayer({ manifest, lessonId }: { manifest: Manifest; lesso
         <StatusMessage>{t('state.loading')}</StatusMessage>
       )
   else if (session)
-    body = <PlayerSession key={session.sessionId} plan={plan} initial={session} onRestart={start} onPhase={setInProgress} />
+    // The running lesson takes the whole screen: top bar, outline sidebar and page.
+    return <PlayerSession key={session.sessionId} plan={plan} initial={session} onRestart={start} onPhase={setInProgress} />
   else
     body = (
       <StartScreen
@@ -156,8 +158,8 @@ export function LessonPlayer({ manifest, lessonId }: { manifest: Manifest; lesso
         motherTongueOverride={session?.motherTongue}
         title={<Brand />}
         actions={
-          <a className="button button-outline" href={routes.index()}>
-            {t(session && inProgress ? 'action.cancelLesson' : 'action.lessonOverview')}
+          <a className="button button-ghost button-small" href={routes.index()}>
+            ← {t('action.lessonOverview')}
           </a>
         }
       />

@@ -1,6 +1,6 @@
 import { parseRichText, type Inline } from '../../lib/richText'
 
-function Inlines({ inlines, lang }: { inlines: Inline[]; lang: string }) {
+export function Inlines({ inlines, lang }: { inlines: Inline[]; lang: string }) {
   return (
     <>
       {inlines.map((inline, i) =>

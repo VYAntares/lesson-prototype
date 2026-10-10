@@ -36,3 +36,24 @@ export function responseText(unit: Unit, response: Response | undefined, t: (key
 /** "masculine / feminine" in the interface language. */
 export const genderList = (target: { genders: readonly string[] }, t: (key: string) => string) =>
   target.genders.map((g) => t(`gender.${g}`)).join(' / ')
+
+/**
+ * The other answers that are also right, so a learner who typed "il" sees that "elle" was fine too.
+ * Typed answers differing only in case are one answer.
+ */
+export function otherAnswers(unit: Unit, t: (key: string) => string): string[] {
+  const main = (unit.answerLang === 'ui' ? t(unit.answer) : unit.answer).toLocaleLowerCase()
+  const all =
+    unit.kind === 'text'
+      ? unit.accepted.answers
+      : unit.kind === 'choice'
+        ? unit.options.filter((o) => unit.correct.includes(o.id)).map((o) => (o.lang === 'ui' ? t(o.text) : o.text))
+        : []
+  const seen = new Set([main])
+  return all.filter((a) => {
+    const key = a.toLocaleLowerCase()
+    if (seen.has(key)) return false
+    seen.add(key)
+    return true
+  })
+}

@@ -1,31 +1,105 @@
-/* Course index lesson table. */
+/* Course index: the learner's path, one row per lesson. */
+.index-hero {
+  margin: 0.5rem 0 1.5rem;
+}
+.index-hero h1 {
+  font-size: 34px;
+}
+.index-hero .lead {
+  margin: 0;
+}
+.available-toggle {
+  margin-left: auto;
+}
+.lesson-path {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.lesson-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.lesson-row:not(.is-playable) {
+  background: transparent;
+  border-style: dashed;
+}
+.lesson-row.is-playable {
+  box-shadow: var(--shadow-sm);
+}
+.lesson-number {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--surface-2);
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.is-playable .lesson-number {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+}
+.lesson-main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.75rem;
+  flex: 1;
+  min-width: 0;
+}
+.lesson-title {
+  font-weight: 600;
+}
+.lesson-row:not(.is-playable) .lesson-title {
+  color: var(--muted);
+  font-weight: 500;
+}
+.lesson-score {
+  color: var(--correct);
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.lesson-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+.lesson-unavailable {
+  min-width: 7rem;
+  color: var(--subtle);
+  font-size: 13px;
+  text-align: right;
+}
+
+/* The old table, still used by nothing but kept harmless. */
 .table-wrap {
   position: relative;
   overflow-x: auto;
 }
-.lesson-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-.lesson-table th {
-  text-align: left;
-  color: var(--muted);
-  border-bottom: 1px solid var(--border-strong);
-  white-space: nowrap;
-  padding: 0.75rem;
-  font-size: 16px;
-  font-weight: 600;
-}
-.lesson-table td {
-  border-bottom: 1px solid var(--border);
-  vertical-align: middle;
-  padding: 1rem 0.75rem;
-}
-.lesson-table .ordinal {
-  color: var(--muted);
-  font-variant-numeric: tabular-nums;
-}
-.lesson-table .score {
-  font-variant-numeric: tabular-nums;
-  font-weight: 600;
+
+@media (max-width: 640px) {
+  .lesson-row {
+    flex-wrap: wrap;
+  }
+  .lesson-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .available-toggle {
+    margin-left: 0;
+  }
 }

@@ -27,17 +27,17 @@
   }
   30% {
     border-color: var(--correct);
-    background-color: #00e67638;
+    background-color: var(--correct-soft);
   }
   to {
     border-color: var(--correct);
-    background-color: #00e6761f;
+    background-color: var(--correct-soft);
   }
 }
 @media (prefers-reduced-motion: reduce) {
   .task-card.is-celebrating:has(.matching) {
     border-color: var(--correct);
-    background-color: #00e67626;
+    background-color: var(--correct-soft);
     animation: none;
   }
 }
@@ -49,13 +49,13 @@
     border-color: var(--correct);
     box-shadow:
       0 0 0 1px var(--correct),
-      0 0 18px #00e67659;
-    background-color: #00e67638;
+      0 0 18px color-mix(in srgb, var(--correct) 35%, transparent);
+    background-color: var(--correct-soft);
   }
   to {
     border-color: var(--correct);
     box-shadow: 0 0 0 1px var(--correct);
-    background-color: #00e6761f;
+    background-color: var(--correct-soft);
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -63,17 +63,17 @@
   .task-card.is-celebrating .token[aria-pressed="true"],
   .task-card.is-celebrating select {
     border-color: var(--correct);
-    background-color: #00e67626;
+    background-color: var(--correct-soft);
     animation: none;
   }
   .task-card.is-celebrating .choice:has(input:checked) {
     border-color: var(--correct);
-    background-color: #00e67626;
+    background-color: var(--correct-soft);
     animation: none;
   }
   .task-card.is-celebrating .units:not(:has(.reference-list)) .text-input {
     border-color: var(--correct);
-    background-color: #00e67626;
+    background-color: var(--correct-soft);
     animation: none;
   }
 }

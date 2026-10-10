@@ -11,14 +11,14 @@
 }
 .article-badge.is-alert {
   border-color: var(--incorrect);
-  color: #fecaca;
-  background: #ff525224;
+  color: var(--incorrect);
+  background: var(--incorrect-soft);
 }
 .info-box {
   border-left: 3px solid var(--incorrect);
   border-radius: var(--radius);
   color: var(--text);
-  background: #ff52521f;
+  background: var(--incorrect-soft);
   margin: 0.4rem 0 0;
   padding: 0.5rem 0.8rem;
   font-size: 15px;
@@ -36,10 +36,10 @@
   display: flex;
 }
 .gender-row.is-right {
-  border-color: #00e67673;
+  border-color: var(--correct);
 }
 .gender-row.is-wrong {
-  border-color: #ff525280;
+  border-color: var(--incorrect);
 }
 .gender-option.is-right input + span {
   border-color: var(--correct);
@@ -92,7 +92,7 @@
   border-color: var(--correct);
   box-shadow:
     0 0 0 1px var(--correct),
-    0 0 18px #00e67659;
+    0 0 18px color-mix(in srgb, var(--correct) 35%, transparent);
   color: var(--correct);
   transition:
     box-shadow 0.3s,
@@ -103,11 +103,11 @@
 }
 .button-exam {
   border-color: var(--progress);
-  color: #ddd6fe;
+  color: var(--accent-strong);
   font-weight: 600;
 }
 .button-exam[aria-pressed="true"] {
-  background: #1e1b4b;
+  background: var(--accent-soft);
 }
 .results-lesson {
   margin: 0.25rem 0 0;

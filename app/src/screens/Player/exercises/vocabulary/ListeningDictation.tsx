@@ -10,7 +10,7 @@ export function ListeningDictation(props: ExerciseProps<'vocabulary_listening_di
     <div className="units">
       {(props.units as TextUnit[]).map((unit) => (
         <UnitFrame key={unit.id} unit={unit} props={props}>
-          {unit.speak && <ListenButton text={unit.speak} lang={props.plan.lang} />}
+          {unit.speak && <ListenButton text={unit.speak} lang={props.plan.lang} size="large" />}
           <PromptedTextField unit={unit} props={props} />
         </UnitFrame>
       ))}

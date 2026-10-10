@@ -1,0 +1,677 @@
+/* Redesign layer, loaded last: exercise controls, feedback, theory, results. */
+
+/* ---------- course-language forms ---------- */
+.learning-form {
+  color: var(--learning);
+  font-weight: 650;
+}
+
+/* ---------- sentences and inputs ---------- */
+.gap-sentence {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 1.25rem 1.4rem;
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.gap-sentence .text-input {
+  flex: 0 1 11rem;
+  min-width: 7rem;
+  width: auto;
+  font-size: 22px;
+  padding: 0.35rem 0.75rem;
+}
+.text-input {
+  width: 100%;
+  padding: 0.7rem 0.95rem;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 18px;
+  transition:
+    border-color 0.15s,
+    box-shadow 0.15s;
+}
+.text-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+}
+.text-input.is-right {
+  border-color: var(--correct);
+  background: var(--correct-soft);
+  color: var(--correct);
+  box-shadow: none;
+}
+.text-input.is-almost {
+  border-color: var(--partial);
+  background: var(--partial-soft);
+  color: var(--partial);
+  box-shadow: none;
+}
+.text-input.is-wrong {
+  border-color: var(--incorrect);
+  background: var(--incorrect-soft);
+  color: var(--incorrect);
+  box-shadow: none;
+}
+.inline-answer {
+  color: var(--correct);
+  font-weight: 700;
+}
+.field {
+  display: grid;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+/* ---------- choices: large cards, no radio dot ---------- */
+.choices {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  gap: 0.6rem;
+  margin: 0.25rem 0 0;
+  padding: 0;
+  border: 0;
+}
+.choice {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 56px;
+  padding: 0.75rem 1.1rem;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  font-size: 18px;
+  font-weight: 550;
+  cursor: pointer;
+  box-shadow: 0 2px 0 var(--border);
+  transition:
+    border-color 0.12s,
+    background 0.12s,
+    transform 0.05s;
+}
+.choice input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.choice:hover {
+  border-color: var(--border-strong);
+}
+.choice:active {
+  transform: translateY(1px);
+}
+.choice:has(input:checked) {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  box-shadow: 0 2px 0 var(--accent);
+}
+.choice:has(input:focus-visible) {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+.choices:disabled .choice {
+  cursor: default;
+}
+.choice.is-right,
+.choices:disabled .choice.is-right {
+  border-color: var(--correct);
+  background: var(--correct-soft);
+  color: var(--correct);
+  box-shadow: 0 2px 0 var(--correct);
+}
+.choice.is-wrong,
+.choices:disabled .choice.is-wrong {
+  border-color: var(--incorrect);
+  background: var(--incorrect-soft);
+  color: var(--incorrect);
+  box-shadow: 0 2px 0 var(--incorrect);
+}
+.choice-gender {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* ---------- word bank of the typed gap ---------- */
+.units:has(.reference-list) .references {
+  margin: 0;
+}
+.references {
+  color: var(--text);
+}
+.reference-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.reference-list li {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  width: auto;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  font-weight: 600;
+}
+.reference-list li small {
+  color: var(--muted);
+  font-weight: 500;
+}
+.reference-list li.is-correct {
+  border-color: var(--correct);
+  background: var(--correct-soft);
+  color: var(--correct);
+  box-shadow: none;
+}
+
+/* ---------- tokens (word order, error spotting) ---------- */
+.token {
+  margin: 0.2rem;
+  padding: 0.5rem 0.95rem;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 18px;
+  font-weight: 550;
+  cursor: pointer;
+  box-shadow: 0 2px 0 var(--border);
+}
+.token:hover {
+  border-color: var(--border-strong);
+}
+.token[aria-pressed="true"],
+.token-placed {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+.order-answer {
+  min-height: 3.4rem;
+  padding: 0.4rem;
+  border: 0;
+  border-bottom: 2px dashed var(--border-strong);
+}
+.order-bank {
+  margin-top: 0.75rem;
+}
+
+/* ---------- feedback ---------- */
+.feedback-panel {
+  display: grid;
+  gap: 0.6rem;
+  flex-basis: 100%;
+}
+.feedback {
+  margin-top: 0.75rem;
+  padding: 0.9rem 1.1rem;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--surface-2);
+}
+.feedback-panel .feedback {
+  margin: 0;
+}
+.feedback p {
+  margin: 0.15rem 0;
+}
+.feedback-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+}
+.feedback {
+  --tone: var(--muted);
+}
+.feedback-title {
+  color: var(--tone);
+}
+.feedback-title > span[aria-hidden] {
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--tone);
+  color: var(--surface);
+  font-size: 13px;
+}
+.outcome-fully_correct.feedback {
+  --tone: var(--correct);
+  background: var(--correct-soft);
+}
+.outcome-fully_correct.feedback .feedback-title {
+  color: var(--correct);
+}
+.outcome-orthography_only.feedback {
+  --tone: var(--partial);
+  background: var(--partial-soft);
+}
+.outcome-orthography_only.feedback .feedback-title {
+  color: var(--partial);
+}
+.outcome-incorrect.feedback,
+.outcome-unanswered.feedback {
+  --tone: var(--incorrect);
+  background: var(--incorrect-soft);
+}
+.outcome-incorrect.feedback .feedback-title,
+.outcome-unanswered.feedback .feedback-title {
+  color: var(--incorrect);
+}
+.fix-lines {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin: 0.25rem 0;
+  font-size: 18px;
+}
+.match-right {
+  color: var(--correct);
+}
+.match-wrong {
+  color: var(--incorrect);
+}
+.feedback .explanation {
+  color: var(--text);
+  opacity: 0.85;
+}
+.also-accepted {
+  font-weight: 600;
+}
+.also-accepted span {
+  color: var(--correct);
+}
+.continue-wrap {
+  flex-direction: row;
+  gap: 0.75rem;
+}
+
+/* ---------- theory ---------- */
+.theory {
+  display: grid;
+  gap: 1rem;
+}
+.theory-title {
+  margin: 0;
+  font-size: 20px;
+}
+.theory-label {
+  margin: 0 0 0.5rem;
+  color: var(--subtle);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.theory-points {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.theory-point {
+  padding: 1.1rem 1.25rem;
+  border-left: 4px solid var(--accent);
+  border-radius: 4px var(--radius) var(--radius) 4px;
+  background: var(--surface-2);
+  animation: point-in 0.25s ease;
+}
+@keyframes point-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .theory-point {
+    animation: none;
+  }
+}
+.theory-text {
+  margin: 0;
+  font-size: 18px;
+}
+.theory-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 18px;
+}
+.theory-list li + li {
+  margin-top: 0.35rem;
+}
+.form-list {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.form-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  font-size: 17px;
+}
+.form-chip {
+  display: inline-flex;
+  justify-content: center;
+  min-width: 3.4rem;
+  padding: 0.25rem 0.7rem;
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--learning);
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: var(--shadow-sm), 0 0 0 1px var(--border);
+}
+.theory-next {
+  display: inline-flex;
+  align-items: center;
+  justify-self: start;
+  gap: 0.6rem;
+  padding: 0.6rem 1.1rem;
+  border: 2px dashed var(--accent);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--accent-strong);
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+}
+.theory-next:hover,
+.theory-next:focus-visible {
+  background: var(--accent-soft);
+}
+.example-cards {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.example-cards li {
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 0 0 1px var(--border);
+}
+.example-cards strong {
+  font-size: 18px;
+}
+.example-cards span {
+  color: var(--muted);
+  font-size: 15px;
+}
+.word-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.word-chips li {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: var(--radius-pill);
+  background: var(--accent-soft);
+}
+.word-chips strong {
+  color: var(--learning);
+}
+.word-chips span {
+  color: var(--muted);
+  font-size: 14px;
+}
+.new-verbs {
+  margin: 0;
+}
+
+/* ---------- tables ---------- */
+.data-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.data-table th,
+.data-table td {
+  padding: 0.6rem 0.9rem;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+.data-table tr:last-child > * {
+  border-bottom: 0;
+}
+.data-table thead th {
+  background: var(--surface-2);
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ---------- listening ---------- */
+.listen {
+  display: flex;
+  justify-content: center;
+}
+.icon-button {
+  display: inline-grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--accent-text);
+  cursor: pointer;
+  box-shadow: 0 3px 0 var(--accent-strong);
+  transition: transform 0.05s;
+}
+.icon-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 var(--accent-strong);
+}
+.icon-button-large {
+  width: 72px;
+  height: 72px;
+}
+.icon-button-large svg {
+  width: 30px;
+  height: 30px;
+}
+.icon-button-small {
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 2px 0 var(--accent-strong);
+}
+.icon-button.is-unavailable {
+  background: var(--surface-2);
+  color: var(--subtle);
+  box-shadow: none;
+}
+
+/* ---------- flashcards ---------- */
+.flashcard-face {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.flashcard-back {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+.flashcard-form {
+  color: var(--learning);
+}
+.flip-button {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--accent);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ---------- matching ---------- */
+.match-item {
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  font-weight: 550;
+  box-shadow: 0 2px 0 var(--border);
+}
+.match-item:hover {
+  border-color: var(--border-strong);
+}
+.match-item[aria-pressed="true"] {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+.match-item.is-paired {
+  border-color: var(--accent);
+  box-shadow: 0 2px 0 var(--accent);
+}
+.pair-badge {
+  background: var(--accent);
+  color: var(--accent-text);
+}
+.match-curve {
+  stroke: var(--accent);
+}
+
+/* ---------- gender ---------- */
+.gender-option span {
+  border-radius: var(--radius-pill);
+}
+
+/* ---------- badges and notes ---------- */
+.article-badge {
+  border: 0;
+  background: var(--surface-2);
+  color: var(--muted);
+  font-weight: 600;
+}
+.article-badge.is-alert {
+  background: var(--incorrect-soft);
+  color: var(--incorrect);
+}
+.info-box {
+  border-left: 3px solid var(--incorrect);
+  background: var(--incorrect-soft);
+}
+
+/* ---------- results list ---------- */
+.result-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  overflow: hidden;
+}
+.result-item {
+  padding: 0.85rem 1.1rem;
+  border-bottom: 1px solid var(--border);
+}
+.result-item:last-child {
+  border-bottom: 0;
+}
+.result-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--incorrect-soft);
+  color: var(--incorrect);
+  font-size: 13px;
+  font-weight: 700;
+}
+.outcome-fully_correct .result-icon {
+  background: var(--correct-soft);
+  color: var(--correct);
+}
+.outcome-orthography_only .result-icon {
+  background: var(--partial-soft);
+  color: var(--partial);
+}
+
+.flashcard-grid {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+}
+.flashcard-face {
+  min-height: 9rem;
+}
+
+/* results list: one row per answer (icon, prompt → answer, explanation) */
+.results .result-list {
+  display: block;
+}
+.results .result-list .result-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+.results .result-list .result-body {
+  display: grid;
+  flex: 1;
+  gap: 0.25rem;
+  grid-column: auto;
+}
+.results .result-list .result-fix {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0.75rem;
+  grid-column: auto;
+}
+.results .result-list .result-answer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.6rem;
+  grid-column: auto;
+}
+.results .result-list .result-prompt {
+  grid-column: auto;
+}
+.results .result-list .match-arrow:empty {
+  display: none;
+}
+.results .result-list .muted {
+  margin: 0;
+  font-size: 15px;
+}
+.results .result-icon {
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}

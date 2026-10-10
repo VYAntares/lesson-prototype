@@ -181,7 +181,7 @@
   font-weight: 700;
 }
 .flashcard-form {
-  color: #c7d2fe;
+  color: var(--learning);
   align-items: center;
   gap: 0.75rem;
   display: flex;
@@ -283,7 +283,7 @@
 }
 .match-item[aria-pressed="true"] {
   border-color: var(--indigo);
-  background: #1e1b4b;
+  background: var(--accent-soft);
 }
 .pair-badge {
   background: var(--indigo);

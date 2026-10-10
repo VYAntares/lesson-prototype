@@ -13,16 +13,21 @@ body {
 h1 {
   margin: 0 0 0.5rem;
   font-size: 30px;
-  font-weight: 600;
-  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
 }
 h2 {
   margin: 0 0 1rem;
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 650;
+  letter-spacing: -0.01em;
 }
 a {
-  color: var(--text);
+  color: var(--accent);
+}
+::selection {
+  background: var(--accent-soft);
 }
 code {
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
@@ -61,7 +66,7 @@ main:focus {
 }
 .label-muted {
   color: var(--muted);
-  font-size: 16px;
+  font-size: 14px;
 }
 .muted {
   color: var(--muted);

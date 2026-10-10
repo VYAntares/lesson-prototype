@@ -1,9 +1,8 @@
 import { useId, type ReactNode } from 'react'
 import { useI18n } from '../../lib/i18n'
 import { isValidMotherTongue, usePreferences } from '../../lib/preferences'
+import { routes } from '../../lib/router'
 import { LOCALES, type Locale } from '../../schemas/common'
-
-const INTERFACE_LANGUAGES: Locale[] = ['fr', 'en', 'de']
 
 type Props = {
   /** Mother tongue can only be changed on the course index and lesson overview. */
@@ -18,20 +17,15 @@ type Props = {
   actions?: ReactNode
 }
 
-export function AppHeader({
-  motherTongueEditable,
-  courseLang,
-  motherTongueOverride,
-  announcement,
-  title,
-  actions,
-}: Props) {
+/**
+ * One language setting: the learner's mother tongue. The interface, the instructions and the
+ * explanations all use it (team feedback: instructions belong in the mother tongue).
+ */
+export function AppHeader({ motherTongueEditable, courseLang, motherTongueOverride, announcement, title, actions }: Props) {
   const { t } = useI18n()
   const prefs = usePreferences()
   const motherTongue = motherTongueOverride ?? prefs.motherTongue
   const lockedId = useId()
-  const sameAsCourseId = useId()
-  const interfaceId = useId()
 
   return (
     <header className="app-header">
@@ -46,24 +40,24 @@ export function AppHeader({
         {t('app.skipToContent')}
       </a>
       <div className="header-inner">
+        <div className="header-bar">
+          <div className="header-title">{title}</div>
+          {actions && <nav className="header-actions">{actions}</nav>}
+        </div>
         <div className="prefs">
           <fieldset
             className="segmented"
             disabled={!motherTongueEditable}
             aria-describedby={motherTongueEditable ? undefined : lockedId}
           >
-            <legend className="label-muted">{t('prefs.motherTongue')}</legend>
+            <legend className="label-muted">{t('prefs.myLanguage')}</legend>
             {LOCALES.map((locale) => {
               const allowed = !courseLang || isValidMotherTongue(locale, courseLang)
               return (
                 <label
                   key={locale}
                   className="segment"
-                  title={
-                    allowed
-                      ? t(`locale.${locale}`)
-                      : t('prefs.sameAsCourse', { locale: t(`locale.${locale}`) })
-                  }
+                  title={allowed ? t(`locale.${locale}`) : t('prefs.sameAsCourse', { locale: t(`locale.${locale}`) })}
                 >
                   <input
                     type="radio"
@@ -71,7 +65,6 @@ export function AppHeader({
                     value={locale}
                     checked={motherTongue === locale}
                     disabled={!allowed}
-                    aria-describedby={allowed ? undefined : sameAsCourseId}
                     onChange={() => prefs.setMotherTongue(locale)}
                   />
                   <span lang={locale}>{locale}</span>
@@ -79,36 +72,11 @@ export function AppHeader({
               )
             })}
           </fieldset>
-          <div className="select-field">
-            <label className="label-muted" htmlFor={interfaceId}>
-              {t('prefs.interfaceLanguage')}
-            </label>
-            <select
-              id={interfaceId}
-              value={prefs.interfaceLanguage}
-              onChange={(e) => prefs.setInterfaceLanguage(e.target.value as Locale)}
-            >
-              {INTERFACE_LANGUAGES.map((locale) => (
-                <option key={locale} value={locale} lang={locale}>
-                  {locale}
-                </option>
-              ))}
-            </select>
-          </div>
           {!motherTongueEditable && (
             <p id={lockedId} className="visually-hidden">
               {t('prefs.motherTongueLocked')}
             </p>
           )}
-          {courseLang && (LOCALES as readonly string[]).includes(courseLang) && (
-            <p id={sameAsCourseId} className="visually-hidden">
-              {t('prefs.sameAsCourse', { locale: t(`locale.${courseLang}`) })}
-            </p>
-          )}
-        </div>
-        <div className="header-bar">
-          <div className="header-title">{title}</div>
-          <nav className="header-actions">{actions}</nav>
         </div>
       </div>
       <p className="visually-hidden" role="status" aria-live="polite">
@@ -120,5 +88,9 @@ export function AppHeader({
 
 export function Brand() {
   const { t } = useI18n()
-  return <span className="brand">{t('app.brand')}</span>
+  return (
+    <a className="brand" href={routes.index()}>
+      {t('app.brand')}
+    </a>
+  )
 }

@@ -52,7 +52,7 @@
 .form-slot[aria-pressed="true"],
 .pronoun-match.is-dragging .form-slot:hover {
   border-color: var(--indigo);
-  background: #1e1b4b;
+  background: var(--accent-soft);
 }
 .form-slot:disabled {
   cursor: default;

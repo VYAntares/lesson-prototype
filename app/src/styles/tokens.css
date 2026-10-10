@@ -1,30 +1,46 @@
-/* Design tokens: colours, radii and widths (same values as the original). */
+/* Design tokens. Light by default, dark when the system asks for it. */
 :root {
-  --bg: #020617;
-  --surface: #0f172a;
-  --border: #1e293b;
-  --border-strong: #334155;
-  --text: #e2e8f0;
-  --muted: #94a3b8;
-  --subtle: #64748b;
-  --primary-bg: #f1f5f9;
-  --primary-text: #020617;
-  --indigo: #4338ca;
-  --progress: #635bff;
-  --focus: #818cf8;
-  --disabled-bg: #92959e;
-  --correct: #00e676;
-  --incorrect: #ff5252;
-  --partial: #fbbf24;
-  --radius: 8px;
-  --radius-card: 12px;
+  --bg: #f5f6fb;
+  --surface: #ffffff;
+  --surface-2: #f0f2f8;
+  --border: #e3e6ef;
+  --border-strong: #c9cedb;
+  --text: #1a1d29;
+  --muted: #5d6478;
+  --subtle: #8a91a5;
+  --accent: #5b4cf0;
+  --accent-strong: #4a3bd9;
+  --accent-soft: #ecebfe;
+  --accent-text: #ffffff;
+  --primary-bg: var(--accent);
+  --primary-text: var(--accent-text);
+  --indigo: var(--accent);
+  --progress: var(--accent);
+  --focus: #8b80ff;
+  --disabled-bg: #d5d8e2;
+  --correct: #138a4a;
+  --correct-soft: #e5f6ec;
+  --incorrect: #d03434;
+  --incorrect-soft: #fdeaea;
+  --partial: #b76e00;
+  --partial-soft: #fff4e0;
+  --learning: #3a2fc4;
+  --shadow-sm: 0 1px 2px rgb(20 24 40 / 6%);
+  --shadow: 0 1px 2px rgb(20 24 40 / 5%), 0 8px 24px rgb(20 24 40 / 6%);
+  --shadow-lg: 0 12px 40px rgb(20 24 40 / 12%);
+  --radius: 12px;
+  --radius-card: 20px;
+  --radius-pill: 999px;
   --width-wide: 72rem;
-  --width-task: 1080px;
-  --width-start: 560px;
-  color-scheme: dark;
+  --width-task: 760px;
+  --width-start: 640px;
+  --sidebar: 280px;
+  --topbar: 64px;
+  color-scheme: light;
   color: var(--text);
   background: var(--bg);
   font-family:
+    Inter,
     system-ui,
     -apple-system,
     Segoe UI,
@@ -32,6 +48,37 @@
     Helvetica Neue,
     Arial,
     sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e1018;
+    --surface: #171a26;
+    --surface-2: #1e2231;
+    --border: #272c3d;
+    --border-strong: #3a4157;
+    --text: #e8eaf2;
+    --muted: #a2a8bb;
+    --subtle: #747b91;
+    --accent: #8a7dff;
+    --accent-strong: #a197ff;
+    --accent-soft: #252145;
+    --accent-text: #0e1018;
+    --focus: #a197ff;
+    --disabled-bg: #2c3142;
+    --correct: #4fd18b;
+    --correct-soft: #13281e;
+    --incorrect: #ff7a7a;
+    --incorrect-soft: #2e1719;
+    --partial: #f2b552;
+    --partial-soft: #2c2213;
+    --learning: #b3abff;
+    --shadow-sm: none;
+    --shadow: 0 1px 0 rgb(255 255 255 / 3%) inset;
+    --shadow-lg: 0 12px 40px rgb(0 0 0 / 45%);
+    color-scheme: dark;
+  }
 }

@@ -3,7 +3,7 @@ import { useI18n } from '../../../../lib/i18n'
 import type { Unit } from '../../../../lib/lesson/plan'
 import type { LockedAnswer } from '../../../../lib/session/types'
 import type { ExerciseContext } from '../types'
-import { responseText } from './answerState'
+import { otherAnswers, responseText } from './answerState'
 
 const OUTCOME_KEY = {
   fully_correct: 'outcome.fully_correct',
@@ -13,15 +13,28 @@ const OUTCOME_KEY = {
 } as const
 const OUTCOME_ICON = { fully_correct: '✓', orthography_only: '!', incorrect: '✕', unanswered: '✕' } as const
 
+function AlsoAccepted({ unit, lang }: { unit: Unit; lang: string }) {
+  const { t } = useI18n()
+  const others = otherAnswers(unit, t)
+  if (!others.length) return null
+  return (
+    <p className="also-accepted">
+      {t('feedback.alsoAccepted', { answers: '' })}
+      <span lang={unit.answerLang === 'learning' ? lang : undefined}>{others.join(' · ')}</span>
+    </p>
+  )
+}
+
 /** Feedback box below a checked unit: "Correct", or the right answer next to the learner's. */
 export function UnitFeedback({ unit, locked, lang }: { unit: Unit; locked: LockedAnswer; lang: string }) {
   const { t, locale } = useI18n()
   if (locked.outcome === 'fully_correct')
     return (
       <div className="feedback outcome-fully_correct" role="status">
-        <p>
+        <p className="feedback-title">
           <span aria-hidden="true">✓</span> {t('feedback.correct')}
         </p>
+        <AlsoAccepted unit={unit} lang={lang} />
       </div>
     )
   const answer = unit.answerLang === 'ui' ? t(unit.answer) : unit.answer
@@ -45,6 +58,7 @@ export function UnitFeedback({ unit, locked, lang }: { unit: Unit; locked: Locke
           </s>
         </span>
       </div>
+      <AlsoAccepted unit={unit} lang={lang} />
       <p className="explanation">{unit.explanation[locale]}</p>
     </div>
   )

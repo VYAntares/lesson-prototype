@@ -61,7 +61,7 @@ export function PreferencesProvider({ children, initial }: { children: ReactNode
 
   useEffect(() => {
     savePreferences(prefs)
-    document.documentElement.lang = prefs.interfaceLanguage
+    document.documentElement.lang = prefs.motherTongue
   }, [prefs])
 
   const value = useMemo(

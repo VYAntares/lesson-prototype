@@ -1,0 +1,269 @@
+{
+  "formatVersion": 3,
+  "id": "fr-subject-pronouns",
+  "lang": "fr",
+  "level": "A1",
+  "provenance": {
+    "generator": "hand",
+    "model": null,
+    "promptVersion": null,
+    "generatedAt": "2026-10-09T00:00:00.000Z",
+    "inputHash": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "kind": "grammar",
+  "reading": null,
+  "sections": [
+    {
+      "pointId": "p-singular",
+      "theory": {
+        "type": "rule",
+        "text": {
+          "en": "For **one person**, the pronoun comes before the verb:\n\n- `je`: I\n- `tu`: you (a friend)\n- `il`: he\n- `elle`: she",
+          "de": "Für **eine Person** steht das Pronomen vor dem Verb:\n\n- `je`: ich\n- `tu`: du\n- `il`: er\n- `elle`: sie"
+        },
+        "table": null,
+        "examples": [
+          {
+            "text": "Je suis à Paris.",
+            "highlight": ["Je"],
+            "translation": { "en": "I am in Paris.", "de": "Ich bin in Paris." }
+          },
+          {
+            "text": "Voici Léa. Elle est avec Marc.",
+            "highlight": ["Elle"],
+            "translation": { "en": "This is Léa. She is with Marc.", "de": "Das ist Léa. Sie ist mit Marc zusammen." }
+          }
+        ],
+        "tip": {
+          "en": "The forms suis, es, est come from être (to be); you will learn them soon.",
+          "de": "Die Formen suis, es, est kommen von être (sein); du lernst sie bald."
+        }
+      },
+      "practice": [
+        {
+          "type": "gap_choice",
+          "id": "singular-1",
+          "pointIds": ["p-singular"],
+          "hint": { "en": "suis is the form for the person who speaks.", "de": "suis ist die Form für die Person, die spricht." },
+          "explanation": { "en": "Je suis: I am.", "de": "Je suis: ich bin." },
+          "before": "",
+          "after": "suis à Paris.",
+          "choices": [
+            { "text": "Je", "correct": true },
+            { "text": "Tu", "correct": false },
+            { "text": "Nous", "correct": false }
+          ]
+        },
+        {
+          "type": "gap_choice",
+          "id": "singular-2",
+          "pointIds": ["p-singular"],
+          "hint": { "en": "Léa is a woman.", "de": "Léa ist eine Frau." },
+          "explanation": { "en": "Léa is one woman: elle.", "de": "Léa ist eine Frau: elle." },
+          "before": "Voici Léa.",
+          "after": "est à Paris.",
+          "choices": [
+            { "text": "Elle", "correct": true },
+            { "text": "Il", "correct": false },
+            { "text": "Tu", "correct": false }
+          ]
+        },
+        {
+          "type": "gap_typing",
+          "id": "singular-3",
+          "pointIds": ["p-singular"],
+          "hint": { "en": "Marc is a man.", "de": "Marc ist ein Mann." },
+          "explanation": { "en": "Marc is one man: il.", "de": "Marc ist ein Mann: il." },
+          "before": "Voici Marc.",
+          "after": "est avec Léa.",
+          "accepted": ["il"]
+        }
+      ]
+    },
+    {
+      "pointId": "p-plural",
+      "theory": {
+        "type": "rule",
+        "text": {
+          "en": "For **several people**:\n\n- `nous`: we\n- `vous`: you (several people)\n- `ils`: they (men, or men and women)\n- `elles`: they (women only)\n\nIn speech, `on` often means `nous`.",
+          "de": "Für **mehrere Personen**:\n\n- `nous`: wir\n- `vous`: ihr\n- `ils`: sie (Männer, oder Männer und Frauen)\n- `elles`: sie (nur Frauen)\n\nGesprochen bedeutet `on` oft `nous`."
+        },
+        "table": {
+          "header": null,
+          "rows": [["nous sommes", "on est"], ["vous êtes", "vous êtes"], ["ils sont", "elles sont"]]
+        },
+        "examples": [
+          {
+            "text": "Marc et Léa ? Ils sont à Paris.",
+            "highlight": ["Ils"],
+            "translation": { "en": "Marc and Léa? They are in Paris.", "de": "Marc und Léa? Sie sind in Paris." }
+          },
+          {
+            "text": "On est avec Julie.",
+            "highlight": ["On"],
+            "translation": { "en": "We are with Julie.", "de": "Wir sind mit Julie zusammen." }
+          }
+        ],
+        "tip": null
+      },
+      "practice": [
+        {
+          "type": "gap_choice",
+          "id": "plural-1",
+          "pointIds": ["p-plural"],
+          "hint": { "en": "Marc is a man, Léa a woman.", "de": "Marc ist ein Mann, Léa eine Frau." },
+          "explanation": { "en": "A man and a woman together: ils.", "de": "Ein Mann und eine Frau zusammen: ils." },
+          "before": "Marc et Léa ?",
+          "after": "sont à Paris.",
+          "choices": [
+            { "text": "Ils", "correct": true },
+            { "text": "Elles", "correct": false },
+            { "text": "Nous", "correct": false }
+          ]
+        },
+        {
+          "type": "match_forms",
+          "id": "plural-2",
+          "pointIds": ["p-plural", "p-singular"],
+          "hint": { "en": "Each pronoun has its own form of être.", "de": "Jedes Pronomen hat seine eigene Form von être." },
+          "explanation": {
+            "en": "je suis, tu es, nous sommes, vous êtes, ils sont.",
+            "de": "je suis, tu es, nous sommes, vous êtes, ils sont."
+          },
+          "pairs": [
+            { "left": "je", "right": "suis" },
+            { "left": "tu", "right": "es" },
+            { "left": "nous", "right": "sommes" },
+            { "left": "vous", "right": "êtes" },
+            { "left": "ils", "right": "sont" }
+          ]
+        },
+        {
+          "type": "gap_typing",
+          "id": "plural-3",
+          "pointIds": ["p-plural"],
+          "hint": { "en": "Léa and Julie are two women.", "de": "Léa und Julie sind zwei Frauen." },
+          "explanation": { "en": "Women only: elles.", "de": "Nur Frauen: elles." },
+          "before": "Léa et Julie ?",
+          "after": "sont avec Marc.",
+          "accepted": ["elles"]
+        }
+      ]
+    },
+    {
+      "pointId": "p-tu-vous",
+      "theory": {
+        "type": "rule",
+        "text": {
+          "en": "Talking **to** someone:\n\n- `tu`: a friend, a child\n- `vous`: a stranger, or several people",
+          "de": "Wenn man **mit** jemandem spricht:\n\n- `tu`: Freunde, Kinder\n- `vous`: Fremde, oder mehrere Personen"
+        },
+        "table": null,
+        "examples": [
+          {
+            "text": "Salut Marc ! Tu es à Paris ?",
+            "highlight": ["Tu"],
+            "translation": { "en": "Hi Marc! Are you in Paris?", "de": "Hallo Marc! Bist du in Paris?" }
+          },
+          {
+            "text": "Bonjour madame, vous êtes à Paris ?",
+            "highlight": ["vous"],
+            "translation": { "en": "Good morning, madam, are you in Paris?", "de": "Guten Tag, sind Sie in Paris?" }
+          }
+        ],
+        "tip": {
+          "en": "With a stranger, start with vous.",
+          "de": "Mit Fremden beginnt man mit vous."
+        }
+      },
+      "practice": [
+        {
+          "type": "gap_choice",
+          "id": "tu-vous-1",
+          "pointIds": ["p-tu-vous"],
+          "hint": { "en": "You do not know this woman.", "de": "Du kennst diese Frau nicht." },
+          "explanation": { "en": "A stranger: vous.", "de": "Eine fremde Person: vous." },
+          "before": "Bonjour madame,",
+          "after": "êtes à Paris ?",
+          "choices": [
+            { "text": "vous", "correct": true },
+            { "text": "tu", "correct": false },
+            { "text": "nous", "correct": false }
+          ]
+        },
+        {
+          "type": "gap_typing",
+          "id": "tu-vous-2",
+          "pointIds": ["p-tu-vous"],
+          "hint": { "en": "Marc is a friend.", "de": "Marc ist ein Freund." },
+          "explanation": { "en": "A friend: tu.", "de": "Ein Freund: tu." },
+          "before": "Salut Marc !",
+          "after": "es avec Julie ?",
+          "accepted": ["tu"]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "type": "gap_typing",
+      "id": "quiz-1",
+      "pointIds": ["p-singular"],
+      "hint": null,
+      "explanation": { "en": "Thomas is one man: il.", "de": "Thomas ist ein Mann: il." },
+      "before": "Voici Thomas.",
+      "after": "est avec Julie.",
+      "accepted": ["il"]
+    },
+    {
+      "type": "gap_choice",
+      "id": "quiz-2",
+      "pointIds": ["p-singular"],
+      "hint": null,
+      "explanation": { "en": "es goes with tu: tu es.", "de": "es gehört zu tu: tu es." },
+      "before": "",
+      "after": "es avec Marc ?",
+      "choices": [
+        { "text": "Tu", "correct": true },
+        { "text": "Il", "correct": false },
+        { "text": "Je", "correct": false }
+      ]
+    },
+    {
+      "type": "gap_typing",
+      "id": "quiz-3",
+      "pointIds": ["p-plural"],
+      "hint": null,
+      "explanation": { "en": "Two men: ils.", "de": "Zwei Männer: ils." },
+      "before": "Thomas et Marc ?",
+      "after": "sont à Paris.",
+      "accepted": ["ils"]
+    },
+    {
+      "type": "translate",
+      "id": "quiz-4",
+      "pointIds": ["p-plural"],
+      "hint": null,
+      "explanation": {
+        "en": "We: nous sommes, or on est in speech. Both are right.",
+        "de": "Wir: nous sommes, gesprochen auch on est. Beides ist richtig."
+      },
+      "source": { "en": "We are in Paris.", "de": "Wir sind in Paris." },
+      "accepted": ["nous sommes à Paris", "on est à Paris"]
+    },
+    {
+      "type": "gap_choice",
+      "id": "quiz-5",
+      "pointIds": ["p-tu-vous"],
+      "hint": null,
+      "explanation": { "en": "A stranger: vous.", "de": "Eine fremde Person: vous." },
+      "before": "Bonjour monsieur,",
+      "after": "êtes avec Léa ?",
+      "choices": [
+        { "text": "vous", "correct": true },
+        { "text": "tu", "correct": false },
+        { "text": "nous", "correct": false }
+      ]
+    }
+  ]
+}

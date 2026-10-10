@@ -12,7 +12,7 @@ export function ListeningChoice(props: ExerciseProps<'vocabulary_listening_choic
     <div className="units">
       {(props.units as ChoiceUnit[]).map((unit) => (
         <UnitFrame key={unit.id} unit={unit} props={props}>
-          {unit.speak && <ListenButton text={unit.speak} lang={props.plan.lang} />}
+          {unit.speak && <ListenButton text={unit.speak} lang={props.plan.lang} size="large" />}
           <ChoiceList unit={unit} props={props} label={t('session.chooseHeard')} />
         </UnitFrame>
       ))}

@@ -1,4 +1,4 @@
-import { useId } from 'react'
+import { useId, useState } from 'react'
 import { AppHeader, Brand } from '../../components/layout/AppHeader'
 import { StatusMessage } from '../../components/layout/StatusMessage'
 import {
@@ -46,6 +46,7 @@ export function CourseIndex({
   const languageLabelId = useId()
   const levelLabelId = useId()
   const categoriesLabelId = useId()
+  const [availableOnly, setAvailableOnly] = useState(false)
   const levels = courseLevels(manifest, selection.lang)
   const courseLabel = t('index.courseLabel', { language: languageName(selection.lang), level: selection.level })
 
@@ -119,12 +120,16 @@ export function CourseIndex({
               ))}
             </div>
           </div>
+          <label className="option available-toggle">
+            <input type="checkbox" checked={availableOnly} onChange={() => setAvailableOnly((v) => !v)} />
+            <span>{t('index.availableOnly')}</span>
+          </label>
         </div>
 
-        <h1>{t('index.title')}</h1>
-        {outline.status === 'ready' && (
-          <p className="lead">{t('index.summary', { course: courseLabel, count: outline.data.entries.length })}</p>
-        )}
+        <div className="index-hero">
+          <h1>{t('index.title')}</h1>
+          <p className="lead">{t('index.subtitle')}</p>
+        </div>
         {!course && <StatusMessage kind="error">{t('state.noLevels')}</StatusMessage>}
         {course && outline.status === 'loading' && <StatusMessage>{t('state.loading')}</StatusMessage>}
         {course && outline.status === 'error' && (
@@ -149,45 +154,39 @@ export function CourseIndex({
         )}
 
         {outline.status === 'ready' && categories.size > 0 && (
-          <div className="table-wrap">
-            <table className="lesson-table">
-              <thead>
-                <tr>
-                  <th scope="col">{t('col.number')}</th>
-                  <th scope="col">{t('col.lesson')}</th>
-                  <th scope="col">{t('col.category')}</th>
-                  <th scope="col">{t('col.content')}</th>
-                  <th scope="col">{t('col.lastTry')}</th>
-                  <th scope="col">{t('col.actions')}</th>
-                </tr>
-              </thead>
-              <tbody>
-                {numberedEntries(outline.data.entries, new Set(categories)).map(({ ordinal, entry }) => {
-                  const artifacts = manifest.artifacts[entry.id]
-                  const playable = startBlockers(entry.kind, artifacts).length === 0
-                  const score = scores.get(entry.id)
-                  return (
-                    <tr key={entry.id} data-lesson-id={entry.id}>
-                      <td className="ordinal">{String(ordinal).padStart(2, '0')}</td>
-                      <td lang={outline.data.lang}>{entry.workingTitle}</td>
-                      <td>{t(`kind.${entry.kind}`)}</td>
-                      <td>
-                        <ArtifactLink lessonId={entry.id} artifacts={artifacts} />
-                      </td>
-                      <td className="score">{score === undefined ? '' : formatPercent(score, locale)}</td>
-                      <td>
-                        {playable && (
-                          <a className="button button-primary button-small" href={routes.play(entry.id)}>
-                            {t('action.startLesson')}
-                          </a>
-                        )}
-                      </td>
-                    </tr>
-                  )
-                })}
-              </tbody>
-            </table>
-          </div>
+          <ol className="lesson-path">
+            {numberedEntries(outline.data.entries, new Set(categories))
+              .filter(({ entry }) => !availableOnly || startBlockers(entry.kind, manifest.artifacts[entry.id]).length === 0)
+              .map(({ ordinal, entry }) => {
+                const artifacts = manifest.artifacts[entry.id]
+                const playable = startBlockers(entry.kind, artifacts).length === 0
+                const score = scores.get(entry.id)
+                return (
+                  <li key={entry.id} data-lesson-id={entry.id} className={`lesson-row${playable ? ' is-playable' : ''}`}>
+                    <span className="lesson-number">{ordinal}</span>
+                    <div className="lesson-main">
+                      <span className={`kind-badge badge-${entry.kind}`}>{t(`kind.${entry.kind}`)}</span>
+                      <span className="lesson-title" lang={outline.data.lang}>
+                        {entry.workingTitle}
+                      </span>
+                    </div>
+                    {score !== undefined && (
+                      <span className="lesson-score">{t('index.lastScore', { score: formatPercent(score, locale) })}</span>
+                    )}
+                    <div className="lesson-actions">
+                      <ArtifactLink lessonId={entry.id} artifacts={artifacts} />
+                      {playable ? (
+                        <a className="button button-primary button-small" href={routes.play(entry.id)}>
+                          {t('index.play')}
+                        </a>
+                      ) : (
+                        <span className="lesson-unavailable">{t('index.notReady')}</span>
+                      )}
+                    </div>
+                  </li>
+                )
+              })}
+          </ol>
         )}
         <p className="note">{t('index.lastTryNote')}</p>
       </main>

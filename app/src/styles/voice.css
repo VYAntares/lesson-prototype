@@ -14,7 +14,7 @@
   overflow-y: auto;
 }
 .voice-help-dialog::backdrop {
-  background: #020617bf;
+  background: rgb(10 12 20 / 55%);
 }
 .voice-help-dialog h2 {
   margin-top: 0;

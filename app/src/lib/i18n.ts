@@ -14,9 +14,9 @@ export function translate(locale: Locale, key: MessageKey, params?: MessageParam
   return params ? text.replace(/\{(\w+)\}/g, (m, name) => (name in params ? String(params[name]) : m)) : text
 }
 
-/** Interface strings in the current interface language. */
+/** Interface strings in the learner's mother tongue: instructions and explanations share one language. */
 export function useI18n() {
-  const { interfaceLanguage: locale } = usePreferences()
+  const { motherTongue: locale } = usePreferences()
   return useMemo(
     () => ({
       locale,

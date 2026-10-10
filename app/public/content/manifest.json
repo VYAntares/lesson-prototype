@@ -6,7 +6,7 @@
       "lang": "fr",
       "level": "A1",
       "outlineUrl": "content/outlines/fr-a1.json",
-      "sourceHash": "19ead1cc332bf5a3ba9cbb105fd9a618aad31a6070d79ed8980fac2e1c87c99f",
+      "sourceHash": "0b86a3798d648b93f3f0e99e20b9337abb1ae3f5952bb5975d105ef9113c32a4",
       "lessonIds": [
         "fr-greetings-and-goodbyes",
         "fr-subject-pronouns",
@@ -40,6 +40,7 @@
         "fr-months-and-dates",
         "fr-possessives-mon-ton-son",
         "fr-prepositions-with-cities-and-countries",
+        "fr-friends-neighbours-colleagues",
         "fr-introducing-someone",
         "fr-furniture-and-appliances",
         "fr-household-items",
@@ -53,6 +54,7 @@
         "fr-verb-aller-present",
         "fr-shops-and-shopkeepers",
         "fr-contracted-articles",
+        "fr-verb-venir-present",
         "fr-hobbies-and-leisure",
         "fr-stressed-pronouns",
         "fr-talking-about-likes",
@@ -80,21 +82,21 @@
         "fr-buying-clothes",
         "fr-physical-description",
         "fr-adjective-position",
-        "fr-reading-a-flat-ad",
         "fr-numbers-above-one-hundred-and-years",
+        "fr-reading-a-flat-ad",
         "fr-weather-expressions",
         "fr-seasons-and-temperatures",
+        "fr-meals-of-the-day",
         "fr-reflexive-verbs-present",
         "fr-daily-routine",
         "fr-at-work",
-        "fr-talking-about-your-day",
         "fr-time-prepositions",
+        "fr-talking-about-your-day",
         "fr-streets-and-directions",
         "fr-prepositions-of-place",
         "fr-distances-and-measures",
         "fr-asking-the-way",
         "fr-reading-a-holiday-postcard",
-        "fr-meals-of-the-day",
         "fr-means-of-transport",
         "fr-modal-verbs-vouloir-pouvoir-devoir",
         "fr-going-out",
@@ -104,7 +106,6 @@
         "fr-near-future-aller-infinitive",
         "fr-celebrations-and-wishes",
         "fr-reading-a-party-invitation",
-        "fr-verb-venir-present",
         "fr-personal-belongings",
         "fr-verbs-partir-sortir-dormir",
         "fr-at-the-train-station",
@@ -123,7 +124,6 @@
         "fr-booking-a-doctors-appointment",
         "fr-past-tense-with-avoir",
         "fr-purpose-with-pour",
-        "fr-friends-neighbours-colleagues",
         "fr-past-tense-with-etre",
         "fr-time-markers-since-ago-in",
         "fr-reading-written-directions",
@@ -136,16 +136,16 @@
       "outlineHash": "f1cf3bd5f3576695f7d488bf31426ea858fb5591979dadab6f74241a3e4bde2e"
     },
     "fr-subject-pronouns": {
-      "outlineHash": "b476d53fe06441adecdd0702cbcd6c4296b5d821033fe4fe6cf775b302b0d695",
+      "outlineHash": "bc8f909dda1947a997655f9e9e4beb05ca81c627d605e5aa029fbd5c538027ae",
       "draft": {
         "url": "content/briefs/fr-subject-pronouns.json",
         "sourceHash": "8c0a33680cdef1a0cb61b92bb82411ed7e23ad21d11b3d3fd0292a50158dd16b",
-        "status": "valid"
+        "status": "stale"
       },
       "content": {
         "url": "content/lessons/fr-subject-pronouns.json",
         "sourceHash": "5e7b8fa8135e46a3b4e6543cc506fe9fa041c7e8e8943b3048657e0b5d0b9b04",
-        "status": "valid"
+        "status": "stale"
       }
     },
     "fr-alphabet-and-accents": {
@@ -157,16 +157,16 @@
       }
     },
     "fr-verb-etre-present": {
-      "outlineHash": "5c2392d3863624855b6f75ffe68c23d6dd290c31c1f2f6004022fb2b42d34e34",
+      "outlineHash": "2d335834ca0b41f45250ff983283cff95394a46116bf2e815340f062e46cd093",
       "draft": {
         "url": "content/briefs/fr-verb-etre-present.json",
         "sourceHash": "e629674b65e10eb4df6c6e7ccea96a4f3c2e5b4509fbc4c895bf103a5e9a294e",
-        "status": "valid"
+        "status": "stale"
       },
       "content": {
         "url": "content/lessons/fr-verb-etre-present.json",
         "sourceHash": "8f2028bc949a94f6d0b1ce55b9b2df7215236c97df3014255b9fc35493fc4e81",
-        "status": "valid"
+        "status": "stale"
       }
     },
     "fr-countries-and-nationalities": {
@@ -226,16 +226,16 @@
       }
     },
     "fr-er-verbs-present": {
-      "outlineHash": "c4214004217e367d531a6b73223f98c810ad2a2543cfbe66d837e94e4d50c4bb",
+      "outlineHash": "d4352ecf9ba360b031213fc09e452f9bd0f27749d173ff83f0d52c81deefc598",
       "draft": {
         "url": "content/briefs/fr-er-verbs-present.json",
         "sourceHash": "fc151d5ac0744ed26d89f1a1a1fa659780e7b93544cd3c448b2a908d70941203",
-        "status": "valid"
+        "status": "stale"
       },
       "content": {
         "url": "content/lessons/fr-er-verbs-present.json",
         "sourceHash": "4522a96b67e53ccfbde5e7ce81aac6c5c2272b0be5ffe2a7d54e451373e4975d",
-        "status": "valid"
+        "status": "stale"
       }
     },
     "fr-asking-to-repeat-and-spell": {
@@ -321,16 +321,16 @@
       }
     },
     "fr-negation-ne-pas": {
-      "outlineHash": "7d241eb94e9886f6043fd830c6fa44d3d155afddbf76e4a102308067825b0145",
+      "outlineHash": "eeceedbb357aa5129be43c3308307bb52e3a1850e5f8dd8ca5910146599833ad",
       "draft": {
         "url": "content/briefs/fr-negation-ne-pas.json",
         "sourceHash": "028d6260e43f3c6785c60ad38773952dbe91b6e4cd0d1c261d6a13a1ec11a712",
-        "status": "valid"
+        "status": "stale"
       },
       "content": {
         "url": "content/lessons/fr-negation-ne-pas.json",
         "sourceHash": "818e9f31fa36200f7cd9e5e532e2b9578c9949b650b2b3ae2e9b55d0b7c5b64d",
-        "status": "valid"
+        "status": "stale"
       }
     },
     "fr-days-of-the-week": {
@@ -345,29 +345,29 @@
       "outlineHash": "5911bd716a3307897bdf0ebe44b1e4bc6b7402f37e6b3f54bc29a39f230f930b"
     },
     "fr-regular-noun-plurals": {
-      "outlineHash": "b7ef42d6b6f8a10c79700ba5eddb9d79afaefa941237e1a5607f83ab01bfe0c8",
+      "outlineHash": "e690581d3c625e19f5e0d03e143f56403e990890aeacdf2d10a9a83bcd8d8ce2",
       "draft": {
         "url": "content/briefs/fr-regular-noun-plurals.json",
         "sourceHash": "5598627192e07135140ecc27237445f4fa99b8affc45a7aae6cd9f7e09887aab",
-        "status": "valid"
+        "status": "stale"
       },
       "content": {
         "url": "content/lessons/fr-regular-noun-plurals.json",
         "sourceHash": "5434e6b72142ffa6a38031bdb886593757fb9d1953b1404a0f35c28536802da4",
-        "status": "valid"
+        "status": "stale"
       }
     },
     "fr-there-is-il-y-a": {
-      "outlineHash": "9a703c87c929cf52596539372315a433da09ed69d573603cfc49fbb3dbd6c613"
+      "outlineHash": "7dd4502a4b964535ebd0db623dedceb3e6ebd506469ede66f355eb8195620442"
     },
     "fr-rooms-of-the-home": {
-      "outlineHash": "4f5550e9094993417ae900694d419fd7017270bb20ef80700b3c817cbdc2859a"
+      "outlineHash": "35e66aaf4f7ddbca0c92c152eb8c2318d3b78823c3165c5e684e4f6b440238ae"
     },
     "fr-presenting-people-and-things": {
       "outlineHash": "c163376d95973a4f4cb1d1cedc9137bdcea762ea56582741466c4fd27065042c"
     },
     "fr-who-and-what-questions": {
-      "outlineHash": "42bfb07083e5e698b5d85663a0d304a735c01f34a15839f4b8e849a1cfd80c39"
+      "outlineHash": "b82468f2180fef38cbfe18e5ec1aada98100ca336a6eab2586bc1a1f6733e855"
     },
     "fr-months-and-dates": {
       "outlineHash": "77f0e46b798ff1aade665ee7ebeebc166ccd88d30054624a964b5606a20bf426"
@@ -376,7 +376,10 @@
       "outlineHash": "994b13577be0dfd1df5f2fc91ae476c7056ef2e15a79a1b89cfa2bbf1c01c127"
     },
     "fr-prepositions-with-cities-and-countries": {
-      "outlineHash": "a8551b55d70a7d592e51eaa61b72960041544c3c892acdedae14762edd46c969"
+      "outlineHash": "8c9fc3f59264adcf67101c4677336aaf54e920af682dced187eb702bdcf5c256"
+    },
+    "fr-friends-neighbours-colleagues": {
+      "outlineHash": "ec909daa29e526173a0c9e89b1d1cd6d5b23ba9a2cb0ad1afdd9c6fcdf2d7ad5"
     },
     "fr-introducing-someone": {
       "outlineHash": "e632537857696ed9ad2750da1cde34d7d561c14164a0dfae60ad36ad452150a8"
@@ -385,13 +388,13 @@
       "outlineHash": "b0d4af8f59f71cfda8bbf40d2d875e90a66a56fded6e49dd4bb4fa51e43b4416"
     },
     "fr-household-items": {
-      "outlineHash": "e42377abaa1a88b5fb93d6f0a79c30b70d259d5b9824a9dbc681e68c6ea7fab7"
+      "outlineHash": "2ad82091dd83c187cc78671d91398c4a94ef23d89df3ef8e5188b9cbdf98b6da"
     },
     "fr-question-words": {
       "outlineHash": "7481068401a2dfc072ace4f666e64adbde578cef3cd10ecabf9fbd1b4f3a8c89"
     },
     "fr-interrogative-quel": {
-      "outlineHash": "70462dcce3c0aa35622ab487a32b78b2af79ed0c108e1bc40d2a35fc9a3ded59"
+      "outlineHash": "af7ad2ab3ff09a83711ecc3ada2b02a1bd7e7ec9923dbf9fa78a0ada7f4fb89d"
     },
     "fr-telling-the-time": {
       "outlineHash": "59d61671d4d1edd5f64841f2274d80ef96da6ee22eb5edc38778f559cb568d36"
@@ -416,6 +419,9 @@
     },
     "fr-contracted-articles": {
       "outlineHash": "af64e3aa37ba67b40999f253a3074cc57a550240c2c9db8d4e098d0978ff80b4"
+    },
+    "fr-verb-venir-present": {
+      "outlineHash": "7d78ab7319baf452e70167871d7d030cd4ea8dfcb63de0060771bd1c857f5f87"
     },
     "fr-hobbies-and-leisure": {
       "outlineHash": "5d458dd0403a5bc3062c78796aab10768baa04ec7f6ac018197b117a11919f35"
@@ -442,7 +448,7 @@
       "outlineHash": "b6f1e6a6b3e8a23f1c95c20fc03a50817d5127d2317164504c9e9a206980dda7"
     },
     "fr-drinks-at-the-cafe": {
-      "outlineHash": "17d1956489d31763e1b0c18ee8be0a2078da23f511d0c3a50f8cb3ce5d46e978"
+      "outlineHash": "5799e00468991bde1daf58e10e3fb8c39ed7b37ab231f2c422b5dc3b2e1e02e6"
     },
     "fr-polite-requests-je-voudrais": {
       "outlineHash": "c7a6eb3d63e5fccacf70b5882ec67e8b9685ca925a39faf9db958e7a8bf84f3b"
@@ -460,7 +466,7 @@
       "outlineHash": "ce4bbe43429be1649083b62805aa73142421838b835f84e44aead2b1410befb3"
     },
     "fr-packaging-and-weights": {
-      "outlineHash": "8b48fd2d8d6ecb804ceec6345eeec804bae4d4dc48ba91d8c6cde15a5686eaae"
+      "outlineHash": "cfd19ad32f0e0825b72b9bcc77ef521d53ffc13a3ebc3d07a40e684ac5a5e715"
     },
     "fr-negation-pas-de-and-jamais": {
       "outlineHash": "5cd23ee67bd1fec825955b2675173fef2925ea73d77a48a8df4f986e586f54ae"
@@ -498,17 +504,20 @@
     "fr-adjective-position": {
       "outlineHash": "993272e1556be0bc0426be9e1f41ec39ebd4c5496570e34616c4c6a058234118"
     },
-    "fr-reading-a-flat-ad": {
-      "outlineHash": "0ee9fe35354543f3d3cf5a920dd45af83fd15659177488e7e6696d49d3b33ac2"
-    },
     "fr-numbers-above-one-hundred-and-years": {
       "outlineHash": "33c488f00c76439173af1cf4fe707f324b05c083a99667950de4ed32b09f02c7"
+    },
+    "fr-reading-a-flat-ad": {
+      "outlineHash": "0ee9fe35354543f3d3cf5a920dd45af83fd15659177488e7e6696d49d3b33ac2"
     },
     "fr-weather-expressions": {
       "outlineHash": "9064c0d78726bd40a35dcafe2143080655150db2e23ad05083dd65e35c096299"
     },
     "fr-seasons-and-temperatures": {
       "outlineHash": "0868285ef97ec8d5c731e3927400b2d34323926c548df22455d264d8d8b6330b"
+    },
+    "fr-meals-of-the-day": {
+      "outlineHash": "bc7e6107bac427fbc08de78e10c410fa43eb460667c05a2b2af43fd521a93d38"
     },
     "fr-reflexive-verbs-present": {
       "outlineHash": "ec451a2874c4f63c41007764faaaf222f09b0408b59b68291278b57e9b4f3048"
@@ -517,16 +526,16 @@
       "outlineHash": "bf1702ec0b982cbc1693c31850423b5a22d7009608ee85e490c2c9e4542f62ad"
     },
     "fr-at-work": {
-      "outlineHash": "19dc69590da8cf5b1483e1707d30c4a26f91df1dadc07785ad4c1ff6dbacba2b"
+      "outlineHash": "3b23731088ff866be880e72e2188816e3291c7c78c103acf2f3da53f973826ee"
+    },
+    "fr-time-prepositions": {
+      "outlineHash": "cc4e45b7988c7ad71b1aa49ff3a0eb245c15dbab8e9dd36416741a6fd50ba0b8"
     },
     "fr-talking-about-your-day": {
       "outlineHash": "fcf5d333220b04183fec5ff1d18a9a0ade6aaa241a61c075efb0972af01905da"
     },
-    "fr-time-prepositions": {
-      "outlineHash": "4e1300ff2ba224bb56a44a0aaab00e70a71f2ddad65f36ea82879d01eb9f49c9"
-    },
     "fr-streets-and-directions": {
-      "outlineHash": "bf348d0ac72a267ff49f921265f0e8b0ac8da807ea04e334754ab0a314a9a418"
+      "outlineHash": "9da7f489cac240a373c6cd401dd3a30ca52849fbeedf8f1c5719f988c8a3fdbb"
     },
     "fr-prepositions-of-place": {
       "outlineHash": "5074bb4a08bdf5a5afd1e31e02a8580cfb2e263aa87397603df509e4be999758"
@@ -538,10 +547,7 @@
       "outlineHash": "fcc9998d354910d96645252f5de2919381a31873ba3a5902dcdacecd8024bfc9"
     },
     "fr-reading-a-holiday-postcard": {
-      "outlineHash": "6200cd52485c867392d59f9a268b986772e228c34f0aa496d7b46afb211fc8a4"
-    },
-    "fr-meals-of-the-day": {
-      "outlineHash": "bc7e6107bac427fbc08de78e10c410fa43eb460667c05a2b2af43fd521a93d38"
+      "outlineHash": "96225128e831194ac406653d4f90354928ba38b24b406e67af3ae68cb35ea7ea"
     },
     "fr-means-of-transport": {
       "outlineHash": "f7f1aeb882447c1fb0f10672b47c2fc0c169b261f9d972c171cf9bef63f2bf13"
@@ -553,7 +559,7 @@
       "outlineHash": "5d8caee0262ad771ab5d978391dde0a001c64a624b8b2e8c2648f8f5b045e973"
     },
     "fr-reading-an-event-programme": {
-      "outlineHash": "382509c91fca0fcf21250b96efb7dc388b5392b066fbab1390430ce317d3727d"
+      "outlineHash": "3ab85146527e96aed9ef12f479d8eeaed5c293cc146d5092402d6f0659552000"
     },
     "fr-possessives-notre-votre-leur": {
       "outlineHash": "4c86eb6580800f54f4be5aaf2bb88660ca46768ed7730e43efac58fb90b01785"
@@ -570,14 +576,11 @@
     "fr-reading-a-party-invitation": {
       "outlineHash": "8fce45346297f7e28723884ab024c4e11d06c27e8092e2792377269f210479dd"
     },
-    "fr-verb-venir-present": {
-      "outlineHash": "90badd13303e520ddcb6797c13ee462a6a67d91f9d1a0263a8259317c2f7e61d"
-    },
     "fr-personal-belongings": {
       "outlineHash": "9d50f2574b0c21c41c5ddb8122b2eaeef903799d22d193ffe7ce06c8d0379511"
     },
     "fr-verbs-partir-sortir-dormir": {
-      "outlineHash": "d9a8c80af8e7f8959a4c8cb021be25e4202b2633868daa56bedef764089cec94"
+      "outlineHash": "998bc8831fb10ac843aa95fdd210fc2bc1a805c76b55e61a9bc0ecc9db75bb28"
     },
     "fr-at-the-train-station": {
       "outlineHash": "cab95257562db05b0365e8f20ce580f19976df9cb7ee21569a301e7191d217a6"
@@ -601,7 +604,7 @@
       "outlineHash": "dad895c7581753aded71c4b40bb820cc36f7883b9da5d91506e4b50b83e189e2"
     },
     "fr-imperative-mood": {
-      "outlineHash": "6e377c254a68c953941290fdd82cc1647b46311336d0e396c806526e300f2881"
+      "outlineHash": "bf3005b31ccc62afe0e29b374f3b5a9920e820f6822ed9c3343d8038b1a286f9"
     },
     "fr-household-chores": {
       "outlineHash": "bf5ee86e9c08a72767a51ddf87a8e9cdda0908a2c3eaf156b83a280851980e81"
@@ -616,19 +619,16 @@
       "outlineHash": "328a764643fab3c239bbc2262891f44b5707201eec4ce79e897cb8cb99c630f4"
     },
     "fr-feeling-ill": {
-      "outlineHash": "490ab43ecc118a45671a370b2a0d56f274fbe81f2c58b0d7ebba8d6393499a07"
+      "outlineHash": "cd4eaf9def27ccf3f8ae0e2482b59b988c241ae7c21b307a824d77e62aef7e3f"
     },
     "fr-booking-a-doctors-appointment": {
-      "outlineHash": "ddf9726513c8ab488d2d6a0284780732fdf3bc3bdb28fd1831c6ee9a95d1c19a"
+      "outlineHash": "eb2472a357a8d61c4b1e482ddbabd65f94f50b89259bf0fe8636be2e2366af19"
     },
     "fr-past-tense-with-avoir": {
       "outlineHash": "07c428df6b90a3447f89b636fd889bd0a0ffca8ffb21d994af8e66c9bab28b2e"
     },
     "fr-purpose-with-pour": {
       "outlineHash": "1f32e49b6736f4c3d0951fb93aa1508401393e2169e72b4300ea81e315097470"
-    },
-    "fr-friends-neighbours-colleagues": {
-      "outlineHash": "12dba01d2a003752ddc15804d2b8aa1fe05eabe19997f1bb9f08d67d1a6cab1c"
     },
     "fr-past-tense-with-etre": {
       "outlineHash": "06319b9deb69d99c5dd29c36230e54e1630cdb522768d1f2d498f85f479838e7"

@@ -13,7 +13,7 @@ type Props = {
 }
 
 /** Speaks a word or sentence; when no voice is installed, opens installation help. */
-export function ListenButton({ text, lang, variant = 'text', label, size = 'small' }: Props) {
+export function ListenButton({ text, lang, variant = 'icon', label, size = 'small' }: Props) {
   const { t } = useI18n()
   const voice = useVoiceStatus(lang)
   const dialog = useRef<HTMLDialogElement>(null)

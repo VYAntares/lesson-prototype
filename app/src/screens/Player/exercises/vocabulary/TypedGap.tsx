@@ -6,13 +6,20 @@ import { TextAnswer } from '../shared/TextAnswer'
 import { UnitFrame } from '../shared/UnitFeedback'
 import type { ExerciseProps } from '../types'
 
-/** vocabulary_typed_gap: four reference words, type the one that fits the sentence. */
+/** vocabulary_typed_gap: the sentence first (team feedback), then the four words to choose from. */
 export function TypedGap(props: ExerciseProps<'vocabulary_typed_gap'>) {
   const { t } = useI18n()
   const { item, plan } = props
   const solved = props.celebrating || props.units.some((u) => props.locked[u.id])
   return (
     <div className="units">
+      {(props.units as TextUnit[]).map((unit) => (
+        <UnitFrame key={unit.id} unit={unit} props={props}>
+          <GapSentence before={unit.prompt.before} after={unit.prompt.after} lang={plan.lang}>
+            <TextAnswer unit={unit} props={props} label={t('session.gapAnswer')} />
+          </GapSentence>
+        </UnitFrame>
+      ))}
       <div className="references">
         <p className="visually-hidden">{t('session.references')}</p>
         <ul className="reference-list">
@@ -27,13 +34,6 @@ export function TypedGap(props: ExerciseProps<'vocabulary_typed_gap'>) {
           })}
         </ul>
       </div>
-      {(props.units as TextUnit[]).map((unit) => (
-        <UnitFrame key={unit.id} unit={unit} props={props}>
-          <GapSentence before={unit.prompt.before} after={unit.prompt.after} lang={plan.lang}>
-            <TextAnswer unit={unit} props={props} label={t('session.gapAnswer')} />
-          </GapSentence>
-        </UnitFrame>
-      ))}
     </div>
   )
 }
